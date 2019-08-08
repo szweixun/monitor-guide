@@ -1,0 +1,15 @@
+---
+index: 4.07
+---
+### {{page.title}}
+![컴포넌트-Chart-polar][chart-polar-01]
+
+데이터를 극좌표 모양으로 표현해주는 차트.
+
+- Category : Chart
+- 속성 :  
+ < 원형 차트와 동일 >
+
+
+[chart-polar-01]: {{site.baseurl}}/assets/components/chart-polar-01.png
+{: height="200px" }

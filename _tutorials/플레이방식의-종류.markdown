@@ -1,0 +1,12 @@
+---
+index: 5.05
+---
+## {{page.title}}
+
+1. Carousel: 플레이그룹에 있는 Scene을 순차적으로 하나씩 보여준다.
+
+1. Filp-card: 플레이그룹의 Scene 2개를 순차적으로 보여준다.
+
+1. Flip-card2: Flip-card와 동일하며, 보여지는 효과가 다르다.
+
+1. Grid: 플레이그룹의 Scene을 Grid형태로 배치하여 보여준다.

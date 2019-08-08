@@ -1,0 +1,12 @@
+---
+index: 8.02
+---
+### {{page.title}}
+
+![IoT][iot-02]  
+温湿度传感器
+
+
+- 类型：IoT
+
+[iot-02]: {{site.baseurl}}/assets/components/iot-02.png

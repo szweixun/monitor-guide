@@ -1,0 +1,12 @@
+---
+index: 11.04
+---
+### {{page.title}}
+![组件-模拟时钟][clock-analog-01]  
+模拟时钟
+
+- 类型：形状
+
+
+[clock-analog-01]: {{site.baseurl}}/assets/components/clock-analog-01.png
+{: height="200px"}

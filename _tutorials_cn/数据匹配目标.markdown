@@ -1,0 +1,57 @@
+---
+index: 3.05
+---
+### {{page.title}}
+设置将要传播数据值的目标。  
+设置有以下三种方法。
+
+1. 相对目标设置方法  
+  - **(self)**: 指定自身为目标。
+  - **(key)**: 将与data的key相一致的组件设置为目标。  
+    被用在数据类型为Object的情况。  
+    ```javascript
+    // e.g. 
+        {
+            "id1": 1,
+            "id2": 2,
+            "id3": 3
+        } // 将目标指定为(key)
+        
+        1 // ID为id1的组件的数据
+        2 // ID为id2的组件的数据
+        3 // ID为id3的组件的数据
+    ```
+
+1. 通过ID的设置方法  
+  - **#id**: 输入组件的ID并将相一致的组件设置为目标。
+  - **.class**: 输入组件的class并将相一致的组件设置为目标。
+
+1. 指定数据的key并通过该值而设置目标的方法  
+  - **[dataKey]**: 将符合输入值的dataKey的值和ID相一致的组件设置为目标。  
+    被用在数据类型为Object-Array的情况。
+    ```javascript
+    // e.g. 
+        [{
+            "id": "component-1",
+            "value": "1"
+        }, {
+            "id": "component-2",
+            "value": "2"
+        }, {
+            "id": "component-3",
+            "value": "3"
+        }] // 将目标指定为[id]
+
+        {
+            "id": "component-1",
+            "value": "1"
+        } // ID为component-1的组件的数据
+        {
+            "id": "component-2",
+            "value": "2"
+        } // ID为component-2的组件的数据
+        {
+            "id": "component-3",
+            "value": "3"
+        } // ID为component-3的组件的数据
+    ```

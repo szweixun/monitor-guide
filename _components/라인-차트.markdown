@@ -1,0 +1,68 @@
+---
+index: 4.04
+---
+### {{page.title}}
+![컴포넌트-Chart-line][chart-line-01]
+
+데이터를 라인모양의 형태로 표현해주는 차트. (중복되는 속성은 막대차트를 참조)
+
+- Category : Chart
+- 속성 :
+1. Multi Axis(Check) - < 막대 차트와 동일 >  <-- 링크 걸수있는 방법이 있을까나요?
+1. Data Key - Series(String) - < 막대 차트와 동일 >
+1. Label(String) - < 막대 차트와 동일 >
+1. Line Tension(Select) - 데이터를 표시하는 라인의 각도를 부드럽게 또는 날카롭게 변경  
+![Chart-line-선 민감도][chart-line-02]
+1. Border Color(Color) - 라인의 색상을 변경  
+![Chart-line-선 색상][chart-line-03]
+1. Border Width(Number) - 라인의 굵기를 변경  
+![Chart-line-선 굵기][chart-line-04]
+1. Fill(Color) - 라인이 그려진 공간을 색칠  
+![Chart-line-공간 칠하기][chart-line-05]
+1. Background Color(Color) - 라인의 속성이 'Fill'일 경우 채워지는 색상의 변경  
+![Chart-line-배경색][chart-line-06]
+1. Point Shape(Select) - 데이터를 표시하는 도형의 모양  
+![Chart-line-선 민감도][chart-line-07]
+1. Point Size(Number) - 데이터를 표시하는 도형의 크기  
+![Chart-line-선 민감도][chart-line-08]
+1. Point Bg Color(Color) - 데이터를 표시하는 도형에 채워지는 색상  
+![Chart-line-공간 칠하기][chart-line-09]
+1. Target Axis(Select) - < 막대 차트와 동일 >
+1. Prefix(String) - < 막대 차트와 동일 >
+1. Suffix(String) - < 막대 차트와 동일 >
+1. Data Key - < 막대 차트와 동일 >
+1. Thickness(Number) - < 막대 차트와 동일 >
+1. Grid Line - < 막대 차트와 동일 >
+1. Display Tick - < 막대 차트와 동일 >
+1. Min Auto - < 막대 차트와 동일 >
+1. Max Auto - < 막대 차트와 동일 >
+1. Grid Line - < 막대 차트와 동일 >
+1. Display Tick - < 막대 차트와 동일 >
+
+
+[chart-line-01]: {{site.baseurl}}/assets/components/chart-line-01.png
+{: height="200px" }
+
+[chart-line-02]: {{site.baseurl}}/assets/components/chart-line-02.png
+{: height="200px" }
+
+[chart-line-03]: {{site.baseurl}}/assets/components/chart-line-03.png
+{: height="200px" }
+
+[chart-line-04]: {{site.baseurl}}/assets/components/chart-line-04.png
+{: height="200px" }
+
+[chart-line-05]: {{site.baseurl}}/assets/components/chart-line-05.png
+{: height="200px" }
+
+[chart-line-06]: {{site.baseurl}}/assets/components/chart-line-06.png
+{: height="200px" }
+
+[chart-line-07]: {{site.baseurl}}/assets/components/chart-line-07.png
+{: height="200px" }
+
+[chart-line-08]: {{site.baseurl}}/assets/components/chart-line-08.png
+{: height="200px" }
+
+[chart-line-09]: {{site.baseurl}}/assets/components/chart-line-09.png
+{: height="200px" }

@@ -1,0 +1,27 @@
+---
+index: 3.04
+---
+### {{page.title}}
+如果数据是Object或Array，访问者需要访问内部属性。如果没有输入，则默认使用Field1的第一行的值。
+
+- 访问Array: `[0]`
+```javascript
+  // e.g. 
+  [1, 2, 3, 4, 5, ...] // 将访问者指定为[1]
+
+  2 // 访问结果
+```
+
+- 访问Object: `[value]`或`.value`  
+```javascript
+  // e.g.
+  {
+    "key1": "value1",
+    "key2": "value2",
+    "key3": "value3",
+    "key4": "value4",
+    ...
+  } // 将访问者指定为[key2]
+
+  "value2" // 访问结果
+```

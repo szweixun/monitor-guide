@@ -1,0 +1,18 @@
+---
+index: 1.06
+---
+### {{page.title}}
+![Right-Angle-Path][Right-Angle-Path-01]
+
+直角路径。
+
+- 类型：线
+- 属性：
+1. direction（选择）– 改变开始和结束的方向。
+![Right-Angle-Path-02][Right-Angle-Path-02]
+
+
+[Right-Angle-Path-01]: {{site.baseurl}}/assets/components/right-angle-path-01.png
+{: height="200px"}
+
+[Right-Angle-Path-02]: {{site.baseurl}}/assets/components/right-angle-path-02.png

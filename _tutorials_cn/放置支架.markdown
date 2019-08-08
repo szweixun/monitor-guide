@@ -1,0 +1,31 @@
+---
+index: 6.03
+---
+## {{page.title}}
+
+1. 从组件工具栏中，选择并放置支架表。
+（!注意 因为支架表仅识别所放置的表格的行为通道，所以如果图纸上的通道是垂直的，则将其旋转90度。）
+![visualizer-put-rack-table-on-the-zone]
+
+2. 选择已放置的支架表后，将其被包含（确认可视器的边框变为橙色）在已放置的可视器中。
+![visualizer-set-row-col]
+
+3. 参考图纸，设置通道。（选择相当于通道的行后，勾选属性的is empty。）
+![visualizer-set-aisle]
+
+4. 选择支架表后，输入支架的隔板层数和隔板深度。
+
+5. （可选）设置是否隐藏支架柱并设置库存量。
+
+6. 通过预览进行确认。<br>
+![visualizer-preview-02]
+
+
+[visualizer-put-rack-table-on-the-zone]: {{site.baseurl}}/assets/tutorials/visualizer-put-rack-table-on-the-zone.png
+{: height="350px" }
+[visualizer-set-row-col]: {{site.baseurl}}/assets/tutorials/visualizer-set-row-col.png
+{: height="350px" }
+[visualizer-set-aisle]: {{site.baseurl}}/assets/tutorials/visualizer-set-aisle.png
+{: height="350px" }
+[visualizer-preview-02]: {{site.baseurl}}/assets/tutorials/visualizer-preview-02.png
+{: height="300px" }

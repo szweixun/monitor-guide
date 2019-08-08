@@ -1,0 +1,38 @@
+---
+index: 4.01
+---
+### {{page.title}}
+
+- Category : Chart
+- 속성 :
+1. Theme(Select) - 차트의 테마를 변경. 'light'와 'dark' 두가지를 지원
+![Chart-테마][chart-01]
+1. Legend(Check) - 차트의 범례를 표시. 상, 하, 좌, 우 네방향으로 배치할 수 있다.
+![Chart-범례][chart-02]
+1. Text Size(Number) - 차트의 텍스트 크기를 조절
+![Chart-텍스트 크기][chart-03]
+1. Value-Display(Check) - 차트 데이터의 필드마다 값 레이블을 표시
+![Chart- 레이블][chart-04]
+1. Value-Display-Color(Color) - 차트 값 레이블의 색상을 변경
+![Chart-레이블 색상][chart-05]
+1. Value-Display-Size(Number) - 차트 값 레이블의 크기를 변경
+![Chart-레이블 크기][chart-06]
+
+
+[chart-01]: {{site.baseurl}}/assets/components/chart-01.png
+{: height="200px" }
+
+[chart-02]: {{site.baseurl}}/assets/components/chart-02.png
+{: height="200px" }
+
+[chart-03]: {{site.baseurl}}/assets/components/chart-03.png
+{: height="200px" }
+
+[chart-04]: {{site.baseurl}}/assets/components/chart-04.png
+{: height="200px" }
+
+[chart-05]: {{site.baseurl}}/assets/components/chart-05.png
+{: height="200px" }
+
+[chart-06]: {{site.baseurl}}/assets/components/chart-06.png
+{: height="200px" }

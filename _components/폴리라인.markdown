@@ -1,0 +1,12 @@
+---
+index: 1.05
+---
+### {{page.title}}
+![Polyline][Polyline-01]
+
+하나 이상의 선분으로 구성된 연속적인 선
+
+- Category : Line
+
+[Polyline-01]: {{site.baseurl}}/assets/components/polyline-01.png
+{: height="200px"}

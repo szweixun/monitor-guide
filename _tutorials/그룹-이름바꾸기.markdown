@@ -1,0 +1,14 @@
+---
+index: 1.02
+---
+### {{page.title}}
+
+1. 그룹 옆의 ![연필모양버튼][group-name-change-button]을 클릭한다.  
+
+1. **그룹 이름**을 입력하고 이름버튼을 클릭하여 그룹 이름을 변경한다.  
+![group-name-change]
+
+[group-name-change]: {{site.baseurl}}/assets/tutorials/group-name-change-01.png
+
+[group-name-change-button]: {{site.baseurl}}/assets/tutorials/group-name-change-02.png
+{: height="20px" style="vertical-align:baseline;"}

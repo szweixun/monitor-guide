@@ -1,0 +1,16 @@
+---
+index: 5.01
+---
+## {{page.title}}
+说明创建可以聚集通过播放功能而显示的Scene的播放组的方法。
+
+1. 点击左侧下端的![+][add-group-button]按钮。
+
+1. 输入**组名称**并选择**组类型**为**PLAY**之后，点击Create按钮，创建组。  
+![add-group]
+
+[add-group]: {{site.baseurl}}/assets/tutorials/add-play-group.png
+{: height="200px" }
+
+[add-group-button]: {{site.baseurl}}/assets/getting_started/add-group-button.png
+{: height="20px" }

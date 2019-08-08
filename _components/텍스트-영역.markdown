@@ -1,0 +1,33 @@
+---
+index: 0.01
+---
+### {{page.title}}
+텍스트와 영역에 대한 속성을 설명한다.
+
+
+1. ID : 컴포넌트의 ID를 설정한다.  
+1. 클래스 : 컴포넌트의 클래스를 설정한다.
+1. 텍스트 : 컴포넌트의 텍스트를 설정한다. 해당 컴포넌트를 더블클릭해도 입력이 가능하다.
+1. 텍스트 형식 : 텍스트의 형식을 설정한다.  
+  - \# : 숫자형식 (값 또는 소수점 이하의 값이 0이면 표시하지 않는다.)
+  - 0 : 숫자형식
+  - , : 자리수 표현
+  - . : 소수점 표현
+1. 숨김 : 컴포넌트를 숨긴다.  
+1. 위치고정 : 컴포넌트의 위치를 고정시킨다.  
+1. 크기  
+  - 너비 : 컴포넌트의 너비를 설정한다.  
+  - 높이 : 컴포넌트의 높이를 설정한다.  
+  - 회전 : 컴포넌트를 회전시킨다. (양수는 시계방향으로, 음수는 시계 반대방향으로 회전한다.)
+1. 텍스트 상자  
+  - ![가로정렬][align-horizontal] : 가로정렬을 설정한다. (좌측부터 순서대로 왼쪽정렬, 가운데정렬, 우측정렬, 양쪽정렬)  
+  - ![수직정렬][align-vertical] : 세로정렬을 설정한다. (좌측부터 순서대로 위쪽정렬, 중간정렬, 아래쪽정렬)  
+  - 텍스트개행 : 텍스트가 컴포넌트의 영역을 벗어날 경우 개행여부를 선택한다.  
+  - ![여백][text-margin] : 텍스트의 상하좌우 여백을 설정한다.
+
+[align-horizontal]: {{ site.baseurl }}/assets/components/common-property-text-align-horizontal.png
+
+[align-vertical]: {{ site.baseurl }}/assets/components/common-property-text-align-vertical.png
+
+[text-margin]: {{ site.baseurl }}/assets/components/common-property-text-margin.png
+

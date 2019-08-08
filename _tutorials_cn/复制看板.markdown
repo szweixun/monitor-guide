@@ -1,0 +1,15 @@
+---
+index: 1.06
+---
+### {{page.title}}
+
+1. 移动到具有将要复制的Scene的组。
+
+1. 点击Scene下端的![i][info]，并移动到信息页面。
+
+1. 点击信息页面下端的复制按钮。
+
+1. 输入将要新创建的Scene的名称，并点击储存。
+
+[info]: {{site.baseurl}}/assets/info.png
+{: height="20px" style="vertical-align:baseline;" }

@@ -1,0 +1,14 @@
+---
+index: 1.08
+---
+### {{page.title}}
+
+1. 移动到具有相关Scene的组。
+
+1. 拖拽将要变更组的Scene，并拖放到左侧组列表中将要变更的组。
+![Drag&Drop][scene-group-change]
+
+1. 点击相关组，确认是否已有移动Scene。
+
+[scene-group-change]: {{site.baseurl}}/assets/tutorials/scene-group-change-01.png
+{: style="vertical-align:baseline;max-height: 400px;" }

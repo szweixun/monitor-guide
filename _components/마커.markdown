@@ -1,0 +1,19 @@
+---
+index: 2.08
+---
+### {{page.title}}
+![컴포넌트-마커][marker-01]
+
+표시물 도형
+- Category : Shape
+- 속성 :
+1. innerCircleFillStyle(Color) - 마커 안쪽 공간의 색상을 지정  
+![마커-innerCircleFillStyle적용결과][marker-02]
+
+
+
+[marker-01]: {{site.baseurl}}/assets/components/marker-01.png
+{: height="200px"}
+
+[marker-02]: {{site.baseurl}}/assets/components/marker-02.png
+{: height="200px"}

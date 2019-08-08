@@ -1,0 +1,21 @@
+---
+index: 4.06
+---
+### {{page.title}}
+![组件-Chart-radar][chart-radar-01]
+
+用雷达形状显示数据的图表。用多个线条的形状，表现饼状图的数据。
+
+- 类型：图表
+- 属性：
+1. Data Key - Series(String) - 成为数据的值的字段。当具有如下数据时，‘Series’的‘Data Key’将会成为‘Good’和‘Bad’。  
+![chart-radar-数据键][chart-radar-01]
+1. Data Key - Axis(String) - 成为数据的标签的字段。当具有如下数据时，‘Axis’的‘Data Key’将会成为‘Line’。  
+![chart-radar-数据键][chart-radar-01]  
+
+<br>
+<其他属性与线状图相同。>
+
+
+[chart-radar-01]: {{site.baseurl}}/assets/components/chart-radar-01.png
+{: height="200px" }

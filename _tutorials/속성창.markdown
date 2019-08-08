@@ -1,0 +1,30 @@
+---
+index: 2.04
+---
+### {{page.title}}
+속성창의 기능들에 대해 설명한다.  
+![속성창][property-window]
+
+1. ![모양속성탭][shape-property-tab]: 컴포넌트의 모양에 관련된 속성. ID, class를 부여하거나, 너비, 높이 등을 지정할 수 있다.
+
+1. ![스타일속성탭][style-property-tab]: 컴포넌트의 스타일에 관련된 속성. 색상, 폰트 등을 지정할 수 있다.
+
+1. ![효과속성탭][effect-property-tab]: 컴포넌트의 효과에 관련된 속성. 그림자, 애니메이션, 클릭시 이벤트를 지정할 수 있다.
+
+1. ![특정속성탭][specific-property-tab]: 컴포넌트 고유 속성.
+
+1. ![데이터속성탭][variable-property-tab]: Scene의 데이터에 관련된 속성. 
+
+[property-window]: {{site.baseurl}}/assets/tutorials/property-window.png
+{: height="500px" }
+
+[shape-property-tab]: {{site.baseurl}}/assets/tutorials/shape-property.png
+{: height="20px" style="vertical-align:middle;" }
+[style-property-tab]: {{site.baseurl}}/assets/tutorials/style-property.png
+{: height="20px" style="vertical-align:middle;" }
+[effect-property-tab]: {{site.baseurl}}/assets/tutorials/effect-property.png
+{: height="20px" style="vertical-align:middle;" }
+[specific-property-tab]: {{site.baseurl}}/assets/tutorials/specific-property.png
+{: height="20px" style="vertical-align:middle;" }
+[variable-property-tab]: {{site.baseurl}}/assets/tutorials/variable-property.png
+{: height="20px" style="vertical-align:middle;" }

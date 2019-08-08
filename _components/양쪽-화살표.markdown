@@ -1,0 +1,11 @@
+---
+index: 1.04
+---
+### {{page.title}}
+![Both-Arrow][Both-Arrow-01]
+
+양쪽 끝자락에 화살표 모양이 있는 직선
+
+- Category : Line
+
+[Both-Arrow-01]: {{site.baseurl}}/assets/components/both-arrow-01.png

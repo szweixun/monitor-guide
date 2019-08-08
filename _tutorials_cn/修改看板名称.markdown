@@ -1,0 +1,15 @@
+---
+index: 1.09
+---
+### {{page.title}}
+
+1. 移动到具有相关Scene的组。
+
+1. 点击Scene下端的![i][info]，移动到信息页面。
+
+1. 点击信息页面下端的名称变更按钮。
+
+1. 输入将要变更的名称之后，点击OK按钮。
+
+[info]: {{site.baseurl}}/assets/info.png
+{: height="20px" style="vertical-align:baseline;" }

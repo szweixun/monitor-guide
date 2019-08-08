@@ -1,0 +1,5 @@
+---
+index: 4
+---
+## {{page.title}}
+说明在Scene中包含(Reference)其他Scene的画面的功能。

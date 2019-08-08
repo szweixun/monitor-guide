@@ -1,0 +1,20 @@
+---
+index: 6.01
+---
+## {{page.title}}
+
+1. 从场景建模器左侧的组件工具栏中，选择并放置可视器。<br>
+![visualizer-select-visualizer-from-component-bar]
+
+2. 点击已放置的可视器后，将相关的图纸图像设置为可视器的背景图像。
+![avisualizer-background-pattern]
+
+3. 点击预览进行确认。<br>
+![visualizer-preview-01]
+
+[visualizer-select-visualizer-from-component-bar]:{{site.baseurl}}/assets/tutorials/visualizer-select-visualizer-from-component-bar.png
+{: height="350px" }
+[avisualizer-background-pattern]: {{site.baseurl}}/assets/tutorials/visualizer-background-pattern.png
+{: height="350px" }
+[visualizer-preview-01]: {{site.baseurl}}/assets/tutorials/visualizer-preview-01.png
+{: height="300px" }

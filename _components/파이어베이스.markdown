@@ -1,0 +1,13 @@
+---
+index: 7.02
+---
+### {{page.title}}
+
+![컴포넌트-데이터 소스][data-source-02]  
+파이어베이스
+
+
+- Category : Data Source
+
+[data-source-02]: {{site.baseurl}}/assets/components/data-source-02.png
+{: height="200px"}

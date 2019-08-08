@@ -1,0 +1,19 @@
+---
+index: 0.02
+---
+### {{page.title}}
+
+1. 点击画面左侧的管理者页面链接(![管理者页面链接-图像][admin-page-link])。  
+![管理者页面][go-to-admin-page]
+
+1. 登录为具有管理者权限的用户。
+
+1. 系统 - 点击用户而打开用户菜单。
+
+1. 找出并勾选申请注册的ID之后，点击下方的删除，并点击储存按钮。
+
+[admin-page-link]: {{site.baseurl}}/assets/tutorials/go-to-admin-page.png
+{: style="height:15px; vertical-align:middle;" }
+
+[go-to-admin-page]: {{site.baseurl}}/assets/tutorials/scene-import-01.png
+{: style="max-height:200px" }

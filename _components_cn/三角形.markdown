@@ -1,0 +1,12 @@
+---
+index: 2.05
+---
+### {{page.title}}
+![组件-三角形][triangle-01]
+
+三角形
+
+- 类型：形状
+
+[triangle-01]: {{site.baseurl}}/assets/components/triangle-01.png
+{: height="200px"}

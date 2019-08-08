@@ -1,0 +1,80 @@
+---
+index: 4.02
+---
+### {{page.title}}
+![컴포넌트-Chart-bar][chart-bar-01]
+
+데이터를 막대모양의 형태로 표현해주는 차트. 여러개의 필드가 있을시엔 병렬막대 또는 누적막대로 표현이 가능
+
+- Category : Chart
+- 속성 :
+1. Stacked(Check) - 차트를 누적막대로 변경  
+![Chart-bar-테마][chart-bar-02]
+1. Multi Axes(Check) - 차트의 보조축을 사용. 보조축 데이터를 사용할 시 'Series'의 'Target Axis'의 방향을 Right로 변경 해 줘야 함  
+![Chart-bar-테마][chart-bar-03]
+1. Data Key - Series(String) - 차트가 표현할 데이터의 필드명. Y축에 표현될 데이터의 필드명을 입력한다. 아래와 같은 데이터를 표시할 시 Series의 Data-Key는 'Good'과 'Bad'가 된다.  
+![Chart-bar-테마][chart-bar-01]
+1. Label(String) - 범례에 표시될 데이터의 값  
+![Chart-bar-테마][chart-bar-04]
+1. Target Axis(Select) - 시리즈의 데이터가 표시될 방향을 선택. 오른쪽을 선택 시 보조 축의 데이터 표현범위를 따르며 공통 속성의 'Multi Axes'가 선택되어 있어야 한다.  
+![Chart-bar-테마][chart-bar-03]
+1. Prefix(String) - 차트에 마우스를 올릴 때 표기되는 데이터의 앞에 표기될 문자.  
+![Chart-bar-테마][chart-bar-05]
+1. Suffix(String) - 차트에 마우스를 올릴 때 표기되는 데이터의 뒤에 표기될 문자.  
+![Chart-bar-테마][chart-bar-06]
+1. Data Key - X Axis(String) - 차트가 표현할 데이터의 필드명. X축에 표현될 데이터의 필드명을 입력한다. 아래와 같은 데이터를 표시할 시 X-Axis의 Data-Key는 'Date'가 된다.  
+![Chart-bar-테마][chart-bar-01]
+1. Thickness(Number) - 막대차트의 두께.  
+![Chart-bar-테마][chart-bar-07]
+1. Grid Line - X Axis(Check) - X축의 눈금선을 표시  
+![Chart-bar-테마][chart-bar-08]
+1. Display Tick - X Axis(Check) - X축의 레이블을 표시  
+![Chart-bar-테마][chart-bar-09]
+1. Min Auto - Y Axis(Check&Number) - Y축의 최소값을 지정하거나 자동으로 표시  
+![Chart-bar-테마][chart-bar-10]
+1. Max Auto - Y Axis(Check&Number) - Y축의 최대값을 지정하거나 자동으로 표시  
+![Chart-bar-테마][chart-bar-11]
+1. Grid Line - Y Axis(Check) - Y축의 눈금선을 표시  
+![Chart-bar-테마][chart-bar-12]
+1. Display Tick - Y Axis(Check) - Y축의 레이블을 표시  
+![Chart-bar-테마][chart-bar-13]
+
+
+[chart-bar-01]: {{site.baseurl}}/assets/components/chart-bar-01.png
+{: height="200px" }
+
+[chart-bar-02]: {{site.baseurl}}/assets/components/chart-bar-02.png
+{: height="200px" }
+
+[chart-bar-03]: {{site.baseurl}}/assets/components/chart-bar-03.png
+{: height="200px" }
+
+[chart-bar-04]: {{site.baseurl}}/assets/components/chart-bar-04.png
+{: height="200px" }
+
+[chart-bar-05]: {{site.baseurl}}/assets/components/chart-bar-05.png
+{: height="200px" }
+
+[chart-bar-06]: {{site.baseurl}}/assets/components/chart-bar-06.png
+{: height="200px" }
+
+[chart-bar-07]: {{site.baseurl}}/assets/components/chart-bar-07.png
+{: height="200px" }
+
+[chart-bar-08]: {{site.baseurl}}/assets/components/chart-bar-08.png
+{: height="200px" }
+
+[chart-bar-09]: {{site.baseurl}}/assets/components/chart-bar-09.png
+{: height="200px" }
+
+[chart-bar-10]: {{site.baseurl}}/assets/components/chart-bar-10.png
+{: height="200px" }
+
+[chart-bar-11]: {{site.baseurl}}/assets/components/chart-bar-11.png
+{: height="200px" }
+
+[chart-bar-12]: {{site.baseurl}}/assets/components/chart-bar-12.png
+{: height="200px" }
+
+[chart-bar-13]: {{site.baseurl}}/assets/components/chart-bar-13.png
+{: height="200px" }

@@ -1,0 +1,5 @@
+---
+index: 3
+---
+## {{page.title}}
+Text 및 Media 컴포넌트에 대하여 설명한다.

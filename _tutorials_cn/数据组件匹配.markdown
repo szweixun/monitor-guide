@@ -1,0 +1,26 @@
+---
+index: 3.02
+---
+### {{page.title}}
+说明匹配数据和组件的方法。
+
+1. 点击数据标签-属性窗口的第五个标签。
+1. 为组件分配ID。来自服务器的数据，将其key（数据名称）匹配到同一组件的ID。(_也就是说，组件ID和数据的key应该是相同的。_)  
+![variable-insert-01][variable-insert-01]  
+1. 输入对象ID。该对象也可以是自身，并且可以同其他组件共享同一数据。
+1. [输入将要变更的属性。](#数据匹配属性) 属性设置当获取数据时，变更组件的哪种属性。
+1. 在表格中，输入默认值。默认值是获取实际数据的数据之前的、数据的初始值。如果不是数组类型的数据，如下图所示，默认值只会识别Field1的第一行的数据。  
+![variable-insert-02][variable-insert-02]
+1. 数据值将会被输入到组件的 'data'属性中。如果想把该值用到组件的其他属性，则可以在属性输入窗口中，输入#{data}。  
+_**( 如果输入#{属性名称}，就会替代相关属性的值。 )**_
+![variable-insert-03][variable-insert-03]
+
+
+[variable-insert-01]: {{site.baseurl}}/assets/tutorials/variable-insert-01.png
+{: style="height:350px; vertical-align:middle;" style="margin-bottom: 15px"}
+
+[variable-insert-02]: {{site.baseurl}}/assets/tutorials/variable-insert-02.png
+{: style="height:200px; vertical-align:middle;" style="margin-bottom: 15px"}
+
+[variable-insert-03]: {{site.baseurl}}/assets/tutorials/variable-insert-03.png
+{: style="height:200px; vertical-align:middle;" style="margin-bottom: 15px"}

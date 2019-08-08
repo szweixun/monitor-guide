@@ -1,0 +1,38 @@
+---
+index: 4.01
+---
+### {{page.title}}
+
+- 类型：图表
+- 属性：
+1. Theme(Select) - 变更图表的主题。支持‘light’和‘dark’等两种。
+![Chart-主题][chart-01]
+1. Legend(Check) - 显示图表的图例。可以布置上、下、左、右等四个方向。
+![Chart-图例][chart-02]
+1. Text Size(Number) - 调整图表的文本大小。
+![Chart-文本大小][chart-03]
+1. Value-Display(Check) - 在图表数据的各个字段，显示值标签。
+![Chart-标签][chart-04]
+1. Value-Display-Color(Color) - 变更图表值标签的颜色。
+![Chart-标签颜色][chart-05]
+1. Value-Display-Size(Number) - 变更图表值标签的大小。
+![Chart-标签大小][chart-06]
+
+
+[chart-01]: {{site.baseurl}}/assets/components/chart-01.png
+{: height="200px" }
+
+[chart-02]: {{site.baseurl}}/assets/components/chart-02.png
+{: height="200px" }
+
+[chart-03]: {{site.baseurl}}/assets/components/chart-03.png
+{: height="200px" }
+
+[chart-04]: {{site.baseurl}}/assets/components/chart-04.png
+{: height="200px" }
+
+[chart-05]: {{site.baseurl}}/assets/components/chart-05.png
+{: height="200px" }
+
+[chart-06]: {{site.baseurl}}/assets/components/chart-06.png
+{: height="200px" }

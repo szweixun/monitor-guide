@@ -1,0 +1,18 @@
+---
+index: 2.01
+---
+### {{page.title}}
+![컴포넌트-Rect][rect-01]
+
+기본적인 사각형 도형.
+
+- Category : Shape
+- 속성 :
+1. Round(Number) - 모서리를 둥글게 적용
+![Rect-Round적용결과][rect-02]
+
+
+[rect-01]: {{site.baseurl}}/assets/components/rect-01.png
+{: height="200px"}
+
+[rect-02]: {{site.baseurl}}/assets/components/rect-02.png

@@ -1,0 +1,2022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Components and Properties</title>
+  <meta name="description" content="It describes about common properties and the property of each component.">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:4000/en/components/">
+  <link rel="alternate" type="application/rss+xml" title="X-Monitoring" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/custom.css">
+
+
+</head>
+
+  <body>
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/en">
+      <img src="/assets/brand-logo.png" style="height:26px; margin-top: -4px;">
+      X-Monitoring
+    </a>
+
+    <nav class="site-nav">
+      <span class="menu-icon">
+        <svg viewBox="0 0 18 15" width="18px" height="15px">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </span>
+
+      <div class="trigger">
+
+
+
+
+          <a class="page-link" href="/en/getting-started/">Getting Started</a>
+
+
+
+          <a class="page-link" href="/en/components/">Components and Properties</a>
+
+
+
+          <a class="page-link" href="/en/tutorials/">Tutorials</a>
+
+
+
+        <select id="lang-selector">
+          <option value="ko" >한글</option>
+          <option value="en" selected>English</option>
+          <option value="cn" >中文</option>
+        </select>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Components and Properties</h1>
+  </header>
+
+  <div class="post-content">
+    <p>It describes about common properties and the property of each component.</p>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h2 id="common-properties">Common Properties</h2>
+  <p>It describes about common properties of component.</p>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="text-area">Text Area</h3>
+  <p>It describes the property about text and area.</p>
+
+  <ol>
+  <li>ID: Set component ID.</li>
+  <li>Class: Set the class of component.</li>
+  <li>Text: Specify the text of component. It can be entered even if double click the corresponding component.</li>
+  <li>Text format: Set the format of text.
+    <ul>
+      <li># : Numeric format (If the value or the value of the decimal is 0, it will not be displayed.)</li>
+      <li>0 : Numeric format.</li>
+      <li>, : The expression of digit number.</li>
+      <li>. : The expression of decimal.</li>
+    </ul>
+  </li>
+  <li>Hide: Hide the component.</li>
+  <li>Position Fixing: Fix the position of the component.</li>
+  <li>Size
+    <ul>
+      <li>Width: Set the width of component.</li>
+      <li>Height: Set the height of component.</li>
+      <li>Rotation: Rotate the component. (If a positive number, it will rotate in a clockwise direction, and if a negative number, it will rotate in a counterclockwise direction.)</li>
+    </ul>
+  </li>
+  <li>Text box
+    <ul>
+      <li><img src="/assets/components/common-property-text-align-horizontal.png" alt="Horizontal alignment" /> : Set the horizontal alignment. (It is align left, center, align right, justify in order from left.)</li>
+      <li><img src="/assets/components/common-property-text-align-vertical.png" alt="Vertical alignment" /> : Set the vertical alignment. (It is align top, center, align bottom in order from left.)</li>
+      <li>The line feed of text: When the text is beyond the area of component, it will select whether to feed out the text.</li>
+      <li><img src="/assets/components/common-property-text-margin.png" alt="Margin" /> : Set the top, bottom, left and right margins of text.</li>
+    </ul>
+  </li>
+</ol>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="style">Style</h3>
+  <p>The window in which can set the style property of component. It describes about the style property.</p>
+
+  <ul>
+  <li>Transparency: Set the transparency of component. (0 ~ 1, 0: Invisible, 1: Visible)</li>
+  <li>Text style
+    <ul>
+      <li>Font: Set the font of component text.</li>
+      <li>Font size: Set the size of component text.</li>
+      <li>Line spacing: Set the line spacing of component text.</li>
+      <li>Color: Set the color of component text.</li>
+      <li>Bold: Set the text of component bold.</li>
+      <li>Italic: Set the text of component italic.</li>
+    </ul>
+  </li>
+  <li>Fill style
+    <ul>
+      <li>No Fill: Clear the background.</li>
+      <li>Solid: Fill the background with a solid color.</li>
+      <li>Gradient: Apply the gradient to background.
+        <ul>
+          <li>Type: Linear Gradient (Shade from one color to another along a line), Radial Gradient (Shade one interior color and the other exterior color along a circular pattern)</li>
+          <li>Rotation: Rotate the background by the set angle.</li>
+          <li>Direction: Can select a background of a desired angle (increase/decrease by 45 degrees) from the dropdown list.</li>
+          <li>Color stop: It is a color wheel that specifies the color on both sides of the gradient slider.</li>
+        </ul>
+      </li>
+      <li>Pattern: Insert the image as pattern.
+        <ul>
+          <li>Image: Select the image in the file store.</li>
+          <li>Align: Align Left Top, Top, Right Top, Left, Center, Right, Left Bottom, Bottom, Right Bottom.</li>
+          <li>Offset X: Move the entire background horizontally by a certain value from the starting point.</li>
+          <li>Offset Y: Move the entire background vertically by a certain value from the starting point.</li>
+          <li>Width: Set the width of each single image inserted as a pattern.</li>
+          <li>Height: Set the height of each single image inserted as a pattern.</li>
+          <li>Fit: Set the single image inserted as a pattern to the background of the scene.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>The line style
+    <ul>
+      <li>Thickness: Set the thickness of line.</li>
+      <li>Color: Set the color of line.</li>
+      <li>Line style: Set the line style. (Straight line, dotted line)</li>
+      <li>Line end style: Set the line end style. (Square, round)</li>
+      <li>Lined style: Set the style of point where lines are connected.<br />
+(miter : <img height="30px " src="/assets/components/join-type-miter.png" alt="miter" />, round : <img height="30px " src="/assets/components/join-type-round.png" alt="round" />, bevel : <img height="30px " src="/assets/components/join-type-bevel.png" alt="bevel" />)</li>
+      <li>Start shape: Set the start shape of line.</li>
+      <li>Start size: Set the start size of line.</li>
+      <li>End shape: Set the end shape of line.</li>
+      <li>End size: Set the end size of line.</li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="effect">Effect</h3>
+  <p>The window which can control the effect of component. You can add shadow effect in component or define animation and click event which will run in monitoring mode.</p>
+
+  <ul>
+  <li><strong>Shadow</strong><br />
+<img height="200px" src="/assets/components/properties/shadow-02.png" alt="shadow-02" /><br />
+Set the shadow effect of component. It can adjust the location, blurring effect and color of shadow.
+    <ol>
+      <li>X, Y coordinates (Number) - Adjust the coordinates for a location of shadow based on component.
+<img height="200px" src="/assets/components/properties/shadow-03.png" alt="shadow-03" /></li>
+      <li>Size(Number) - Adjust the blurring effect of shadow.
+<img height="200px" src="/assets/components/properties/shadow-04.png" alt="shadow-04" /></li>
+      <li>Color(Number) - Adjust the color of shadow.
+<img height="200px" src="/assets/components/properties/shadow-05.png" alt="shadow-05" /></li>
+    </ol>
+  </li>
+  <li>
+    <p><strong>Retention</strong><br />
+The length of time that the component remains on the board. That is, when the retention ends, the component disappears from the board.<br />
+However, when a change occurs in the component property within the retention, the moment of the retention will be reset.</p>
+  </li>
+  <li><strong>Animation</strong><br />
+<img width="400" height="100px" style="margin-bottom: 30px; margin-left:100px" src="/assets/components/properties/animation-01.gif" alt="animation-01" /><br />
+You can set the animations of component which will run when converts to preview and monitoring mode.
+    <ul>
+      <li>Event point
+        <ol>
+          <li>onCreate - Operate animation from the moment of running view mode.</li>
+          <li>onChange - Operate when the data of component has been changed.</li>
+        </ol>
+      </li>
+      <li>Animation type
+        <ol>
+          <li>Rotation-CW<br />
+<img width="200px" height="200px" style="margin-bottom: 30px" src="/assets/components/properties/animation-02.gif" alt="animation-02" /></li>
+          <li>Rotation-CWW<br />
+<img width="200px" height="200px" style="margin-bottom: 30px" src="/assets/components/properties/animation-03.gif" alt="animation-03" /></li>
+          <li>Vibration<br />
+<img width="200px" height="200px" style="margin-bottom: 30px" src="/assets/components/properties/animation-04.gif" alt="animation-04" /></li>
+          <li>Hearbeat<br />
+<img width="200px" height="200px" style="margin-bottom: 30px" src="/assets/components/properties/animation-05.gif" alt="animation-05" /></li>
+          <li>Moving-Right<br />
+<img width="200px" height="200px" style="margin-bottom: 30px" src="/assets/components/properties/animation-07.gif" alt="animation-06" /></li>
+          <li>Moving-Left<br />
+<img width="200px" height="200px" style="margin-bottom: 30px" src="/assets/components/properties/animation-06.gif" alt="animation-07" /></li>
+          <li>Moving-Bottom<br />
+<img width="200px" height="200px" style="margin-bottom: 30px" src="/assets/components/properties/animation-09.gif" alt="animation-08" /></li>
+          <li>Moving-Top<br />
+<img width="200px" height="200px" style="margin-bottom: 30px" src="/assets/components/properties/animation-08.gif" alt="animation-09" /></li>
+          <li>Outline<br />
+<img width="500px" height="300px" style="margin-bottom: 30px" src="/assets/components/properties/animation-10.gif" alt="animation-10" /></li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Hover event</strong><br />
+Set the event which will be fired when the cursor of mouse is over the component. After creating the variable, set the variable and the value of variable which will be changed when the mouse is over the component.
+    <ul>
+      <li>Highlight - Highlight the border when the cursor of mouse is over the component.<br />
+<strong>(When checked, the mouse event will also be applied in ‘tab event’.)</strong><br />
+<img height="200px" src="/assets/components/properties/hover-01.png" alt="hover-01" /></li>
+      <li>Variable information - Select the variable which will change the value when the cursor of mouse is over the component.</li>
+      <li>Value - Change the value of selected variable when the cursor of mouse is over the component.</li>
+    </ul>
+  </li>
+  <li><strong>Tab event</strong><br />
+Set the event which will be fired when the component is clicked. It basically provides ‘GoTo’, ‘Link Open’, ‘Link Move’, and can set the variable and the value of variable which will be changed when the component is clicked after the user additionally creating variable.<br />
+<strong>(If want to fire a highlight event when the mouse is over the component, you can select ‘highlight’ of ‘hover event’.)</strong>
+    <ul>
+      <li>Variable information - Select the variable which will change the value when the component is selected.
+        <ol>
+          <li>GoTo - Move to the screen of the corresponding SCENE.</li>
+          <li>StopPlaying -</li>
+          <li>LinkOpen - Open the corresponding URL in a new window.</li>
+          <li>LinkMove - Move to the corresponding URL.</li>
+          <li>InfoWindow -</li>
+          <li>(Component variable) – The data of component.</li>
+        </ol>
+      </li>
+      <li>Value – Change the value of selected variable when the component is clicked.</li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:10rem; min-height:0rem;">
+  <h2 id="line-component">Line Component</h2>
+  <p>It describes about the line component.</p>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="straight-line">Straight Line</h3>
+  <p><img src="/assets/components/line-01.png" alt="Line" /></p>
+
+  <p>A common straight line.</p>
+
+  <ul>
+  <li>Category : Line</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="dotted-line">Dotted Line</h3>
+  <p><img src="/assets/components/dash-01.png" alt="Dash" /></p>
+
+  <p>Straight dotted line.</p>
+
+  <ul>
+  <li>Category : Line</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="arrow">Arrow</h3>
+  <p><img src="/assets/components/single-arrow-01.png" alt="Single-Arrow" /></p>
+
+  <p>A straight line with an arrow on one end.</p>
+
+  <ul>
+  <li>Category : Line</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="double-arrow">Double Arrow</h3>
+  <p><img src="/assets/components/both-arrow-01.png" alt="Both-Arrow" /></p>
+
+  <p>A straight line with an arrow on both ends.</p>
+
+  <ul>
+  <li>Category : Line</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="polyline">Polyline</h3>
+  <p><img height="200px" src="/assets/components/polyline-01.png" alt="Polyline" /></p>
+
+  <p>A continuous line composed of one or more line segments.</p>
+
+  <ul>
+  <li>Category : Line</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="right-angled-path">Right Angled Path</h3>
+  <p><img height="200px" src="/assets/components/right-angle-path-01.png" alt="Right-Angle-Path" /></p>
+
+  <p>Right-angled path.</p>
+
+  <ul>
+  <li>Category : Line</li>
+  <li>Property :
+    <ol>
+      <li>direction(Select) - Change the direction of the start and end.
+<img src="/assets/components/right-angle-path-02.png" alt="Right-Angle-Path-02" /></li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:10rem; min-height:0rem;">
+  <h2 id="shape-component">Shape Component</h2>
+  <p>It describes about the shape component.</p>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="rectangle">Rectangle</h3>
+  <p><img height="200px" src="/assets/components/rect-01.png" alt="Component-Rectangle" /></p>
+
+  <p>The shape of basic rectangle.</p>
+
+  <ul>
+  <li>Category : Shape</li>
+  <li>Property :
+    <ol>
+      <li>Round(Number) - Round the edges.
+<img src="/assets/components/rect-02.png" alt="Rect-Round application result" /></li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="top-rounded-rectangle">Top Rounded Rectangle</h3>
+  <p><img height="200px" src="/assets/components/half-round-rect-01.png" alt="Half-Round-Rect" /></p>
+
+  <p>A rectangle of which top edge is rounded.</p>
+
+  <ul>
+  <li>Category : Shape</li>
+  <li>Property :
+    <ol>
+      <li>round(Number) - Round the top edge.
+<img src="/assets/components/half-round-rect-02.png" alt="Half-Round-Rect-Round-Result" /></li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="ellipse">Ellipse</h3>
+  <p><img height="200px" src="/assets/components/ellipse-01.png" alt="Component-Circle" /></p>
+
+  <p>Circle (including ellipse)</p>
+
+  <ul>
+  <li>Category : Shape</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="donut">Donut</h3>
+  <p><img height="200px" src="/assets/components/donut-01.png" alt="Component-Donut" /></p>
+
+  <p>Ring-shaped (donut shape)</p>
+  <ul>
+  <li>Category : Shape</li>
+  <li>Property :
+    <ol>
+      <li>ratio(Number) - Adjust the size of inner circle.
+<img height="200px" src="/assets/components/donut-02.png" alt="Donut-ratio application result" /></li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="triangle">Triangle</h3>
+  <p><img height="200px" src="/assets/components/triangle-01.png" alt="Component-Triangle" /></p>
+
+  <p>Triangle</p>
+
+  <ul>
+  <li>Category : Shape</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="polygon">Polygon</h3>
+  <p><img height="200px" src="/assets/components/polygon-01.png" alt="Component-Polygon" /></p>
+
+  <p>Polygon</p>
+
+  <ul>
+  <li>Category : Shape</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="star">Star</h3>
+  <p><img height="200px" src="/assets/components/star-01.png" alt="Component-Star" /></p>
+
+  <p>The shape of star.</p>
+
+  <ul>
+  <li>Category : Shape</li>
+  <li>Property :
+    <ol>
+      <li>ratio(Number) - Adjust the thickness of shape.
+<img height="200px" src="/assets/components/star-02.png" alt="Star-ratio application result" /></li>
+      <li>wing(Number) - Adjust the number of wing.
+<img height="200px" src="/assets/components/star-03.png" alt="Star-wing application result" /></li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="marker">Marker</h3>
+  <p><img height="200px" src="/assets/components/marker-01.png" alt="Component-Marker" /></p>
+
+  <p>The shape of indicator.</p>
+  <ul>
+  <li>Category : Shape</li>
+  <li>Property :
+    <ol>
+      <li>innerCircleFillStyle(Color) - Specify the color of inner space of marker.
+<img height="200px" src="/assets/components/marker-02.png" alt="Marker-innerCircleFillStyle application result" /></li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:10rem; min-height:0rem;">
+  <h2 id="text-and-media-component">Text And Media Component</h2>
+  <p>It describes about the text and media component.</p>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="text">Text</h3>
+
+  <p><img src="/assets/components/text-01.png" alt="Text" /><br />
+Text box</p>
+
+  <ul>
+  <li>Category : Text</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="color-image">Color Image</h3>
+
+  <p><img src="/assets/components/media-01.png" alt="Media" /><br />
+Upload an RGB (Color) image.</p>
+
+  <ul>
+  <li>Category : Media</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="gray-image">Gray Image</h3>
+
+  <p><img src="/assets/components/media-02.png" alt="Media" /><br />
+Upload a Gray image.</p>
+
+  <ul>
+  <li>Category : Media</li>
+</ul>
+
+</div>
+
+<div style="margin-top:10rem; min-height:0rem;">
+  <h2 id="chart-and-gauge-component">Chart And Gauge Component</h2>
+  <p>It helps the user understand data by displaying complicated data in the form of graph.</p>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="common-property-of-chart">Common Property Of Chart</h3>
+
+  <ul>
+  <li>Category : Chart</li>
+  <li>Property :
+    <ol>
+      <li>Theme(Select) - Change the theme of chart. Support ‘light’ and ‘dark’.
+<img height="200px" src="/assets/components/chart-01.png" alt="Chart-Theme" /></li>
+      <li>Legend(Check) - Display the legend of chart. You can arrange in four directions like up, down, left and right.
+<img height="200px" src="/assets/components/chart-02.png" alt="Chart-Legend" /></li>
+      <li>Text Size(Number) - Adjust the text size of chart.
+<img height="200px" src="/assets/components/chart-03.png" alt="Chart-Text Size" /></li>
+      <li>Value-Display(Check) - Display the value label in each field of chart data.
+<img height="200px" src="/assets/components/chart-04.png" alt="Chart-Label" /></li>
+      <li>Value-Display-Color(Color) - Change the color of chart value label.
+<img height="200px" src="/assets/components/chart-05.png" alt="Chart-Label color" /></li>
+      <li>Value-Display-Size(Number) - Change the size of chart value label.
+<img height="200px" src="/assets/components/chart-06.png" alt="Chart-Label Size" /></li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="bar-chart">Bar Chart</h3>
+  <p><img height="200px" src="/assets/components/chart-bar-01.png" alt="Component-Chart-bar" /></p>
+
+  <p>The chart which displays the data in the form of bar. You can display with parallel bars or cumulative bars when there are several fields.</p>
+
+  <ul>
+  <li>Category : Chart</li>
+  <li>Property :
+    <ol>
+      <li>Stacked(Check) - Change the chart to cumulative bars.
+<img height="200px" src="/assets/components/chart-bar-02.png" alt="Chart-bar-Theme" /></li>
+      <li>Multi Axes(Check) - Use the secondary axis of the chart. You should change the direction of ‘Target Axis’ of ‘Series’ as Right when use the data of secondary axis.
+<img height="200px" src="/assets/components/chart-bar-03.png" alt="Chart-bar-Theme" /></li>
+      <li>Data Key - Series(String) - The field name of data which will be represented by the chart. Enter the field name of data which will be represented in Y axis. When display the data as below, Data-Key of Series will become ‘Good’ and ‘Bad’.
+<img height="200px" src="/assets/components/chart-bar-01.png" alt="Chart-bar-Theme" /></li>
+      <li>Label(String) - The value of data which will be displayed in the legend.
+<img height="200px" src="/assets/components/chart-bar-04.png" alt="Chart-bar-Theme" /></li>
+      <li>Target Axis(Select) - Select the direction in which will display the data of series. When select right, it will follow the range of data presentation and should select ‘Multi Axes’ of common property.
+<img height="200px" src="/assets/components/chart-bar-03.png" alt="Chart-bar-Theme" /></li>
+      <li>Prefix(String) - The string which will be written in front of the data being displayed when the mouse is over the chart.<br />
+<img height="200px" src="/assets/components/chart-bar-05.png" alt="Chart-bar-Theme" /></li>
+      <li>Suffix(String) - The string which will be written behind the data being displayed when the mouse is over the chart.<br />
+<img height="200px" src="/assets/components/chart-bar-06.png" alt="Chart-bar-Theme" /></li>
+      <li>Data Key - X Axis(String) - The field name of data which will be represented by the chart. Enter the field name of data which will be represented in X axis. When display the data as below, Data-Key of X-Axis will become ‘Date’.
+<img height="200px" src="/assets/components/chart-bar-01.png" alt="Chart-bar-Theme" /></li>
+      <li>Thickness(Number) - The thickness of bar chart.
+<img height="200px" src="/assets/components/chart-bar-07.png" alt="Chart-bar-Theme" /></li>
+      <li>Grid Line - X Axis(Check) - Display the scale mark of X axis.
+<img height="200px" src="/assets/components/chart-bar-08.png" alt="Chart-bar-Theme" /></li>
+      <li>Display Tick - X Axis(Check) - Display the label of X axis.
+<img height="200px" src="/assets/components/chart-bar-09.png" alt="Chart-bar-Theme" /></li>
+      <li>Min Auto - Y Axis(Check&amp;Number) - Specify the minimum value of Y axis or display automatically.
+<img height="200px" src="/assets/components/chart-bar-10.png" alt="Chart-bar-Theme" /></li>
+      <li>Max Auto - Y Axis(Check&amp;Number) - Specify the maximum value of Y axis or display automatically.
+<img height="200px" src="/assets/components/chart-bar-11.png" alt="Chart-bar-Theme" /></li>
+      <li>Grid Line - Y Axis(Check) - Display the scale mark of Y axis.
+<img height="200px" src="/assets/components/chart-bar-12.png" alt="Chart-bar-Theme" /></li>
+      <li>Display Tick - Y Axis(Check) - Display the label of Y axis.
+<img height="200px" src="/assets/components/chart-bar-13.png" alt="Chart-bar-Theme" /></li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="horizontal-bar-chart">Horizontal Bar Chart</h3>
+  <p><img height="200px" src="/assets/components/chart-horizontal-bar-01.png" alt="Component-Chart-horizontal-bar" /></p>
+
+  <p>The chart which displays the data in the form of horizontal bar. You can display with parallel bars or cumulative bars when there are several fields.</p>
+
+  <ul>
+  <li>Category : Chart</li>
+  <li>Property :<br />
+&lt; The same as the bar chart &gt;</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="line-chart">Line Chart</h3>
+  <p><img height="200px" src="/assets/components/chart-line-01.png" alt="Component-Chart-line" /></p>
+
+  <p>The chart which displays the data in the form of line. (Please refer to the bar chart about the duplicated property.)</p>
+
+  <ul>
+  <li>Category : Chart</li>
+  <li>Property :
+    <ol>
+      <li>Multi Axes(Check) - &lt; The same as the bar chart &gt;</li>
+      <li>Data Key - Series(String) - &lt; The same as the bar chart &gt;</li>
+      <li>Label(String) - &lt; The same as the bar chart &gt;</li>
+      <li>Line Tension(Select) - Change the angle of line which displays the data smoothly or sharply.
+<img height="200px" src="/assets/components/chart-line-02.png" alt="Chart-line-Line sensitivity" /></li>
+      <li>Border Color(Color) - Change the color of line.
+<img height="200px" src="/assets/components/chart-line-03.png" alt="Chart-line-Line color" /></li>
+      <li>Border Width(Number) - Change the thickness of line.
+<img height="200px" src="/assets/components/chart-line-04.png" alt="Chart-line-Line thickness" /></li>
+      <li>Fill(Color) - Paint the space in which has drawn the line.
+<img height="200px" src="/assets/components/chart-line-05.png" alt="Chart-line-Space fill" /></li>
+      <li>Background Color(Color) - The change of fill color when the property of line is ‘Fill’.
+<img height="200px" src="/assets/components/chart-line-06.png" alt="Chart-line-Background color" /></li>
+      <li>Point Shape(Select) - The shape of chart which displays the data.
+<img height="200px" src="/assets/components/chart-line-07.png" alt="Chart-line-Line sensitivity" /></li>
+      <li>Point Size(Number) - The size of chart which displays the data.
+<img height="200px" src="/assets/components/chart-line-08.png" alt="Chart-line-Line sensitivity" /></li>
+      <li>Point Bg Color(Color) - Paint the shape which displays the data.<br />
+<img height="200px" src="/assets/components/chart-line-09.png" alt="Chart-line-Space fill" /></li>
+      <li>Target Axis(Select) - &lt; The same as the bar chart &gt;</li>
+      <li>Prefix(String) - &lt; The same as the bar chart &gt;</li>
+      <li>Suffix(String) - &lt; The same as the bar chart &gt;</li>
+      <li>Data Key - &lt; The same as the bar chart &gt;</li>
+      <li>Thickness(Number) - &lt; The same as the bar chart &gt;</li>
+      <li>Grid Line - &lt; The same as the bar chart &gt;</li>
+      <li>Display Tick - &lt; The same as the bar chart &gt;</li>
+      <li>Min Auto - &lt; The same as the bar chart &gt;</li>
+      <li>Max Auto - &lt; The same as the bar chart &gt;</li>
+      <li>Grid Line - &lt; The same as the bar chart &gt;</li>
+      <li>Display Tick - &lt; The same as the bar chart &gt;</li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="mix-chart">Mix Chart</h3>
+  <p><img height="200px" src="/assets/components/chart-mix-01.png" alt="Component-Chart-mix" /></p>
+
+  <p>The chart which displays the data in the form of mixed bars and lines. <strong>(The property of mixed chart is the same as bar and line chart.)</strong></p>
+
+  <ul>
+  <li>Category : Chart</li>
+  <li>Property :
+    <ol>
+      <li>Chart Type(Select) - Select the form of chart between line and bar.
+<img height="200px" src="/assets/components/chart-mix-02.png" alt="chart-mix-Chart type" /></li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="radar-chart">Radar Chart</h3>
+  <p><img height="200px" src="/assets/components/chart-radar-01.png" alt="컴포넌트-Chart-radar" /></p>
+
+  <p>The chart which displays the data in the form of radar. It displays the data of pie chart with several lines.</p>
+
+  <ul>
+  <li>Category : Chart</li>
+  <li>Property :
+    <ol>
+      <li>Data Key - Series(String) - The field which will be the value of data. When there is the data as below, ‘Data Key’ of ‘Series’ will become ‘Good’ and ‘Bad’.
+<img height="200px" src="/assets/components/chart-radar-01.png" alt="chart-radar-데이타 키" /></li>
+      <li>Data Key - Axis(String) - The field which will be the label of data. When there is the data as below, ‘Data Key’ of ‘Axes’ will become ‘Line’.<br />
+<img height="200px" src="/assets/components/chart-radar-01.png" alt="chart-radar-데이타 키" /></li>
+    </ol>
+  </li>
+</ul>
+
+  <p><br />
+&lt; The remaining property is the same as line chart &gt;</p>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="polar-chart">Polar Chart</h3>
+  <p><img height="200px" src="/assets/components/chart-polar-01.png" alt="Component-Chart-polar" /></p>
+
+  <p>The chart which displays the data in the form of polar coordinates.</p>
+
+  <ul>
+  <li>Category : Chart</li>
+  <li>Property :<br />
+ &lt; The same as the pie chart &gt;</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="pie-chart">Pie Chart</h3>
+  <p><img height="200px" src="/assets/components/chart-circle-01.png" alt="Component-Chart-circle" /></p>
+
+  <p>The chart which displays the data in the form of pie.</p>
+
+  <ul>
+  <li>Category : Chart</li>
+  <li>Property :
+    <ol>
+      <li>Data Key - Series(String) - The field which will be the value of data. When there is the data as below, ‘Data Key’ of ‘Series’ will become ‘Good’.
+<img height="200px" src="/assets/components/chart-circle-01.png" alt="chart-circle-Chart type" /></li>
+      <li>Backgroud Color(Color) - The color of pie chart.
+<img height="200px" src="/assets/components/chart-circle-02.png" alt="chart-circle-Chart type" /></li>
+      <li>Data Key - Axis(String) - The field which will be the label of data. When there is the data as below, ‘Data Key’ of ‘Axis’ will become ‘Line’.
+<img height="200px" src="/assets/components/chart-circle-01.png" alt="chart-circle-Chart type" /></li>
+      <li>Prefix(String) - &lt; The same as the bar chart &gt;</li>
+      <li>Suffix(String) - &lt; The same as the bar chart &gt;</li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="donut-chart">Donut Chart</h3>
+  <p><img height="200px" src="/assets/components/chart-doughnut-01.png" alt="Component-Chart-doughnut" /></p>
+
+  <p>The chart which displays the data in the form of donut.</p>
+
+  <ul>
+  <li>Category : Chart</li>
+  <li>Property :<br />
+&lt; The same as the pie chart &gt;</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="circular-gauge">Circular Gauge</h3>
+  <p><img height="200px" src="/assets/components/gauge-circle-01.png" alt="Component-Gauge(Circular)" /></p>
+
+  <ul>
+  <li>Category: Gauge</li>
+  <li>Property:
+    <ol>
+      <li>
+        <p>Value(Number) - The value of gauge.
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-02.png" alt="Gauge-Value application result" /><br />
+    <figurecaption>(value: 85)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>startValue - The start value of gauge.
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-03.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(startValue: 10)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>endValue - The end value of gauge.
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-04.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(endValue: 120)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>step - The tick interval of gauge.
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-05.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(step: 30)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>stepTextSize - The tick text size of gauge.
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-06.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(stepTextSize: 10)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>subStep - The space between ticks of gauge.
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-07.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(subStep: 10)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>stepNeedleSize - The tick size of gauge.
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-08.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(stepNeedleSize: 3)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>startAngle - The start angle of gauge. It increases clockwise based on the 12 o’clock position. If a negative value, it will be reverse direction.
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-09.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(startAngle: -90)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>endAngle - The end angle of gauge. It increases clockwise based on the 12 o’clock position. If a negative value, it will be reverse direction.
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-10.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(endAngle: 90)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>textFillStyle - The tick text color of gauge.
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-11.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(textFillStyle: #ec5324)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>needleFillStyle - The needle color of gauge.
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-12.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(needleFillStyle: #ec5324)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>innerCircleFillStyle - The circle color of gauge needle.
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-13.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(innerCircleFillStyle: #ec5324)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>stepFillStyle - The needle color of gauge.
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-14.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(stepFillStyle: #ec5324)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>colorStops - The color of each sector of gauge. You can add a sector by double clicking and delete it by dragging down the marker.
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-15.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(colorStops: <img src="/assets/components/color-stops-value.png" height="30" alt="color stops" />)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>showStartValue - Determine whether to display the start value of gauge.
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-16.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(showStartValue: unchecked)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>showEndValue - Determine whether to display the end value of gauge.
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-17.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(showEndValue: unchecked)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>showStepLine - Determine whether to display the tick of gauge.
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-18.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(showStepLine: unchecked)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>showStepText - Determine whether to display the tick value of gauge.
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-19.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(showStepText: unchecked)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>showSubStep - Determine whether to display the minor tick of gauge.
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-20.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(showSubStep: unchecked)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>inText - Determine the location of tick value of gauge. (checked: inside, unchecked: outside)
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-21.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(inText: unchecked)</figurecaption>
+    </figure></p>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="vertical-gauge">Vertical Gauge</h3>
+  <p><img height="250px" width="180px" src="/assets/components/gauge-vertical-01.png" alt="Component-Gauge(Vertical)" /><br />
+The component which displays the gauge with a vertical bar.</p>
+
+  <ul>
+  <li>Category: Gauge</li>
+  <li>Property:
+    <ol>
+      <li>
+        <p>Value(Number) - The value of gauge.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-02.png" alt="Gauge-Value application result" /><br />
+    <figurecaption>(value: 85)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>startValue - The start value of gauge.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-03.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(startValue: 10)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>endValue - The end value of gauge.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-04.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(endValue: 120)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>step - The tick interval of gauge.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-05.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(step: 30)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>stepTextSize - The tick text size of gauge.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-06.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(stepTextSize: 10)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>subStep - The space between ticks of gauge.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-07.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(subStep: 10)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>stepNeedleSize - The tick size of gauge.
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-08.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(stepNeedleSize: 3)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>textColor - The tick text color of gauge.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-09.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(textColor: #ec5324)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>needleFillStyle - The needle color of gauge.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-10.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(needleFillStyle: #ec5324)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>needleSize - The needle size of gauge.
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-11.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(needleSize: 10)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>stepFillStyle - The tick color of gauge.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-12.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(stepFillStyle: #ec5324)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>colorStops - The color of each sector of gauge. You can add a sector by double clicking and delete it by dragging down the marker.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-13.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(colorStops: <img src="/assets/components/color-stops-value2.png" height="30" alt="color stops" />)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>showStartValue - Determine whether to display the start value of gauge.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-14.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(showStartValue: unchecked)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>showEndValue - Determine whether to display the end value of gauge.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-15.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(showEndValue: unchecked)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>showStepLine - Determine whether to display the tick of gauge.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-16.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(showStepLine: unchecked)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>showStepText - Determine whether to display the tick value of gauge.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-17.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(showStepText: unchecked)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>showSubStep - Determine whether to display the minor tick of gauge.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-18.png" alt="Gauge-BackgroundColor application result" /><br />
+    <figurecaption>(showSubStep: unchecked)</figurecaption>
+    </figure></p>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="horizontal-gauge">Horizontal Gauge</h3>
+  <p><img height="150px" width="250px" src="/assets/components/gauge-horizontal-01.png" alt="Component-Gauge(Horizontal)" /><br />
+The component which displays the gauge with a horizontal bar.</p>
+
+  <ul>
+  <li>Category : Gauge</li>
+  <li>Property :<br />
+&lt; The same as the vertical gauge &gt;</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="vertical-progress-bar">Vertical Progress Bar</h3>
+  <p><img height="250px" width="130px" src="/assets/components/progress-vertical-01.png" alt="Component-Progress bar(Vertical)" /><br />
+The component which displays the progress with a vertical bar.</p>
+
+  <ul>
+  <li>Category : Shape</li>
+  <li>Property :
+    <ol>
+      <li>
+        <p>Value(Number) - The progress value of progress bar.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/progress-vertical-02.png" alt="Progress bar-Value application result" /><br />
+    <figurecaption>(value: 80)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>BackgroundColor(Color) - The color in which progress is not filled.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/progress-vertical-03.png" alt="Progress bar-BackgroundColor application result" /><br />
+    <figurecaption>(backgroundColor: #ec5324)</figurecaption>
+    </figure></p>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="horizontal-progress-bar">Horizontal Progress Bar</h3>
+  <p><img height="130px" width="250px" src="/assets/components/progress-horizontal-01.png" alt="Component-Progress bar(Horizontal)" /><br />
+The component which displays the progress with a horizontal bar.</p>
+
+  <ul>
+  <li>Category : Shape</li>
+  <li>Property :
+    <ol>
+      <li>
+        <p>Value(Number) - The progress value of progress bar.<br />
+    <figure style="text-align: center;">
+    <img max-height="200px" src="/assets/components/progress-horizontal-02.png" alt="Progress bar-Value application result" /><br />
+    <figurecaption>(value: 80)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>BackgroundColor(Color) - The color in which progress is not filled.<br />
+    <figure style="text-align: center;">
+    <img max-height="200px" src="/assets/components/progress-horizontal-03.png" alt="Progress bar-BackgroundColor application result" /><br />
+    <figurecaption>(backgroundColor: #ec5324)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>reverse - Fill the progress in reverse direction.<br />
+    <figure style="text-align: center;">
+    <img max-height="200px" src="/assets/components/progress-horizontal-04.png" alt="Progress bar-BackgroundColor application result" /><br />
+    <figurecaption>(backgroundColor: #ec5324)</figurecaption>
+    </figure></p>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="circular-progress-bar">Circular Progress Bar</h3>
+  <p><img height="200px" src="/assets/components/progress-circle-01.png" alt="Component-Progress bar(Circular)" /></p>
+
+  <ul>
+  <li>Category : Shape</li>
+  <li>Property :
+    <ol>
+      <li>
+        <p>Value(Number) - The progress value of progress bar.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/progress-circle-02.png" alt="Progress bar-Valueapplication result" /><br />
+    <figurecaption>(value: 80)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>startAngle - The start angle of progress bar. It increases clockwise based on the 12 o’clock position. If a negative value, it will be reverse direction.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/progress-circle-03.png" alt="Progress bar-startAngleapplication result" /><br />
+    <figurecaption>(startAngle: -120)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>endAngle - The end angle of progress bar. It increases clockwise based on the 12 o’clock position. If a negative value, it will be reverse direction.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/progress-circle-04.png" alt="Progress bar-endAngleapplication result" /><br />
+    <figurecaption>(endAngle: 120)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>blankStrokeStyle - The color in which progress is not filled.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/progress-circle-05.png" alt="Progress bar-blankStrokeStyleapplication result" /><br />
+    <figurecaption>(blankStrokeStyle: #ec5324)</figurecaption>
+    </figure></p>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:10rem; min-height:0rem;">
+  <h2 id="table-component">Table Component</h2>
+  <p>It describes about the table component.</p>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="table">Table</h3>
+  <p><img height="200px" src="/assets/components/table-01.png" alt="Component-Table" /></p>
+
+  <p>The component which is used to display several data in the form of table.</p>
+
+  <ul>
+  <li>Category : Table</li>
+  <li>Property(Table):
+    <ol>
+      <li>Row &amp; Column(Number) - Adjust the number of rows and columns.
+<img height="200px" src="/assets/components/table-02.png" alt="Table-The number of rows and columns" /></li>
+      <li>Cell Width &amp; Height - If drag the red handler of table with mouse, you can adjust the size of each cell.
+<img height="200px" src="/assets/components/table-03.png" alt="Table-The size of rows and columns" /></li>
+    </ol>
+  </li>
+  <li>Property(Cell):
+    <ol>
+      <li>Border Style - Change the thickness and color of border of the selected cell. After enter the style value, type the button of cell in which will apply it among <img height="70px" src="/assets/components/table-04.png" alt="Table-셀 스타일 종류" />.
+<img height="200px" src="/assets/components/table-05.png" alt="Table-Cell style" /></li>
+      <li>Border Type - Change the type of line of the selected cell. After select the border type, type the button of cell in which will apply it among <img height="70px" src="/assets/components/table-04.png" alt="Table-셀 스타일 종류" />.<br />
+<strong>(!!Apply cell border and table border differently.)</strong></li>
+      <li>Merge Cells - Merge the selected cells. (Apply to the neighboring cells only)</li>
+      <li>Split Cells - Unmerge the cells.</li>
+      <li>Delete Row - Delete the selected row.
+<img height="200px" src="/assets/components/table-06.png" alt="Table-Delete the cell row" /></li>
+      <li>Delete Column - Delete the selected column.
+<img height="200px" src="/assets/components/table-07.png" alt="Table-Delete the cell column" /></li>
+      <li>Insert Above - Insert a new cell on the top of the selected cell.
+<img height="200px" src="/assets/components/table-08.png" alt="Table-Insert on the top of cell" /></li>
+      <li>Insert Below - Insert a new cell on the bottom of the selected cell.
+<img height="200px" src="/assets/components/table-09.png" alt="Table-Insert on the bottom of cell" /></li>
+      <li>Insert Left - Insert a new cell on the left of the selected cell.
+<img height="200px" src="/assets/components/table-10.png" alt="Table-Insert on the left of cell" /></li>
+      <li>Insert Right - Insert a new cell on the right of the selected cell.
+<img height="200px" src="/assets/components/table-11.png" alt="Table-Insert on the right of cell" /></li>
+      <li>Distribute Horizontally - Make the width of the selected columns be the same.
+<img height="200px" src="/assets/components/table-12.png" alt="Table-Make the cell width the same" /></li>
+      <li>Distribute Vertically - Make the height of the selected rows the same.
+<img height="200px" src="/assets/components/table-13.png" alt="Table-Make the cell height the same" /></li>
+      <li>Data Key - The field name of data header when mapping the data in table. DataKey must be entered as the field name rather than the number of column.</li>
+      <li>Data Index - The location of data row when mapping the data in table. DataIndex makes the start number of data except the header as 0.<br />
+<img height="200px" src="/assets/components/table-14.png" alt="Table-데이터 예시" /><br />
+When receive the data as in the above image, if want to display the data of ‘01-03’ of Date, you can enter DataKey = Date, DataIndex = 2.</li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:10rem; min-height:0rem;">
+  <h2 id="container-component">Container Component</h2>
+  <p>It describes about the container component.</p>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="container">Container</h3>
+
+  <p><img height="200px" src="/assets/components/container-01.png" alt="Container" /><br />
+Container</p>
+
+  <ul>
+  <li>Category : Container</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="threed-container">3D Container</h3>
+
+  <p><img height="200px" src="/assets/components/container-02.png" alt="Container" /><br />
+3D container</p>
+
+  <ul>
+  <li>Category : Container</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="indoor-map">Indoor Map</h3>
+
+  <p><img height="200px" src="/assets/components/container-03.png" alt="Container" /><br />
+Indoor map</p>
+
+  <ul>
+  <li>Category : Container</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="tab">Tab</h3>
+
+  <p><img height="200px" src="/assets/components/container-04.png" alt="Container" /><br />
+Tab</p>
+
+  <ul>
+  <li>Category : Container</li>
+</ul>
+
+</div>
+
+<div style="margin-top:10rem; min-height:0rem;">
+  <h2 id="data-source-component">Data Source Component</h2>
+  <p>It describes about the data source component.</p>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="stomp">Stomp</h3>
+
+  <p><img height="200px" src="/assets/components/data-source-01.png" alt="Data-Source" /><br />
+Stomp</p>
+
+  <ul>
+  <li>Category : Data Source</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="firebase">Firebase</h3>
+
+  <p><img height="200px" src="/assets/components/data-source-02.png" alt="Data-Source" /><br />
+Firebase</p>
+
+  <ul>
+  <li>Category : Data Source</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="mqtt">Mqtt</h3>
+
+  <p><img height="200px" src="/assets/components/data-source-03.png" alt="Data-Source" /><br />
+MQTT</p>
+
+  <ul>
+  <li>Category : Data Source</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="restful">Restful</h3>
+
+  <p><img height="200px" src="/assets/components/data-source-04.png" alt="Data-Source" /><br />
+Restful</p>
+
+  <ul>
+  <li>Category : Data Source</li>
+</ul>
+
+</div>
+
+<div style="margin-top:10rem; min-height:0rem;">
+  <h2 id="iot-component">Iot Component</h2>
+  <p>It describes about the IoT component.</p>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="beacon">Beacon</h3>
+
+  <p><img height="200px" src="/assets/components/iot-01.png" alt="IoT" /><br />
+Beacon</p>
+
+  <ul>
+  <li>Category : IoT</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="humidity-sensor">Humidity Sensor</h3>
+
+  <p><img src="/assets/components/iot-02.png" alt="IoT" /><br />
+Humidity sensor</p>
+
+  <ul>
+  <li>Category : IoT</li>
+</ul>
+
+</div>
+
+<div style="margin-top:10rem; min-height:0rem;">
+  <h2 id="threed-component">3D Component</h2>
+  <p>It describes about the 3D component.</p>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="threed-container-2">3D Container</h3>
+
+  <p><img height="200px" src="/assets/components/3D-01.png" alt="3D" /><br />
+3D Container</p>
+
+  <ul>
+  <li>Category : 3D</li>
+</ul>
+
+</div>
+
+<div style="margin-top:10rem; min-height:0rem;">
+  <h2 id="warehouse-component">Warehouse Component</h2>
+  <p>The component which is used in warehouse modeling.</p>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="rack">Rack</h3>
+  <p><img height="200px" src="/assets/components/rack-01.png" alt="Component-Rack" /></p>
+
+  <p>The component which is used to display warehouse rack. It can apply the height and layer, and can give a unique ID number in each rack and layer.</p>
+
+  <ul>
+  <li>Category : WareHouse</li>
+  <li>Property :
+    <ol>
+      <li>Depth(Number) - The height of one layer when converted to 3D modeling.</li>
+      <li>Shelves(Number) - The number of layer when converted to 3D modeling.</li>
+      <li>Location Pattern(String) - The pattern which is defined when give a unique ID number in the location and layer of rack. Define the pattern of Z(Zone), S(Selection), U(Unit), Sh(Shelf) in {}.</li>
+      <li>Zone(String) - The value of Zone which will be applied to the pattern.</li>
+      <li>Selection(String) - The selection value which will be applied to the pattern.</li>
+      <li>Unit(String) - The Unit value which will be applied to the pattern.</li>
+      <li>Shelf Pattern(String) - The value of Shelf Pattern which will be applied to the pattern.<br />
+ # - Dynamically apply the number of layer.<br />
+ 0 - Fix the number of digits of layers according to the number of 0. (ex. 0 = 0~9 / 00 = 00~99)</li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:10rem; min-height:0rem;">
+  <h2 id="other-component">Other Component</h2>
+  <p>It describes about the other components which are used in the modeling.</p>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="analog-clock">Analog Clock</h3>
+  <p><img height="200px" src="/assets/components/clock-analog-01.png" alt="Component-Analog clock" /><br />
+Analog clock</p>
+
+  <ul>
+  <li>Category : Shape</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:30rem;">
+  <h3 id="digital-clock">Digital Clock</h3>
+  <p><img src="/assets/components/clock-text-01.png" alt="Component-Text Clock" /><br />
+The clock of text format.</p>
+
+  <ul>
+  <li>Category: Shape</li>
+  <li>Property:
+    <ol>
+      <li>time-format(YYYY-MM-DD HH:mm:ss) - Specify the time format.
+<img height="200px" src="/assets/components/clock-text-02.png" alt="Text Clock-time-format application result" /></li>
+      <li>is-local-time(checkbox) - Local time (checked by default)
+<img height="200px" src="/assets/components/clock-text-03.png" alt="Text Clock-is-local-time application result" /></li>
+      <li>utc - universal time coordinated (Should specify before uncheck is-local-time.)
+<img height="200px" src="/assets/components/clock-text-04.png" alt="Text Clock-utc application result" /></li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div id="affix">
+  <ul>
+
+
+
+
+
+        <li class="collapsible">
+          <a href="#common-properties">Common Properties</a>
+        </li>
+        <ul>
+
+
+
+
+
+        <li>
+          <a href="#text-area">Text Area</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#style">Style</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#effect">Effect</a>
+        </li>
+
+
+
+
+
+          </ul>
+
+
+        <li class="collapsible">
+          <a href="#line-component">Line Component</a>
+        </li>
+        <ul>
+
+
+
+
+
+        <li>
+          <a href="#straight-line">Straight Line</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#dotted-line">Dotted Line</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#arrow">Arrow</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#double-arrow">Double Arrow</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#polyline">Polyline</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#right-angled-path">Right Angled Path</a>
+        </li>
+
+
+
+
+
+          </ul>
+
+
+        <li class="collapsible">
+          <a href="#shape-component">Shape Component</a>
+        </li>
+        <ul>
+
+
+
+
+
+        <li>
+          <a href="#rectangle">Rectangle</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#top-rounded-rectangle">Top Rounded Rectangle</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#ellipse">Ellipse</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#donut">Donut</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#triangle">Triangle</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#polygon">Polygon</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#star">Star</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#marker">Marker</a>
+        </li>
+
+
+
+
+
+          </ul>
+
+
+        <li class="collapsible">
+          <a href="#text-and-media-component">Text And Media Component</a>
+        </li>
+        <ul>
+
+
+
+
+
+        <li>
+          <a href="#text">Text</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#color-image">Color Image</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#gray-image">Gray Image</a>
+        </li>
+
+
+
+
+
+          </ul>
+
+
+        <li class="collapsible">
+          <a href="#chart-and-gauge-component">Chart And Gauge Component</a>
+        </li>
+        <ul>
+
+
+
+
+
+        <li>
+          <a href="#common-property-of-chart">Common Property Of Chart</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#bar-chart">Bar Chart</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#horizontal-bar-chart">Horizontal Bar Chart</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#line-chart">Line Chart</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#mix-chart">Mix Chart</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#radar-chart">Radar Chart</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#polar-chart">Polar Chart</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#pie-chart">Pie Chart</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#donut-chart">Donut Chart</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#circular-gauge">Circular Gauge</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#vertical-gauge">Vertical Gauge</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#horizontal-gauge">Horizontal Gauge</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#vertical-progress-bar">Vertical Progress Bar</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#horizontal-progress-bar">Horizontal Progress Bar</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#circular-progress-bar">Circular Progress Bar</a>
+        </li>
+
+
+
+
+
+          </ul>
+
+
+        <li class="collapsible">
+          <a href="#table-component">Table Component</a>
+        </li>
+        <ul>
+
+
+
+
+
+        <li>
+          <a href="#table">Table</a>
+        </li>
+
+
+
+
+
+          </ul>
+
+
+        <li class="collapsible">
+          <a href="#container-component">Container Component</a>
+        </li>
+        <ul>
+
+
+
+
+
+        <li>
+          <a href="#container">Container</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#threed-container">3D Container</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#indoor-map">Indoor Map</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#tab">Tab</a>
+        </li>
+
+
+
+
+
+          </ul>
+
+
+        <li class="collapsible">
+          <a href="#data-source-component">Data Source Component</a>
+        </li>
+        <ul>
+
+
+
+
+
+        <li>
+          <a href="#stomp">Stomp</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#firebase">Firebase</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#mqtt">Mqtt</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#restful">Restful</a>
+        </li>
+
+
+
+
+
+          </ul>
+
+
+        <li class="collapsible">
+          <a href="#iot-component">Iot Component</a>
+        </li>
+        <ul>
+
+
+
+
+
+        <li>
+          <a href="#beacon">Beacon</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#humidity-sensor">Humidity Sensor</a>
+        </li>
+
+
+
+
+
+          </ul>
+
+
+        <li class="collapsible">
+          <a href="#threed-component">3D Component</a>
+        </li>
+        <ul>
+
+
+
+
+
+        <li>
+          <a href="#threed-container-2">3D Container</a>
+        </li>
+
+
+
+
+
+          </ul>
+
+
+        <li class="collapsible">
+          <a href="#warehouse-component">Warehouse Component</a>
+        </li>
+        <ul>
+
+
+
+
+
+        <li>
+          <a href="#rack">Rack</a>
+        </li>
+
+
+
+
+
+          </ul>
+
+
+        <li class="collapsible">
+          <a href="#other-component">Other Component</a>
+        </li>
+        <ul>
+
+
+
+
+
+        <li>
+          <a href="#analog-clock">Analog Clock</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#digital-clock">Digital Clock</a>
+        </li>
+
+
+
+      </ul>
+
+  </ul>
+</div>
+
+  </div>
+
+</article>
+<script src="/assets/scroll-spy.js" charset="utf-8"></script>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <!-- <h2 class="footer-heading">X-Monitoring</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+
+              X-Monitoring
+
+            </li>
+
+            <li><a href="mailto:jinxianlong@qhweixun.com">jinxianlong@qhweixun.com</a></li>
+
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+
+          <li>
+            <a href="https://github.com/hatiolab"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">hatiolab</span></a>
+
+          </li>
+
+
+
+          <li>
+            <a href="https://twitter.com/hatiolab"><span class="icon icon--twitter"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">hatiolab</span></a>
+
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3"> -->
+        <p>Realtime Monitoring System
+</p>
+      <!-- </div>
+    </div> -->
+
+  </div>
+
+</footer>
+
+
+    <script src="/assets/scroll-spy.js" charset="utf-8"></script>
+    <script src="/assets/locale-selector.js" charset="utf-8"></script>
+  </body>
+
+</html>

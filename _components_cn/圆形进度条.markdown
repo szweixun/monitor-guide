@@ -1,0 +1,45 @@
+---
+index: 4.15
+---
+### {{page.title}}
+![组件-进度条（圆形）][progress-circle-01]  
+
+- 类型：形状
+- 属性：  
+    1. Value(Number) - 进度条的进度值。  
+      <figure style="text-align: center;">
+      ![进度条-Value适用结果][progress-circle-02]  
+      <figurecaption>(value: 80)</figurecaption>
+      </figure>
+
+    2. startAngle - 进度条的起始角度。以12点方向为标准，向顺时针方向增加。 如果是负数，就会是反方向。  
+      <figure style="text-align: center;">
+      ![进度条-startAngle适用结果][progress-circle-03]  
+      <figurecaption>(startAngle: -120)</figurecaption>
+      </figure>
+
+    3. endAngle - 进度条的最终角度。以12点方向为标准，向顺时针方向增加。 如果是负数，就会是反方向。  
+      <figure style="text-align: center;">
+      ![进度条-endAngle适用结果][progress-circle-04]  
+      <figurecaption>(endAngle: 120)</figurecaption>
+      </figure>
+
+    4. blankStrokeStyle - 没有填充进度部分的颜色。  
+      <figure style="text-align: center;">
+      ![进度条-blankStrokeStyle适用结果][progress-circle-05]  
+      <figurecaption>(blankStrokeStyle: #ec5324)</figurecaption>
+      </figure>
+
+
+[progress-circle-01]: {{site.baseurl}}/assets/components/progress-circle-01.png
+{: height="200px"}
+
+[progress-circle-02]: {{site.baseurl}}/assets/components/progress-circle-02.png
+{: height="200px"}
+
+[progress-circle-03]: {{site.baseurl}}/assets/components/progress-circle-03.png
+{: height="200px"}
+[progress-circle-04]: {{site.baseurl}}/assets/components/progress-circle-04.png
+{: height="200px"}
+[progress-circle-05]: {{site.baseurl}}/assets/components/progress-circle-05.png
+{: height="200px"}

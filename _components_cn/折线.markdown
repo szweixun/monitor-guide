@@ -1,0 +1,12 @@
+---
+index: 1.05
+---
+### {{page.title}}
+![Polyline][Polyline-01]
+
+由一个以上的线段所构成的连续线。
+
+- 类型：线
+
+[Polyline-01]: {{site.baseurl}}/assets/components/polyline-01.png
+{: height="200px"}

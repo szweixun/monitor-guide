@@ -1,0 +1,67 @@
+title: X-Monitoring
+# email: jinxianlong@szweixun.com.cn
+description: > # this means to ignore newlines until "baseurl:"
+  Realtime Monitoring System
+# baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://xmonitor.szweixun.com.cn" # the base hostname & protocol for your site, e.g. http://example.com
+# twitter_username: weixun
+# github_username:  szweixun
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+# for {{site.baseurl}}
+kramdown:
+  parse_block_html: true
+
+# post url - /:title/
+# permalink: /:title/
+
+
+
+collections:
+  getting_started:
+    permalink: /ko/getting-started/:path/
+
+  components:
+    permalink: /ko/components/:path/
+
+  tutorials:
+    permalink: /ko/tutorials/:path/
+
+  pages:
+    output: true
+
+  getting_started_en:
+    permalink: /en/getting-started/:path/
+
+  components_en:
+    permalink: /en/components/:path/
+
+  tutorials_en:
+    permalink: /en/tutorials/:path/
+
+  pages_en:
+    output: true
+
+  getting_started_cn:
+    permalink: /cn/getting-started/:path/
+
+  components_cn:
+    permalink: /cn/components/:path/
+
+  tutorials_cn:
+    permalink: /cn/tutorials/:path/
+
+  pages_cn:
+    output: true
+
+  languages:
+    permalink: /:name/
+    output: true

@@ -1,0 +1,12 @@
+---
+index: 11.04
+---
+### {{page.title}}
+![컴포넌트-아날로그시계][clock-analog-01]  
+아날로그 시계
+
+- Category : Shape
+
+
+[clock-analog-01]: {{site.baseurl}}/assets/components/clock-analog-01.png
+{: height="200px"}

@@ -1,0 +1,39 @@
+---
+index: 3.07
+---
+### {{page.title}}
+데이터의 값에 대한 룰을 지정한다.  
+1. **값**: 데이터의 값을 그대로 대입한다. (제일 기본적인 옵션)
+1. **MAP**: 데이터의 값에 따라 특정 값으로 변환 시켜준다. (아래의 예시는 데이터의 값이 0일때는 FillStyle을 초록색, 1일때는 노란색, 2일때는 빨간색으로 변환시켜준다.)  
+![variable-rule-01][variable-rule-01]
+1. **Range**: 데이터 값의 범위에 따라 변환될 값을 설정한다. (아래의 예시는 데이터의 값이 0~10미만 일때는 FillStyle을 초록색, 10~20미만 일때는 노란색, 20~30미만 일때는 빨간색으로 변환시켜준다.)  
+![variable-rule-02][variable-rule-02]
+1. **Eval**: 데이터 값과 컴포넌트의 속성을 사용자가 JavaScript 코딩으로 조작할 수 있는 기능이다.  
+  argument는 아래와 같다.
+  - value: 접근자를 통해 접근된 데이터.
+  - this: 데이터를 전달받은 컴포넌트.  
+  ![variable-rule-03][variable-rule-03]
+  ```javascript
+    // e.g. 데이터 값을, '값 * 100' 해서 컴포넌트의 value를 변경
+    /* 
+        receiveData = {
+            "goodRate": 0.973,
+            "badRate": 0.027,
+            "goodCount": 19000,
+            ...
+        }
+
+        accessor = goodRate
+
+        value = 0.973
+     */
+    return value * 100 // 컴포넌트의 value: 97.3
+  ```
+
+
+[variable-rule-01]: {{ site.baseurl }}/assets/tutorials/variable-rule-01.png
+{: height="200px" style="margin-bottom:30px; margin-top:5px; border: 8px; border-style: solid; border-color: #555"}
+[variable-rule-02]: {{ site.baseurl }}/assets/tutorials/variable-rule-02.png
+{: height="200px" style="margin-bottom:30px; margin-top:5px; border: 8px; border-style: solid; border-color: #555"}
+[variable-rule-03]: {{ site.baseurl }}/assets/tutorials/variable-rule-03.png
+{: height="200px" style="margin-bottom:30px; margin-top:5px; border: 8px; border-style: solid; border-color: #555"}

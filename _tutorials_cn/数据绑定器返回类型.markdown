@@ -1,0 +1,164 @@
+---
+index: 3.09
+---
+### {{page.title}}
+
+- Array Type  
+  将SQL的运行结果返回为列表。
+
+  **输入字段 :**  
+  - 数据键 : 包含SQL运行结果的名称。
+
+  例如，当SQL、Record Set、数据键如下时
+    ```sql
+  SELECT ID, AGE, DEPARTMENT, WORK_YEAR FROM EMPLOYEE
+    ```  
+
+    |---------+-----+-------------+-----------|
+    | ID      | AGE | DEPARTMENT  | WORK_YEAR |
+    |---------|----:|-------------|----------:|
+    | e00001  | 30  | SALES       | 1         |
+    | e00002  | 37  | DEVELOPMENT | 5         |
+    | e00003  | 45  | HR          | 12        |
+    |---------+-----+-------------+-----------|
+
+  数据键: data  
+
+  结果如下。
+    ```json
+  {
+    "data": [{
+      "ID": "e00001",
+      "AGE": 30,
+      "DEPARTMENT": "SALES",
+      "WORK_YEAR": 1
+    }, {
+      "ID": "e00002",
+      "AGE": 37,
+      "DEPARTMENT": "DEVELOPMENT",
+      "WORK_YEAR": 5
+    }, {
+      "ID": "e00003",
+      "AGE": 45,
+      "DEPARTMENT": "HR",
+      "WORK_YEAR": 12
+    }]
+  }
+    ```
+- Key-Value Type
+  将SQL的运行结果返回为Key-Value类型的JSON Object。
+
+  **输入字段 :**  
+  - 关键字段 : 包含SQL运行结果的字段名称。（该字段的记录值成为关键。）  
+  - 值字段 : 用作SQL运行结果值的字段名称。（该字段的记录值成为值。）
+
+  例如，当SQL、Record Set、关键字段、值字段如下时
+
+    ```sql
+  SELECT ID, AGE, DEPARTMENT, WORK_YEAR FROM EMPLOYEE
+    ```
+
+    |---------+-----+-------------+-----------|
+    | ID      | AGE | DEPARTMENT  | WORK_YEAR |
+    |---------|----:|-------------|----------:|
+    | e00001  | 30  | SALES       | 1         |
+    | e00002  | 37  | DEVELOPMENT | 5         |
+    | e00003  | 45  | HR          | 12        |
+    |---------+-----+-------------+-----------|
+
+  关键字段: ID，值字段: DEPARTMENT
+
+  结果如下。  
+    ```json
+  {
+    "e00001": "SALES",
+    "e00002": "DEVELOPMENT",
+    "e00003": "HR"
+  }
+    ```  
+
+- Key-Object Type  
+  将SQL的运行结果返回为Key-Object类型的JSON Object。
+
+  **输入字段 :**  
+  - 关键字段 : 包含SQL运行结果的字段名称。（该字段的记录值成为关键。）
+
+
+  例如，当SQL、Record Set、关键字段如下时
+
+    ```sql
+  SELECT ID, AGE, DEPARTMENT, WORK_YEAR FROM EMPLOYEE
+    ```
+
+    |---------+-----+-------------+-----------|
+    | ID      | AGE | DEPARTMENT  | WORK_YEAR |
+    |---------|----:|-------------|----------:|
+    | e00001  | 30  | SALES       | 1         |
+    | e00002  | 37  | DEVELOPMENT | 5         |
+    | e00003  | 45  | HR          | 12        |
+    |---------+-----+-------------+-----------|
+
+
+  关键字段: ID  
+
+  结果如下。
+    ```json
+  {
+    "e00001": {
+      "AGE": 30,
+      "DEPARTMENT": "SALES",
+      "WORK_YEAR": 1
+    },
+    "e00002": {
+      "AGE": 37,
+      "DEPARTMENT": "DEVELOPMENT",
+      "WORK_YEAR": 5
+    },
+    "e00003": {
+      "AGE": 45,
+      "DEPARTMENT": "HR",
+      "WORK_YEAR": 12
+    }
+  }
+    ```
+
+- Single Row Type  
+  将SQL的运行结果返回为JSON Object。
+  结果必须只具有一个row。
+
+  **输入字段 :**  
+  - Data Key(可选) : 包含SQL运行结果的名称
+
+  例如，当SQL、Record Set如下时
+    ```sql
+  SELECT ID, AGE, DEPARTMENT, WORK_YEAR FROM EMPLOYEE LIMIT 1
+    ```
+
+    |---------+-----+-------------+-----------|
+    | ID      | AGE | DEPARTMENT  | WORK_YEAR |
+    |---------|----:|-------------|----------:|
+    | e00001  | 30  | SALES       | 1         |
+    |---------+-----+-------------+-----------|
+
+
+    根据数据键的结果如下。
+    1. 当数据键为data时  
+    ```json
+  {
+    "data": {
+      "ID": "e00001",
+      "AGE": 30,
+      "DEPARTMENT": "SALES",
+      "WORK_YEAR": 1
+    }
+  }
+    ```   
+    1. 当数据键为空白时  
+    ```json
+  {
+    "ID": "e00001",
+    "AGE": 30,
+    "DEPARTMENT": "SALES",
+    "WORK_YEAR": 1
+  }
+    ```

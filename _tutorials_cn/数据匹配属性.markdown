@@ -1,0 +1,9 @@
+---
+index: 3.06
+---
+### {{page.title}}
+设置将数据值代入到目标的哪种属性。  
+![目标属性][target-property]
+
+[target-property]: {{ site.baseurl }}/assets/tutorials/target-property.png
+{: height="200px"}

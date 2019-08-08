@@ -1,0 +1,31 @@
+---
+index: 0.01
+---
+### {{page.title}}
+
+1. 点击登录窗口下方的用户注册申请按钮。
+![用户注册][register]
+
+1. 点击画面左侧的管理者页面链接(![管理者页面链接-图像][admin-page-link])。  
+![管理者页面][go-to-admin-page]
+
+1. 登录为具有管理者权限的用户。
+
+1. 系统 - 通过点击用户，打开用户菜单。
+
+1. 找出申请注册的ID，激活以及赋予权限，并且在设置唯一的功能之后，再进行储存。
+![用户-权限][auth]
+
+1. 登录为相关ID。
+
+[register]: {{ site.baseurl }}/assets/tutorials/user-register.png
+{: height="300px" }
+
+[admin-page-link]: {{site.baseurl}}/assets/tutorials/go-to-admin-page.png
+{: style="height:15px; vertical-align:middle;" }
+
+[go-to-admin-page]: {{site.baseurl}}/assets/tutorials/scene-import-01.png
+{: style="max-height:200px" }
+
+[auth]: {{ site.baseurl }}/assets/tutorials/user-auth.png
+{: height="300px" }

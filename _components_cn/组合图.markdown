@@ -1,0 +1,19 @@
+---
+index: 4.05
+---
+### {{page.title}}
+![组件-Chart-mix][chart-mix-01]
+
+混合柱状和线条显示数据的图表。 __(组合图的属性与柱状图和线状图相同。)__
+
+- 类型：图表
+- 属性：
+1. Chart Type(Select) - 从线条和柱状中，选择图表的形状。
+![chart-mix-图表类型][chart-mix-02]
+
+
+[chart-mix-01]: {{site.baseurl}}/assets/components/chart-mix-01.png
+{: height="200px" }
+
+[chart-mix-02]: {{site.baseurl}}/assets/components/chart-mix-02.png
+{: height="200px" }

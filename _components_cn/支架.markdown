@@ -1,0 +1,24 @@
+---
+index: 10.04
+---
+### {{page.title}}
+![组件-支架][rack-01]
+
+被用于显示库架时的组件。可以适用高度和层，并且可以在各个支架和层，赋予固有的ID。
+
+- 类型：仓库
+- 属性：
+1. Depth(Number) - 当转换为3D建模时，一层的高度。
+1. Shelves(Number) - 当转换为3D建模时，层的数量。
+1. Location Pattern(String) - 被定义在为支架的位置以及层赋予固有的ID时的模式。在{}中，定义Z(Zone)、S(Selection)、U(Unit)、Sh(Shelf)的模式。
+1. Zone(String) - 将会被适用于模式的Zone的值。
+1. Selection(String) - 将会被适用于模式的Selection值。
+1. Unit(String) - 将会被适用于模式的Unit值。
+1. Shelf Pattern(String) - 将会被适用于模式的Shelf Pattern值。  
+   \# - 动态适用层的数字。  
+   0 - 根据0个数，固定层的位数。(ex. 0 = 0~9 / 00 = 00~99)
+
+
+
+[rack-01]: {{site.baseurl}}/assets/components/rack-01.png
+{: height="200px"}

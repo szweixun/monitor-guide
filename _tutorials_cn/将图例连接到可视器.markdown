@@ -1,0 +1,14 @@
+---
+index: 7.02
+---
+## {{page.title}}
+
+1. 在图例中，设置ID。
+
+2. 选择可视器，并在图例目标属性中，输入图例的ID。
+
+3. 通过预览，确认支架的默认颜色是否已转换为设置在图例的默认颜色。
+![visualizer-preview-03]
+
+[visualizer-preview-03]: {{site.baseurl}}/assets/tutorials/visualizer-preview-03.png
+{: height="400px" }

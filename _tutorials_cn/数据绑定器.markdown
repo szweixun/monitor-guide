@@ -1,0 +1,56 @@
+---
+index: 3.08
+---
+### {{page.title}}
+说明Publisher-将数据推送到Scene的功能。
+
+1. 点击屏幕左侧的管理者页面链接(![管理者页面链接-图像][admin-page-link])。  
+![step1][step1]
+
+1. 在管理者页面的左侧菜单上，按顺序点击监控管理-数据绑定器，移动至Scene菜单。  
+![step2][step2]
+
+1. 点击数据绑定器菜单下方的添加按钮。  
+![step3][step3]
+
+1. 输入数据绑定器名称和Board等，并点击储存按钮。  
+  - Board是SCENE-NAME(e.g. : SCENE-XX)。
+
+1. 点击添加的数据绑定器的![详细看图][detail]，打开详细页面弹出窗口。
+
+1. 在详细页面中，向[Return type](#发布者返回类型)和字段输入值。  
+![리턴타입-입력][detail-popup]
+
+1. 在下方Service Logic字段中，输入SQL并储存。  
+![쿼리-입력][query-area]
+
+1. 点击测试按钮(![测试按钮][test-button])，确认数据是否正确。  
+![테스트-결과][test-result]
+
+
+[admin-page-link]: {{site.baseurl}}/assets/tutorials/go-to-admin-page.png
+{: style="height:15px; vertical-align:middle;" }
+
+[step1]: {{site.baseurl}}/assets/tutorials/board-data-binder-00.png
+{: style="max-height:300px" }
+
+[step2]: {{site.baseurl}}/assets/tutorials/board-data-binder-01.png
+{: style="height:300px" }
+
+[step3]: {{site.baseurl}}/assets/tutorials/board-data-binder-02.png
+{: style="max-height:500px" }
+
+[detail-popup]: {{site.baseurl}}/assets/tutorials/board-data-binder-detail-popup.png
+{: style="height:300px" }
+
+[query-area]: {{site.baseurl}}/assets/tutorials/board-data-binder-query-area.png
+{: style="height:300px" }
+
+[detail]: {{site.baseurl}}/assets/tutorials/grid-detail.png
+{: height="20px" }
+
+[test-result]: {{site.baseurl}}/assets/tutorials/board-data-binder-test-result.png
+{: height="300px" }
+
+[test-button]: {{site.baseurl}}/assets/tutorials/board-data-binder-test-button.png
+{: height="20px" }

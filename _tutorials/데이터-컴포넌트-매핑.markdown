@@ -1,0 +1,26 @@
+---
+index: 3.02
+---
+### {{page.title}}
+데이터와 컴포넌트를 매핑하는 방법에 대하여 설명한다.
+
+1. 속성창의 5번째 탭인 데이터탭을 클릭한다.
+1. 컴포넌트에 ID를 할당한다. 서버에서 내려오는 데이터는 자신의 Key(데이터 이름)을 동일한 컴포넌트의 ID를찾아 매핑시킨다. (_즉, 컴포넌트 ID와 데이터의 Key는 동일해야 한다._)  
+![variable-insert-01][variable-insert-01]  
+1. 대상의 ID를 입력한다. 대상은 나 자신이 될수도 있으며 다른 컴포넌트를 대상으로 하여 같은 데이터를 공유할 수 있다.
+1. [변경할 속성을 입력한다.](#데이터-매핑-속성) 속성은 데이터가 왔을때 컴포넌트의 어떤 속성을 변경할 것인지를 설정한다.
+1. 표에 기본값을 입력한다. 기본값은 실제 데이터의 데이터가 들어오기 전, 데이터의 초기값이다. 배열형태의 데이터가 아닐경우 기본값은 아래의 그림에 표시된 것과 같이 Field1의 첫번째 줄의 데이터만을 인식한다.  
+![variable-insert-02][variable-insert-02]
+1. 데이터의 값은 컴포넌트의 'data'라는 속성으로 들어간다. 이 값을 컴포넌트의 다른 속성에서 쓰려면 속성 입력창에 #{data}를 입력하면 된다.  
+_**( #{속성명}을 입력하면 해당 속성의 값이 대체된다. )**_
+![variable-insert-03][variable-insert-03]
+
+
+[variable-insert-01]: {{site.baseurl}}/assets/tutorials/variable-insert-01.png
+{: style="height:350px; vertical-align:middle;" style="margin-bottom: 15px"}
+
+[variable-insert-02]: {{site.baseurl}}/assets/tutorials/variable-insert-02.png
+{: style="height:200px; vertical-align:middle;" style="margin-bottom: 15px"}
+
+[variable-insert-03]: {{site.baseurl}}/assets/tutorials/variable-insert-03.png
+{: style="height:200px; vertical-align:middle;" style="margin-bottom: 15px"}

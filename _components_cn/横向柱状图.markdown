@@ -1,0 +1,15 @@
+---
+index: 4.03
+---
+### {{page.title}}
+![组件-Chart-horizontal-bar][chart-horizontal-bar-01]
+
+用横向柱状显示数据的图表。当有多个字段时，可以用并行柱状或累积柱状显示。
+
+- 类型：图表
+- 属性：  
+  <同柱状图。>
+
+
+[chart-horizontal-bar-01]: {{site.baseurl}}/assets/components/chart-horizontal-bar-01.png
+{: height="200px" }

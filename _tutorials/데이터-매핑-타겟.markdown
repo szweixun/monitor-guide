@@ -1,0 +1,57 @@
+---
+index: 3.05
+---
+### {{page.title}}
+데이터 값을 전파할 타겟을 설정한다.  
+설정은 아래의 세가지 방법이 있다.
+
+1. 상대적 타겟 설정 방법  
+  - **(self)**: 자신을 타겟으로 지정한다.
+  - **(key)**: data의 key와 일치하는 컴포넌트들을 타겟으로 한다.  
+    데이터의 타입이 Object인 경우 사용된다.  
+    ```javascript
+    // e.g. 
+        {
+            "id1": 1,
+            "id2": 2,
+            "id3": 3
+        } // 타겟을 (key)로 지정
+        
+        1 // ID가 id1인 컴포넌트의 데이터
+        2 // ID가 id2인 컴포넌트의 데이터
+        3 // ID가 id3인 컴포넌트의 데이터
+    ```
+
+1. ID를 통한 설정 방법  
+  - **#id**: 컴포넌트의 ID를 입력하여 일치하는 컴포넌트를 타겟으로 한다.
+  - **.class**: 컴포넌트의 class를 입력하여 일치하는 컴포넌트들을 타겟으로 한다.
+
+1. 데이터의 key를 지정하고 그 값을 통해 타겟을 설정하는 방법  
+  - **[dataKey]**: 입력한 값에 해당하는 dataKey의 값과 ID가 일치하는 컴포넌트를 타겟으로 한다.  
+    데이터의 타입이 Object-Array인 경우 사용된다.
+    ```javascript
+    // e.g. 
+        [{
+            "id": "component-1",
+            "value": "1"
+        }, {
+            "id": "component-2",
+            "value": "2"
+        }, {
+            "id": "component-3",
+            "value": "3"
+        }] // 타겟을 [id]로 지정
+
+        {
+            "id": "component-1",
+            "value": "1"
+        } // ID가 component-1인 컴포넌트의 데이터
+        {
+            "id": "component-2",
+            "value": "2"
+        } // ID가 component-2인 컴포넌트의 데이터
+        {
+            "id": "component-3",
+            "value": "3"
+        } // ID가 component-3인 컴포넌트의 데이터
+    ```

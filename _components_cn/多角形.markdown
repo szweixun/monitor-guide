@@ -1,0 +1,14 @@
+---
+index: 2.06
+---
+### {{page.title}}
+![组件-多角形][polygon-01]
+
+多角形
+
+- 类型：形状
+
+
+
+[polygon-01]: {{site.baseurl}}/assets/components/polygon-01.png
+{: height="200px"}

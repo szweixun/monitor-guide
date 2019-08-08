@@ -1,0 +1,64 @@
+---
+index: 2.03
+---
+### {{page.title}}
+聚集了可以被用于建模器的组件的工具栏。如果在组件工具栏中，点击所需的组件，就会在建模器添加相关组件。  
+![组件工具栏][component-toolbar]
+
+- ![箭头][component-arrow] : 变更选择模式和移动模式。当按住<kbd>Space</kbd>时，将会动作为移动模式。
+
+- ![线][component-line] : 聚集[线组件]({{site.baseurl}}/cn/components/#线组件)。
+
+- ![形状][component-shape] : 聚集[形状组件]({{site.baseurl}}/cn/components/#形状组件)。
+
+- ![文本][component-text-media] : 聚集[文本媒体组件]({{site.baseurl}}/cn/components/#文本和媒体组件)。
+
+- ![图标仪表][component-chart-gauge] : 聚集[图表仪表组件]({{site.baseurl}}/cn/components/#图表和仪表组件)。
+
+- ![表格][component-table] : 聚集[表格组件]({{site.baseurl}}/cn/components/#表格组件)。
+
+- ![容器][component-container] : 聚集[容器组件]({{site.baseurl}}/cn/components/#集装箱组件)。
+
+- ![数据源][component-datasource] : 聚集[数据源组件]({{site.baseurl}}/cn/components/#数据源组件)。
+
+- ![IOT][component-iot] : 聚集[IOT组件]({{site.baseurl}}/cn/components/#Iot组件)。
+
+- ![3D][component-3D] : 聚集[3D组件]({{site.baseurl}}/cn/components/#3D组件)。
+
+- ![仓库][component-warehouse] : 聚集[仓库组件]({{site.baseurl}}/cn/components/#仓库组件)。
+
+<!-- - ![表单][component-form] : 聚集[表单组件]({{site.baseurl}}/cn/components/#表单组件)。 -->
+- ![表单][component-form] : 聚集[表单组件]。
+
+- ![其他][component-etc] : 聚集[其他组件]({{site.baseurl}}/cn/components/#其他组件)。
+
+
+[component-toolbar]: {{site.baseurl}}/assets/tutorials/component-toolbar.png
+{: height="633px" }
+
+[component-arrow]: {{site.baseurl}}/assets/tutorials/component-arrow.png
+{: height="30px" }
+[component-line]: {{site.baseurl}}/assets/tutorials/component-line.png
+{: height="30px" }
+[component-shape]: {{site.baseurl}}/assets/tutorials/component-shape.png
+{: height="30px" }
+[component-text-media]: {{site.baseurl}}/assets/tutorials/component-text-media.png
+{: height="30px" }
+[component-chart-gauge]: {{site.baseurl}}/assets/tutorials/component-chart-gauge.png
+{: height="30px" }
+[component-table]: {{site.baseurl}}/assets/tutorials/component-table.png
+{: height="30px" }
+[component-container]: {{site.baseurl}}/assets/tutorials/component-container.png
+{: height="30px" }
+[component-datasource]: {{site.baseurl}}/assets/tutorials/component-datasource.png
+{: height="30px" }
+[component-iot]: {{site.baseurl}}/assets/tutorials/component-iot.png
+{: height="30px" }
+[component-3D]: {{site.baseurl}}/assets/tutorials/component-3D.png
+{: height="30px" }
+[component-warehouse]: {{site.baseurl}}/assets/tutorials/component-warehouse.png
+{: height="30px" }
+[component-form]: {{site.baseurl}}/assets/tutorials/component-form.png
+{: height="30px" }
+[component-etc]: {{site.baseurl}}/assets/tutorials/component-etc.png
+{: height="30px" }

@@ -1,0 +1,16 @@
+---
+index: 7.01
+---
+## {{page.title}}
+
+1. 从组件工具栏中，选择和放置图例。<br>
+![visualizer-select-legend]
+
+2. 选择已放置的支架表后，将其被包含（确认可视器的边框变为橙色）在已放置的可视器中。
+![legend-setting]
+
+
+[visualizer-select-legend]: {{site.baseurl}}/assets/tutorials/visualizer-select-legend.png
+{: height="350px" }
+[legend-setting]: {{site.baseurl}}/assets/tutorials/legend-setting.png
+{: height="250px" }

@@ -1,0 +1,21 @@
+---
+index: 2.99
+---
+### {{page.title}}
+结束并储存建模的方法有如下两种。
+- 使用按钮的方法
+1. 点击建模器右侧下端的![+][fab]。
+1. 点击![磁盘形状-按钮][save]而储存。
+
+- 使用快捷键的方法
+1. 点击建模区域。
+1. 输入储存快捷键。
+  - 各个OS的储存快捷键
+    - Windows: <kbd>Ctrl</kbd> + <kbd>S</kbd>
+    - MacOS: <kbd class="dark">⌘</kbd> + <kbd class="dark">S</kbd>
+
+
+[fab]: {{site.baseurl}}/assets/fab.png
+{: height="20px" }
+[save]: {{site.baseurl}}/assets/tutorials/save-button.png
+{: height="20px" }

@@ -1,0 +1,12 @@
+---
+index: 5.05
+---
+## {{page.title}}
+
+1. Carousel: 按顺序显示播放组中的每个Scene。
+
+1. Filp-card: 按顺序显示播放组中的两个Scene。
+
+1. Flip-card2: 与Flip-card相同，并呈现出不同的效果。
+
+1. Grid: 将播放组中的Scene布置和显示为Grid格式。

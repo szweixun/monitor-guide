@@ -1,0 +1,42 @@
+---
+index: 2.03
+---
+### {{page.title}}
+모델러에서 사용가능한 컴포넌트가 모여있는 툴바. 컴포넌트 툴바에서 원하는 컴포넌트를 클릭하면 모델러에 해당 컴포넌트가 추가된다.  
+![컴포넌트툴바][component-toolbar]
+
+- ![화살표][component-arrow] : 선택모드와 이동모드를 변경한다. <kbd>Space</kbd>를 누르고 있는 동안 이동모드로 작동한다.
+
+- ![선][component-line] : [선 컴포넌트]({{site.baseurl}}/components/#선-컴포넌트)가 모여있다.
+
+- ![도형][component-shape] : [도형 컴포넌트]({{site.baseurl}}/components/#도형-컴포넌트)가 모여있다.
+
+- ![텍스트][component-text] : [텍스트 컴포넌트]({{site.baseurl}}/components/#텍스트-컴포넌트)가 모여있다.
+
+- ![이미지][component-image] : [이미지 컴포넌트]({{site.baseurl}}/components/#이미지-컴포넌트)가 모여있다.
+
+- ![게이지][component-gauge] : [게이지 컴포넌트]({{site.baseurl}}/components/#게이지-컴포넌트)가 모여있다.
+
+- ![차트][component-chart] : [차트 컴포넌트]({{site.baseurl}}/components/#차트-컴포넌트)가 모여있다.
+
+- ![표][component-table] : [표 컴포넌트]({{site.baseurl}}/components/#표-컴포넌트)가 모여있다.
+
+[component-toolbar]: {{site.baseurl}}/assets/tutorials/component-toolbar.png
+{: height="633px" }
+
+[component-arrow]: {{site.baseurl}}/assets/tutorials/component-arrow.png
+{: height="30px" }
+[component-line]: {{site.baseurl}}/assets/tutorials/component-line.png
+{: height="30px" }
+[component-shape]: {{site.baseurl}}/assets/tutorials/component-shape.png
+{: height="30px" }
+[component-text]: {{site.baseurl}}/assets/tutorials/component-text.png
+{: height="30px" }
+[component-image]: {{site.baseurl}}/assets/tutorials/component-image.png
+{: height="30px" }
+[component-gauge]: {{site.baseurl}}/assets/tutorials/component-gauge.png
+{: height="30px" }
+[component-chart]: {{site.baseurl}}/assets/tutorials/component-chart.png
+{: height="30px" }
+[component-table]: {{site.baseurl}}/assets/tutorials/component-table.png
+{: height="30px" }

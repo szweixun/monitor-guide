@@ -1,0 +1,12 @@
+---
+index: 3.01
+---
+### {{page.title}}
+
+![Text][Text-01]  
+文本框
+
+
+- 类型：文本
+
+[Text-01]: {{site.baseurl}}/assets/components/text-01.png

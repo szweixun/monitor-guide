@@ -1,0 +1,121 @@
+---
+index: 0.03
+---
+
+### {{page.title}}
+컴포넌트의 효과를 조작할 수 있는 창. 컴포넌트에 그림자 효과를 추가하거나, 모니터링 모드 시 동작할 애니메이션과 클릭 이벤트 등을 정의할 수 있다.  
+
+
+- **그림자**  
+![shadow-02][shadow-02]  
+컴포넌트의 그림자 효과를 설정. 그림자의 위치와 번짐도, 색상 등을 조절할 수 있다.
+1. X, Y 좌표(Number) - 컴포넌트를 기준으로 그림자가 위치할 좌표를 조정  
+![shadow-03][shadow-03]
+1. 크기(Number) - 그림자의 번지는 정도를 조정
+![shadow-04][shadow-04]
+1. 색상(Number) - 그림자의 색상을 조정
+![shadow-05][shadow-05]
+
+- **유지기간**  
+컴포넌트가 보드에서 유지되는 시간. 즉, 이 유지기간이 종료되면 컴포넌트는 보드에서 사라진다.  
+단, 유지기간 내에 컴포넌트 속성에 변화가 발생하면 유지기간의 시점이 리셋된다.
+
+- **애니메이션**  
+![animation-01][animation-01]  
+미리보기와 모니터링 모드로 변환될 시 동작할 컴포넌트의 애니메이션들을 설정할 수 있다.  
+  - 이벤트 시점
+  1. onCreate - 뷰 모드가 실행되는 순간부터 애니메이션 동작.
+  1. onChange - 컴포넌트의 데이터가 변경이 되었을 때 동작.
+  - 애니메이션 종류  
+  1. Rotation-CW  
+  ![animation-02][animation-02]  
+  1. Rotation-CWW  
+  ![animation-03][animation-03]  
+  1. Vibration  
+  ![animation-04][animation-04]  
+  1. Hearbeat  
+  ![animation-05][animation-05]  
+  1. Moving-Right  
+  ![animation-06][animation-07]  
+  1. Moving-Left  
+  ![animation-07][animation-06]  
+  1. Moving-Bottom  
+  ![animation-08][animation-09]  
+  1. Moving-Top  
+  ![animation-09][animation-08]  
+  1. Outline  
+  ![animation-10][animation-10]
+
+
+- **호버 이벤트**  
+마우스의 커서가 컴포넌트 위에 올라갔을 때 동작하는 이벤트를 설정. 변수를 생성 한 뒤 마우스가 컴포넌트 위에 올라갔을 때 변경 될 변수와 변수의 값을 설정 한다.  
+  - 강조 - 마우스의 커서가 컴포넌트 위로 올라갈 때, 테두리를 강조하여 표시  
+  **(체크 시, '탭 이벤트' 에서도 마우스 이벤트 적용)**  
+  ![hover-01][hover-01]  
+  - 변수정보 - 마우스의 커서가 컴포넌트 위로 올라갔을 때, 값을 변경할 변수를 선택   
+  - 값 - 마우스의 커서가 컴포넌트 위로 올라갔을 때, 선택된 변수의 값을 변경
+
+
+
+
+- **탭 이벤트**  
+ 컴포넌트가 클릭 되었을 때 동작하는 이벤트를 설정. 기본적으로 'GoTo', 'Link Open', 'Link Move' 등을 제공하며 사용자가 추가로 변수를 생성한 뒤 컴포넌트가 클릭 되었을 때 변경될 변수와 변수의 값을 설정할 수 있다.  
+  **(컴포넌트 위로 마우스가 올라갔을 때에 강조 이벤트를 주고싶다면 '호버 이벤트'의 '강조'를 선택)**  
+  - 변수정보 - 컴포넌트가 선택되었을 때, 값을 변경할 변수를 선택   
+   1. GoTo - 해당 SCENE의 화면으로 이동
+   1. StopPlaying - 
+   1. LinkOpen - 해당 URL을 새창으로 열기
+   1. LinkMove - 해당 URL로 이동
+   1. InfoWindow - 
+   1. (컴포넌트 변수) - 컴포넌트의 데이터
+  - 값 - 컴포넌트가 클릭 되었을 때, 선택된 변수의 값을 변경
+
+
+
+
+[shadow-02]: {{site.baseurl}}/assets/components/properties/shadow-02.png
+{: height="200px" }
+
+[shadow-03]: {{site.baseurl}}/assets/components/properties/shadow-03.png
+{: height="200px" }
+
+[shadow-04]: {{site.baseurl}}/assets/components/properties/shadow-04.png
+{: height="200px" }
+
+[shadow-05]: {{site.baseurl}}/assets/components/properties/shadow-05.png
+{: height="200px" }
+
+
+[animation-01]: {{site.baseurl}}/assets/components/properties/animation-01.gif
+{: width="400" height="100px" style="margin-bottom: 30px; margin-left:100px"}
+
+[animation-02]: {{site.baseurl}}/assets/components/properties/animation-02.gif
+{: width="200px" height="200px" style="margin-bottom: 30px"}
+
+[animation-03]: {{site.baseurl}}/assets/components/properties/animation-03.gif
+{: width="200px" height="200px" style="margin-bottom: 30px"}
+
+[animation-04]: {{site.baseurl}}/assets/components/properties/animation-04.gif
+{: width="200px" height="200px" style="margin-bottom: 30px"}
+
+[animation-05]: {{site.baseurl}}/assets/components/properties/animation-05.gif
+{: width="200px" height="200px" style="margin-bottom: 30px"}
+
+[animation-06]: {{site.baseurl}}/assets/components/properties/animation-06.gif
+{: width="200px" height="200px" style="margin-bottom: 30px"}
+
+[animation-07]: {{site.baseurl}}/assets/components/properties/animation-07.gif
+{: width="200px" height="200px" style="margin-bottom: 30px"}
+
+[animation-08]: {{site.baseurl}}/assets/components/properties/animation-08.gif
+{: width="200px" height="200px" style="margin-bottom: 30px"}
+
+[animation-09]: {{site.baseurl}}/assets/components/properties/animation-09.gif
+{: width="200px" height="200px" style="margin-bottom: 30px"}
+
+[animation-10]: {{site.baseurl}}/assets/components/properties/animation-10.gif
+{: width="500px" height="300px" style="margin-bottom: 30px"}
+
+
+[hover-01]: {{site.baseurl}}/assets/components/properties/hover-01.png
+{: height="200px" }

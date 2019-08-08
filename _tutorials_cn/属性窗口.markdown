@@ -1,0 +1,30 @@
+---
+index: 2.04
+---
+### {{page.title}}
+说明属性窗口的功能。  
+![属性窗口][property-window]
+
+1. ![形状属性页面][shape-property-tab]: 相关组件形状的属性。可以赋予ID、Class或指定宽度、高度。
+
+1. ![样式属性页面][style-property-tab]: 相关组件样式的属性。可以指定颜色、字体等。
+
+1. ![效果属性页面][effect-property-tab]: 相关组件的效果的属性。可以指定阴影、动画、点击时的事件。
+
+1. ![特定属性页面][specific-property-tab]: 组件的固有属性。
+
+1. ![数据属性页面][variable-property-tab]: 相关Scene的数据的属性。
+
+[property-window]: {{site.baseurl}}/assets/tutorials/property-window.png
+{: height="500px" }
+
+[shape-property-tab]: {{site.baseurl}}/assets/tutorials/shape-property.png
+{: height="20px" style="vertical-align:middle;" }
+[style-property-tab]: {{site.baseurl}}/assets/tutorials/style-property.png
+{: height="20px" style="vertical-align:middle;" }
+[effect-property-tab]: {{site.baseurl}}/assets/tutorials/effect-property.png
+{: height="20px" style="vertical-align:middle;" }
+[specific-property-tab]: {{site.baseurl}}/assets/tutorials/specific-property.png
+{: height="20px" style="vertical-align:middle;" }
+[variable-property-tab]: {{site.baseurl}}/assets/tutorials/variable-property.png
+{: height="20px" style="vertical-align:middle;" }

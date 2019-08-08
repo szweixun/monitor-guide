@@ -1,0 +1,121 @@
+---
+index: 0.03
+---
+
+### {{page.title}}
+可以控制组件效果的窗口。可以为组件添加阴影效果或定义监控模式时的动画和点击事件等。
+
+
+- **阴影**  
+![shadow-02][shadow-02]  
+设置组件的阴影效果。可以调整阴影的位置和模糊效应、颜色等。
+1. X、Y坐标(Number) - 基于组件，调整阴影位置的坐标。
+![shadow-03][shadow-03]
+1. 大小(Number) - 调整阴影的模糊程度。
+![shadow-04][shadow-04]
+1. 颜色(Number) - 调整阴影的颜色。
+![shadow-05][shadow-05]
+
+- **保持期间**  
+组件保持在Board上的时间。也就是说，当该保持期间结束时，组件将会从Board上消失。  
+但是，如果组件属性在保持期间内发生变更，保持期间的时点就会被重置。
+
+- **动画**  
+![animation-01][animation-01]  
+可以设置当转换为预览和监控模式时的组件的动画。
+  - 事件时点
+  1. onCreate - 从运行视图模式的瞬间开始，操作动画。
+  1. onChange - 当组件的数据发生变更时，将会操作动画。
+  - 动画类型
+  1. 旋转-顺时针  
+  ![animation-02][animation-02]  
+  1. 旋转-逆时针  
+  ![animation-03][animation-03]  
+  1. 震动  
+  ![animation-04][animation-04]  
+  1. 心搏  
+  ![animation-05][animation-05]  
+  1. 向右移动  
+  ![animation-06][animation-07]  
+  1. 向左移动  
+  ![animation-07][animation-06]  
+  1. 向下移动  
+  ![animation-08][animation-09]  
+  1. 向上移动  
+  ![animation-09][animation-08]  
+  1. 轮廓  
+  ![animation-10][animation-10]  
+
+
+- **悬停事件**  
+设置当鼠标的光标位于组件上方时的事件。在创建变量之后，设置当鼠标位于组件上方时，将会发生变更的变量和变量的值。
+  - 强调 – 当鼠标的光标位于组件上方时，强调显示边框。  
+  **(当勾选时，同样会在‘tab事件’中，适用鼠标事件。)**  
+  ![hover-01][hover-01]  
+  - 变量信息 - 当鼠标的光标位于组件上方时，选择将会变更值的变量。
+  - 值 - 当鼠标的光标位于组件上方时，变更所选变量的值。
+
+
+
+
+- **Tab事件**  
+设置当点击组件时的事件。默认提供‘GoTo’、‘Link Open’、‘Link Move’，并且在用户追加创建变量之后，当点击组件时，可以设置将会变更的变量和变量的值。  
+  **(如果想在鼠标位于组件上方时，触发强调事件，就可以选择‘悬停事件’的‘强调’。)**  
+  - 变量信息 - 当已选择组件时，选择将会变更值的变量。
+   1. GoTo - 移动到相关SCENE的画面。
+   1. StopPlaying - 
+   1. LinkOpen - 用新的窗口，打开相关URL。
+   1. LinkMove - 移动到相关URL。
+   1. InfoWindow - 
+   1. (组件变量) - 组件的数据。
+  - 值 – 当点击组件时，变更所选变量的值。
+
+
+
+
+[shadow-02]: {{site.baseurl}}/assets/components/properties/shadow-02.png
+{: height="200px" }
+
+[shadow-03]: {{site.baseurl}}/assets/components/properties/shadow-03.png
+{: height="200px" }
+
+[shadow-04]: {{site.baseurl}}/assets/components/properties/shadow-04.png
+{: height="200px" }
+
+[shadow-05]: {{site.baseurl}}/assets/components/properties/shadow-05.png
+{: height="200px" }
+
+
+[animation-01]: {{site.baseurl}}/assets/components/properties/animation-01.gif
+{: width="400" height="100px" style="margin-bottom: 30px; margin-left:100px"}
+
+[animation-02]: {{site.baseurl}}/assets/components/properties/animation-02.gif
+{: width="200px" height="200px" style="margin-bottom: 30px"}
+
+[animation-03]: {{site.baseurl}}/assets/components/properties/animation-03.gif
+{: width="200px" height="200px" style="margin-bottom: 30px"}
+
+[animation-04]: {{site.baseurl}}/assets/components/properties/animation-04.gif
+{: width="200px" height="200px" style="margin-bottom: 30px"}
+
+[animation-05]: {{site.baseurl}}/assets/components/properties/animation-05.gif
+{: width="200px" height="200px" style="margin-bottom: 30px"}
+
+[animation-06]: {{site.baseurl}}/assets/components/properties/animation-06.gif
+{: width="200px" height="200px" style="margin-bottom: 30px"}
+
+[animation-07]: {{site.baseurl}}/assets/components/properties/animation-07.gif
+{: width="200px" height="200px" style="margin-bottom: 30px"}
+
+[animation-08]: {{site.baseurl}}/assets/components/properties/animation-08.gif
+{: width="200px" height="200px" style="margin-bottom: 30px"}
+
+[animation-09]: {{site.baseurl}}/assets/components/properties/animation-09.gif
+{: width="200px" height="200px" style="margin-bottom: 30px"}
+
+[animation-10]: {{site.baseurl}}/assets/components/properties/animation-10.gif
+{: width="500px" height="300px" style="margin-bottom: 30px"}
+
+
+[hover-01]: {{site.baseurl}}/assets/components/properties/hover-01.png
+{: height="200px" }

@@ -1,0 +1,14 @@
+---
+index: 1.02
+---
+### {{page.title}}
+
+1. 点击组旁边的![铅笔形按钮][group-name-change-button]。
+
+1. 通过输入**组名称**并点击名称按钮，变更组名称。  
+![group-name-change]
+
+[group-name-change]: {{site.baseurl}}/assets/tutorials/group-name-change-01.png
+
+[group-name-change-button]: {{site.baseurl}}/assets/tutorials/group-name-change-02.png
+{: height="20px" style="vertical-align:baseline;"}

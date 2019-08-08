@@ -1,0 +1,17 @@
+---
+index: 6.04
+---
+## {{page.title}}
+
+1. 选择支架表，输入区域、位置模式和隔板模式。
+![set-zone-and-patterns]
+
+2. 拖动并选择将要指定位置的单元格后，通过属性窗口的位置指定功能进行指定。<br>
+（要查看是否已指定好位置，请将鼠标悬停在单元格上。）
+![visualizer-set-location-pattern]
+
+
+[set-zone-and-patterns]: {{site.baseurl}}/assets/tutorials/set-zone-and-patterns.png
+{: height="350px" }
+[visualizer-set-location-pattern]: {{site.baseurl}}/assets/tutorials/visualizer-set-location-pattern.png
+{: height="350px" }

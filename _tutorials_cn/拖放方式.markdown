@@ -1,0 +1,21 @@
+---
+index: 8.01
+---
+## {{page.title}}
+
+1. 选择想要添加背景图像的组件。<br>
+![set-background-select-component]
+
+2. 在按压Alt键的状态下，选择图像并将其拖放到浏览器中。
+![set-background-image-drag-n-drop]
+
+3. 可以确认拖放的图像已被指定为组件的背景图像。<br>
+![set-background-drag-n-drop-result]
+
+
+[set-background-select-component]: {{site.baseurl}}/assets/tutorials/set-background-select-component.png
+{: height="200px" }
+[set-background-image-drag-n-drop]: {{site.baseurl}}/assets/tutorials/set-background-image-drag-n-drop.png
+{: height="350px" }
+[set-background-drag-n-drop-result]: {{site.baseurl}}/assets/tutorials/set-background-drag-n-drop-result.png
+{: height="200px" }

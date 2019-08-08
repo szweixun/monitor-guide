@@ -1,0 +1,15 @@
+---
+index: 4.07
+---
+### {{page.title}}
+![组件-Chart-polar][chart-polar-01]
+
+用极坐标显示数据的图表。
+
+- 类型：图表
+- 属性：
+ <同饼状图。>
+
+
+[chart-polar-01]: {{site.baseurl}}/assets/components/chart-polar-01.png
+{: height="200px" }

@@ -1,0 +1,14 @@
+---
+index: 4.12
+---
+### {{page.title}}
+![组件-仪表（水平）][gauge-horizontal-01]  
+用横条形状，显示仪表的组件。
+
+- 类型：仪表
+- 属性：  
+  <同垂直仪表。>
+
+
+[gauge-horizontal-01]: {{site.baseurl}}/assets/components/gauge-horizontal-01.png
+{: height="150px" width="250px"}

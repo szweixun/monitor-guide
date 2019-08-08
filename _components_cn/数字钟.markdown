@@ -1,0 +1,27 @@
+---
+index: 11.05
+---
+### {{page.title}}
+![组件-文本钟][clock-text-01]  
+文本格式的时钟。
+
+- 类型：形状
+- 属性：
+1. time-format(YYYY-MM-DD HH:mm:ss) - 指定时间格式。
+![文本钟-time-format适用结果][clock-text-02]
+2. is-local-time(checkbox) - 当地时间（默认被选）
+![文本钟-is-local-time适用结果][clock-text-03]
+3. utc - 协调世界时（指定时，需要先解除勾选is-local-time。）
+![文本钟-utc适用结果][clock-text-04]
+
+
+[clock-text-01]: {{site.baseurl}}/assets/components/clock-text-01.png
+
+[clock-text-02]: {{site.baseurl}}/assets/components/clock-text-02.png
+{: height="200px"}
+
+[clock-text-03]: {{site.baseurl}}/assets/components/clock-text-03.png
+{: height="200px"}
+
+[clock-text-04]: {{site.baseurl}}/assets/components/clock-text-04.png
+{: height="200px"}

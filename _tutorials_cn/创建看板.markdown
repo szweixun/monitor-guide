@@ -1,0 +1,13 @@
+---
+index: 1.04
+---
+### {{page.title}}
+
+1. 移动到将要创建Scene的组。
+
+1. 点击右侧下端的![+][fab]按钮。
+
+1. 输入Scene的名称，并点击储存。
+
+[fab]: {{site.baseurl}}/assets/fab.png
+{: height="30px" style="vertical-align:baseline;" }

@@ -1,0 +1,68 @@
+---
+index: 4.04
+---
+### {{page.title}}
+![组件-Chart-line][chart-line-01]
+
+用线条的形状显示数据的图表。（有关重复的属性，请参考柱状图。）
+
+- 类型：图表
+- 属性：
+1. Multi Axes(Check) - <同柱状图。>
+1. Data Key - Series(String) - <同柱状图。>
+1. Label(String) - <同柱状图。>
+1. Line Tension(Select) - 平滑或锐化显示数据的线条的角度。
+![Chart-line-线的灵敏度][chart-line-02]
+1. Border Color(Color) - 变更线条的颜色。
+![Chart-line-线的颜色][chart-line-03]
+1. Border Width(Number) - 变更线条的厚度。
+![Chart-line-线的厚度][chart-line-04]
+1. Fill(Color) - 填充绘制了线条的空间。
+![Chart-line-填充空间][chart-line-05]
+1. Background Color(Color) - 当线条的属性为‘Fill’时，所变更的填充颜色。
+![Chart-line-背景颜色][chart-line-06]
+1. Point Shape(Select) - 显示数据图形的形状。
+![Chart-line-线的灵敏度][chart-line-07]
+1. Point Size(Number) - 显示数据图形的大小。
+![Chart-line-线的灵敏度][chart-line-08]
+1. Point Bg Color(Color) - 填充显示数据图形的颜色。  
+![Chart-line-填充空间][chart-line-09]
+1. Target Axis(Select) - <同柱状图。>
+1. Prefix(String) - <同柱状图。>
+1. Suffix(String) - <同柱状图。>
+1. Data Key - <同柱状图。>
+1. Thickness(Number) - <同柱状图。>
+1. Grid Line - <同柱状图。>
+1. Display Tick - <同柱状图。>
+1. Min Auto - <同柱状图。>
+1. Max Auto - <同柱状图。>
+1. Grid Line - <同柱状图。>
+1. Display Tick - <同柱状图。>
+
+
+[chart-line-01]: {{site.baseurl}}/assets/components/chart-line-01.png
+{: height="200px" }
+
+[chart-line-02]: {{site.baseurl}}/assets/components/chart-line-02.png
+{: height="200px" }
+
+[chart-line-03]: {{site.baseurl}}/assets/components/chart-line-03.png
+{: height="200px" }
+
+[chart-line-04]: {{site.baseurl}}/assets/components/chart-line-04.png
+{: height="200px" }
+
+[chart-line-05]: {{site.baseurl}}/assets/components/chart-line-05.png
+{: height="200px" }
+
+[chart-line-06]: {{site.baseurl}}/assets/components/chart-line-06.png
+{: height="200px" }
+
+[chart-line-07]: {{site.baseurl}}/assets/components/chart-line-07.png
+{: height="200px" }
+
+[chart-line-08]: {{site.baseurl}}/assets/components/chart-line-08.png
+{: height="200px" }
+
+[chart-line-09]: {{site.baseurl}}/assets/components/chart-line-09.png
+{: height="200px" }

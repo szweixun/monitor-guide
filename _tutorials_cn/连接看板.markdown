@@ -1,0 +1,11 @@
+---
+index: 4.02
+---
+### {{page.title}}
+说明Scene内部的、可以连接其他Scene的Goto功能。
+
+1. 点击组件之后，点击效果属性窗口。
+
+1. 设置页面事件的数据信息为Goto。
+
+1. 设置将要连接的Scene的Scene-name为值。

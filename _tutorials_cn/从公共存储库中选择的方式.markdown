@@ -1,0 +1,26 @@
+---
+index: 8.02
+---
+## {{page.title}}
+
+1. 选择想要设置背景图像的组件。<br>
+![set-background-select-component]
+
+2. 指定样式属性窗口的填充样式为图案，并勾选匹配。 <br>
+![set-background-image-repository-01]
+
+3. 点击图像项目的图像选择器按钮，并选择和点击想要指定为背景的图像。
+![image-selector-popup]
+
+4. 可以确认已选的图像已被指定为组件的背景图像。
+![set-background-image-repository-result]
+
+
+[set-background-select-component]: {{site.baseurl}}/assets/tutorials/set-background-select-component.png
+{: height="200px" }
+[set-background-image-repository-01]: {{site.baseurl}}/assets/tutorials/set-background-image-repository-01.png
+{: height="250px" }
+[image-selector-popup]: {{site.baseurl}}/assets/tutorials/image-selector-popup.png
+{: height="400px" }
+[set-background-image-repository-result]: {{site.baseurl}}/assets/tutorials/set-background-image-repository-result.png
+{: height="250px" }

@@ -1,0 +1,15 @@
+---
+index: 4.09
+---
+### {{page.title}}
+![组件-Chart-doughnut][chart-doughnut-01]
+
+用环形显示数据的图表。
+
+- 类型：图表
+- 属性：
+ <同饼状图。>
+
+
+[chart-doughnut-01]: {{site.baseurl}}/assets/components/chart-doughnut-01.png
+{: height="200px" }

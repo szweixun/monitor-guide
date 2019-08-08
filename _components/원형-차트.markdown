@@ -1,0 +1,25 @@
+---
+index: 4.08
+---
+### {{page.title}}
+![컴포넌트-Chart-circle][chart-circle-01]
+
+데이터를 원형 모양으로 표현해주는 차트.
+
+- Category : Chart
+- 속성 :
+1. Data Key - Series(String) - 데이터의 값이 되는 필드. 아래와 같은 데이터가 있을 때 'Series'의 'Data Key'는 'Good'이 된다.  
+![chart-circle-차트 타입][chart-circle-01]
+1. Backgroud Color(Color) - 원형 차트의 색상  
+![chart-circle-차트 타입][chart-circle-02]
+1. Data Key - Axis(String) - 데이터의 레이블이 되는 필드. 아래와 같은 데이터가 있을 때 'Axis'의 'Data Key'는 'Line'이 된다.  
+![chart-circle-차트 타입][chart-circle-01]
+1. Prefix(String) - < 막대 차트와 동일 >
+1. Suffix(String) - < 막대 차트와 동일 >
+
+
+[chart-circle-01]: {{site.baseurl}}/assets/components/chart-circle-01.png
+{: height="200px" }
+
+[chart-circle-02]: {{site.baseurl}}/assets/components/chart-circle-02.png
+{: height="200px" }

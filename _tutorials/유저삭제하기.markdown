@@ -1,0 +1,19 @@
+---
+index: 0.02
+---
+### {{page.title}}
+
+1. 화면 좌측의 관리자페이지 링크(![관리자페이지링크-이미지][admin-page-link])를 클릭한다.  
+![관리자페이지][go-to-admin-page]
+
+1. 관리자 권한이 있는 유저로 로그인한다.  
+
+1. 시스템 - 사용자를 클릭하여 사용자메뉴를 연다.  
+
+1. 등록신청된 아이디를 찾아 체크하고 하단의 삭제를 클릭하고 저장버튼을 클릭한다.  
+
+[admin-page-link]: {{site.baseurl}}/assets/tutorials/go-to-admin-page.png
+{: style="height:15px; vertical-align:middle;" }
+
+[go-to-admin-page]: {{site.baseurl}}/assets/tutorials/scene-import-01.png
+{: style="max-height:200px" }

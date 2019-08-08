@@ -1,0 +1,56 @@
+---
+index: 3.08
+---
+### {{page.title}}
+데이터를 Scene으로 Push해주는 기능인 퍼블리셔에 대하여 설명한다.
+
+1. 화면 좌측의 관리자페이지 링크(![관리자페이지링크-이미지][admin-page-link])를 클릭한다.  
+![step1][step1]
+
+1. 관리자페이지의 좌측 메뉴에서 모니터링 보드 관리 - 보드 데이터 바인더를 순서대로 클릭하여 Scene 메뉴로 이동한다.  
+![step2][step2]
+
+1. 보드 데이터 바인더 메뉴 하단의 추가 버튼을 클릭한다.  
+![step3][step3]
+
+1. 보드 데이터 바인더 명칭과 보드 등을 입력하고 저장버튼을 클릭한다.  
+  - 보드는 SCENE-NAME(e.g. : SCENE-XX) 이다.
+
+1. 추가된 보드 데이터 바인더의 ![상세보기][detail]을 클릭하여 상세페이지 팝업을 연다.
+
+1. 상세페이지에서 [Return type](#퍼블리셔-리턴타입)과 필드들에 값을 입력한다.  
+![리턴타입-입력][detail-popup]
+
+1. 하단 Service Logic 필드에 SQL을 입력하고 저장한다.  
+![쿼리-입력][query-area]
+
+1. 테스트 버튼(![테스트-버튼][test-button])을 클릭하여 데이터가 정상적으로 나오는지 확인한다.  
+![테스트-결과][test-result]
+
+
+[admin-page-link]: {{site.baseurl}}/assets/tutorials/go-to-admin-page.png
+{: style="height:15px; vertical-align:middle;" }
+
+[step1]: {{site.baseurl}}/assets/tutorials/board-data-binder-00.png
+{: style="max-height:300px" }
+
+[step2]: {{site.baseurl}}/assets/tutorials/board-data-binder-01.png
+{: style="height:300px" }
+
+[step3]: {{site.baseurl}}/assets/tutorials/board-data-binder-02.png
+{: style="max-height:500px" }
+
+[detail-popup]: {{site.baseurl}}/assets/tutorials/board-data-binder-detail-popup.png
+{: style="height:300px" }
+
+[query-area]: {{site.baseurl}}/assets/tutorials/board-data-binder-query-area.png
+{: style="height:300px" }
+
+[detail]: {{site.baseurl}}/assets/tutorials/grid-detail.png
+{: height="20px" }
+
+[test-result]: {{site.baseurl}}/assets/tutorials/board-data-binder-test-result.png
+{: height="300px" }
+
+[test-button]: {{site.baseurl}}/assets/tutorials/board-data-binder-test-button.png
+{: height="20px" }

@@ -1,0 +1,60 @@
+---
+index: 10.02
+---
+### {{page.title}}
+![组件-支架表][rack-table-01]
+
+它是用表格结构显示多个仓库支架的组件，可以基于以行和列所构成的表格所具有的扩展性和灵活性，迅速和简便建模用户所需的支架。
+下面介绍支架表的整体属性和单个单元格的属性。（与表格属性具有很多相似之处。）
+
+- 类型：仓库
+- 属性：
+1. 行：调整支架表的行数。
+1. 列：调整支架表的列数。
+1. 区：设置支架表的区域。
+1. 隔板：在3D画面上的层数。
+1. 深度：在3D画面上的单层的高度。
+1. 位置模式：为支架位置以及层赋予固有ID的模式。{z}是Zone、{s}是Section、{u}是Unit、sh是Shelf的值。
+（e.g. 当模式为{z}{s}-{u}{sh}时，如果是Zone A、Section 01、Unit 01、Shelf 3，就会是A01-0103。）
+1. 隔板模式：将会被适用于位置模式的隔板模式值。
+  # - 动态适用层数。
+  0 - 固定层数为0的个数。（ex. 0 = 0~9 / 00 = 00~99）
+1. Stock Scale：装载在支架中的物体的大小比率。(0 ~ 1)
+1. 隐藏支架柱：隐藏支架的柱子。
+
+- 支架表单元格的属性:
+2. Section：将会被适用于模式的Section值。
+2. Unit：将会被适用于模式的Unit值。
+2. Is Empty：勾选时，清空相关单元格。（如果清空整行，该行就会被视为是通道。）
+2. Start Section：当使用支架的位置指定功能时，将会是支架的起始Section值。
+2. Start Unit：当使用支架的位置指定功能时，将会是支架的起始Unit值。
+2. Skip Numbering：不指定位置，跳过空单元格。
+2. 位置模式：
+
+  顺时针：从Section的左上角（基于支架表）开始，依次从左到右、从右到左，轮流指定号码。
+  ![顺时针详细][rack-table-location-pattern-cw-detail]
+
+  逆时针：从Section的右上角（基于支架表）开始，依次从右到左、从左到右，轮流指定号码。 
+  ![逆时针详细][rack-table-location-pattern-ccw-detail]
+
+  之字形：从Section的左上角（基于支架表）开始，以通道为基准，从上到下，指定号码。
+  ![之字形详细][rack-table-location-pattern-zigzag-detail]
+
+  之字形-反方向：从Section的右上角（基于支架表）开始，以通道为基准，从上到下，指定号码。
+  ![之字形-反方向详细][rack-table-location-pattern-zigzag-reverse-detail]
+
+2. 边框样式及类型 < 同表格属性（单元格） >
+
+
+[rack-table-01]: {{site.baseurl}}/assets/components/rack-table-01.png
+{: height="200px"}
+[rack-table-location-pattern-cw]: {{site.baseurl}}/assets/components/rack-table-location-pattern-cw.png
+{: height="30px"}
+[rack-table-location-pattern-cw-detail]: {{site.baseurl}}/assets/components/rack-table-location-pattern-cw-detail.png
+{: height="200px"}
+[rack-table-location-pattern-ccw-detail]: {{site.baseurl}}/assets/components/rack-table-location-pattern-ccw-detail.png
+{: height="200px"}
+[rack-table-location-pattern-zigzag-detail]: {{site.baseurl}}/assets/components/rack-table-location-pattern-zigzag-detail.png
+{: height="200px"}
+[rack-table-location-pattern-zigzag-reverse-detail]: {{site.baseurl}}/assets/components/rack-table-location-pattern-zigzag-reverse-detail.png
+{: height="200px"}

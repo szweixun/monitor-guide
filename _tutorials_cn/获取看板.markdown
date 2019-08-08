@@ -1,0 +1,47 @@
+---
+index: 1.10
+---
+
+### {{ page.title }}
+说明复制其他服务器的Scene建模信息的功能。
+
+1. 点击画面左侧的管理者页面链接(![管理者页面链接-图像][admin-page-link])。  
+![step1][step1]
+
+1. 打开同一浏览器的新标签页面，并访问具有将要复制的Scene的X-Monitoring之后，进行登录。
+
+1. 确认将要复制的Scene的Scene Name。
+![step3][step3]
+
+1. 在管理者页面的左侧菜单中，按顺序点击标签-Scene，移动到Scene菜单。  
+![step4][step4]
+
+1. 点击Scene菜单下端的获取按钮。
+![step5][step5]
+
+1. 输入将要复制到弹出窗口的Scene的URL，并选择将要储存Scene的Group之后，点击确认。
+![step6][step6]
+
+1. 如果在左侧下端成功显示信息，就返回到板上，刷新而进行确认。
+
+
+[admin-page-link]: {{site.baseurl}}/assets/tutorials/go-to-admin-page.png
+{: style="height:15px; vertical-align:middle;" }
+
+[step1]: {{site.baseurl}}/assets/tutorials/scene-import-01.png
+{: style="max-height:200px" }
+
+[step2]: {{site.baseurl}}/assets/tutorials/scene-import-02.png
+{: style="max-height:400px" }
+
+[step3]: {{site.baseurl}}/assets/tutorials/scene-import-03.png
+{: style="max-height:400px" }
+
+[step4]: {{site.baseurl}}/assets/tutorials/scene-import-04.png
+{: style="max-height:400px" }
+
+[step5]: {{site.baseurl}}/assets/tutorials/scene-import-05.png
+{: style="max-height:400px" }
+
+[step6]: {{site.baseurl}}/assets/tutorials/scene-import-06.png
+{: style="max-height:200px" }

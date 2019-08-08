@@ -1,0 +1,13 @@
+---
+index: 5.04
+---
+## {{page.title}}
+
+1. 移动到播放组。
+
+1. 点击右侧下端的![播放按钮][play-button]。
+
+1. 选择播放方式和周期之后，点击确认。
+
+[play-button]: {{site.baseurl}}/assets/play-button.png
+{: height="20px" }

@@ -1,0 +1,11 @@
+---
+index: 4.01
+---
+### {{page.title}}
+如果使用Reference-Scene，就可以在Scene内部，参考其他Scene。
+
+1. [Global Reference]({{ site.baseurl }}/components/#):  
+参考其他Scene，并显示在画面上。
+
+1. [Local Reference]({{ site.baseurl }}/components/#):  
+参考Scene内的特定组件，并显示在画面上。

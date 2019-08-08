@@ -1,0 +1,18 @@
+---
+index: 1.06
+---
+### {{page.title}}
+![Right-Angle-Path][Right-Angle-Path-01]
+
+직각 경로
+
+- Category : Line
+- 속성 :
+1. direction(선택) - 시작과 끝의 방향을 바꿈
+![Right-Angle-Path-02][Right-Angle-Path-02]
+
+
+[Right-Angle-Path-01]: {{site.baseurl}}/assets/components/right-angle-path-01.png
+{: height="200px"}
+
+[Right-Angle-Path-02]: {{site.baseurl}}/assets/components/right-angle-path-02.png

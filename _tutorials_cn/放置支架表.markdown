@@ -1,0 +1,16 @@
+---
+index: 6.02
+---
+## {{page.title}}
+
+1. 从组件工具栏中，选择并放置支架表。<br>
+![visualizer-select-rack-table-from-component-bar]
+
+2. 选择已放置的支架表后，将其被包含（确认可视器的边框变为橙色）在已放置的可视器中。
+![visualizer-put-rack-table]
+
+
+[visualizer-select-rack-table-from-component-bar]: {{site.baseurl}}/assets/tutorials/visualizer-select-rack-table-from-component-bar.png
+{: height="350px" }
+[visualizer-put-rack-table]: {{site.baseurl}}/assets/tutorials/visualizer-put-rack-table.png
+{: height="350px" }

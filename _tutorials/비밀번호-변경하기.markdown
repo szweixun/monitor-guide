@@ -1,0 +1,12 @@
+---
+index: 0.04
+---
+### {{page.title}}
+
+1. 좌측 메뉴 상단의 ![프로필][user-profile]를 클릭한다.  
+
+1. 패스워드 변경을 클릭한다.
+
+1. 현재 비밀번호와 새로운 비밀번호를 입력하고 확인을 클릭한다.  
+
+[user-profile]: {{ site.baseurl }}/assets/tutorials/user-profile.png

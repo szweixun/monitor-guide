@@ -1,0 +1,9 @@
+---
+index: 3.06
+---
+### {{page.title}}
+데이터 값을 타겟의 어떠한 속성에 대입할 것인지 설정한다.  
+![타겟속성][target-property]
+
+[target-property]: {{ site.baseurl }}/assets/tutorials/target-property.png
+{: height="200px"}

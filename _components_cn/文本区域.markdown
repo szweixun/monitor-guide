@@ -1,0 +1,32 @@
+---
+index: 0.01
+---
+### {{page.title}}
+说明文本和区域的属性。
+
+
+1. ID: 设置组件的ID。
+1. 类：设置组件的类。
+1. 文本：指定组件的文本。即使双击相关组件，也可以进行输入。
+1. 文本格式：设置文本的格式。
+  - \# : 数字格式（如果值或小数点以下的值是0，就不进行显示。）
+  - 0 : 数字格式
+  - , : 位数的表达
+  - . : 小数点的表达
+1. 隐藏：隐藏组件。  
+1. 位置固定：固定组件的位置。      
+1. 大小
+  - 宽度：设置组件的宽度。
+  - 高度：设置组件的高度。
+  - 旋转：旋转组件。（如果是正数，就按顺时针方向旋转，而如果是负数，则按逆时针方向旋转。）
+1. 文本框
+  - ![水平对齐][align-horizontal] : 设置水平对齐。（从左侧开始，按顺序是左对齐、 居中对齐、右对齐、两端对齐。）
+  - ![垂直对齐][align-vertical] : 设置垂直对齐。（从左侧开始，按顺序是上对齐、居中对齐、下对齐。）
+  - 文本换行：当文本超出组件的区域时，选择是否换行。
+  - ![边距][text-margin] : 设置文本的上下左右边距。
+
+[align-horizontal]: {{ site.baseurl }}/assets/components/common-property-text-align-horizontal.png
+
+[align-vertical]: {{ site.baseurl }}/assets/components/common-property-text-align-vertical.png
+
+[text-margin]: {{ site.baseurl }}/assets/components/common-property-text-margin.png

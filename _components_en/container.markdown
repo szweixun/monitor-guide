@@ -1,0 +1,13 @@
+---
+index: 6.01
+---
+### {{page.title}}
+
+![Container][Container-01]  
+Container
+
+
+- Category : Container
+
+[Container-01]: {{site.baseurl}}/assets/components/container-01.png
+{: height="200px"}

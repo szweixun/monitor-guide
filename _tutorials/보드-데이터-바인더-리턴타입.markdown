@@ -1,0 +1,164 @@
+---
+index: 3.09
+---
+### {{page.title}}
+
+- Array Type  
+  SQL의 실행 결과를 리스트로 리턴한다.
+
+  **입력필드 :**  
+  - 데이터 키 : SQL 실행 결과를 담아서 내려줄 이름
+
+  예를들어 SQL, Record Set, 데이터 키가 아래와 같을 때
+    ```sql
+  SELECT ID, AGE, DEPARTMENT, WORK_YEAR FROM EMPLOYEE
+    ```  
+
+    |---------+-----+-------------+-----------|
+    | ID      | AGE | DEPARTMENT  | WORK_YEAR |
+    |---------|----:|-------------|----------:|
+    | e00001  | 30  | SALES       | 1         |
+    | e00002  | 37  | DEVELOPMENT | 5         |
+    | e00003  | 45  | HR          | 12        |
+    |---------+-----+-------------+-----------|
+
+  데이터 키: data  
+
+  결과는 아래와 같다.
+    ```json
+  {
+    "data": [{
+      "ID": "e00001",
+      "AGE": 30,
+      "DEPARTMENT": "SALES",
+      "WORK_YEAR": 1
+    }, {
+      "ID": "e00002",
+      "AGE": 37,
+      "DEPARTMENT": "DEVELOPMENT",
+      "WORK_YEAR": 5
+    }, {
+      "ID": "e00003",
+      "AGE": 45,
+      "DEPARTMENT": "HR",
+      "WORK_YEAR": 12
+    }]
+  }
+    ```
+- Key-Value Type
+  SQL의 실행 결과를 Key-Value 타입의 JSON Object로 리턴한다.
+
+  **입력필드 :**  
+  - 키 필드 : SQL 실행 결과를 담아서 내려줄 필드명 (필드의 레코드값이 키가 된다.)  
+  - 값 필드 : SQL 실행 결과중 값으로 사용할 필드명 (필드의 레코드값이 값이 된다.)
+
+  예를들어 SQL, Record Set, 키 필드, 값 필드이 아래와 같을 때
+
+    ```sql
+  SELECT ID, AGE, DEPARTMENT, WORK_YEAR FROM EMPLOYEE
+    ```
+
+    |---------+-----+-------------+-----------|
+    | ID      | AGE | DEPARTMENT  | WORK_YEAR |
+    |---------|----:|-------------|----------:|
+    | e00001  | 30  | SALES       | 1         |
+    | e00002  | 37  | DEVELOPMENT | 5         |
+    | e00003  | 45  | HR          | 12        |
+    |---------+-----+-------------+-----------|
+
+  키 필드: ID, 값 필드: DEPARTMENT
+
+  결과는 아래와 같다.  
+    ```json
+  {
+    "e00001": "SALES",
+    "e00002": "DEVELOPMENT",
+    "e00003": "HR"
+  }
+    ```  
+
+- Key-Object Type  
+  SQL의 실행 결과를 Key-Object 타입의 JSON Object로 리턴한다.
+
+  **입력필드 :**  
+  - 키 필드 : SQL 실행 결과를 담아서 내려줄 필드명 (필드의 레코드값이 키가 된다.)
+
+
+  예를들어 SQL, Record Set, 키 필드가 아래와 같을 때
+
+    ```sql
+  SELECT ID, AGE, DEPARTMENT, WORK_YEAR FROM EMPLOYEE
+    ```
+
+    |---------+-----+-------------+-----------|
+    | ID      | AGE | DEPARTMENT  | WORK_YEAR |
+    |---------|----:|-------------|----------:|
+    | e00001  | 30  | SALES       | 1         |
+    | e00002  | 37  | DEVELOPMENT | 5         |
+    | e00003  | 45  | HR          | 12        |
+    |---------+-----+-------------+-----------|
+
+
+  키 필드: ID  
+
+  결과는 아래와 같다.
+    ```json
+  {
+    "e00001": {
+      "AGE": 30,
+      "DEPARTMENT": "SALES",
+      "WORK_YEAR": 1
+    },
+    "e00002": {
+      "AGE": 37,
+      "DEPARTMENT": "DEVELOPMENT",
+      "WORK_YEAR": 5
+    },
+    "e00003": {
+      "AGE": 45,
+      "DEPARTMENT": "HR",
+      "WORK_YEAR": 12
+    }
+  }
+    ```
+
+- Single Row Type  
+  SQL의 실행 결과를 JSON Object로 리턴한다.
+  결과는 반드시 하나의 row만을 가져야한다.
+
+  **입력필드 :**  
+  - Data Key(선택) : SQL 실행 결과를 담아서 내려줄 이름
+
+  예를들어 SQL, Record Set이 아래와 같을때
+    ```sql
+  SELECT ID, AGE, DEPARTMENT, WORK_YEAR FROM EMPLOYEE LIMIT 1
+    ```
+
+    |---------+-----+-------------+-----------|
+    | ID      | AGE | DEPARTMENT  | WORK_YEAR |
+    |---------|----:|-------------|----------:|
+    | e00001  | 30  | SALES       | 1         |
+    |---------+-----+-------------+-----------|
+
+
+    데이터 키에 따른 결과는 아래와 같다.
+    1. 데이터 키가 data인 경우  
+    ```json
+  {
+    "data": {
+      "ID": "e00001",
+      "AGE": 30,
+      "DEPARTMENT": "SALES",
+      "WORK_YEAR": 1
+    }
+  }
+    ```   
+    1. 데이터 키가 공백인 경우  
+    ```json
+  {
+    "ID": "e00001",
+    "AGE": 30,
+    "DEPARTMENT": "SALES",
+    "WORK_YEAR": 1
+  }
+    ```

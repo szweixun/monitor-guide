@@ -1,0 +1,13 @@
+---
+index: 5.04
+---
+## {{page.title}}
+
+1. 플레이그룹으로 이동한다.
+
+1. 우측 하단의 ![플레이버튼][play-button]을 클릭한다.
+
+1. 플레이방식과 주기를 선택 후 확인을 클릭한다.
+
+[play-button]: {{site.baseurl}}/assets/play-button.png
+{: height="20px" }

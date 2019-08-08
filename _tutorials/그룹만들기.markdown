@@ -1,0 +1,14 @@
+---
+index: 1.01
+---
+### {{page.title}}
+
+1. 좌측 하단의 ![+][add-group-button] 버튼을 클릭한다.  
+
+1. **그룹 이름**을 입력하고 **그룹 타입**을 **SCENE**으로 선택 후 Create버튼을 클릭하여 그룹을 생성한다.  
+![add-group]
+
+[add-group]: {{site.baseurl}}/assets/getting_started/add-group.png
+
+[add-group-button]: {{site.baseurl}}/assets/getting_started/add-group-button.png
+{: height="20px" }

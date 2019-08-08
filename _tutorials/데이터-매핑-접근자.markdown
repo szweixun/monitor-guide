@@ -1,0 +1,27 @@
+---
+index: 3.04
+---
+### {{page.title}}
+접근자는 데이터가 Object 또는 Array일 경우 내부 속성에 접근하기 위해 필요한 것이다. 아무것도 입력이 안되있을 시에는 기본적으로 Field1의 첫행의 값이 사용된다.
+
+- Array에 접근: `[0]`
+```javascript
+  // e.g. 
+  [1, 2, 3, 4, 5, ...] // 접근자를 [1]으로 지정
+
+  2 // 접근 결과
+```
+
+- Object에 접근: `[value]` 혹은 `.value`  
+```javascript
+  // e.g.
+  {
+    "key1": "value1",
+    "key2": "value2",
+    "key3": "value3",
+    "key4": "value4",
+    ...
+  } // 접근자를 [key2]로 지정
+
+  "value2" // 접근 결과
+```

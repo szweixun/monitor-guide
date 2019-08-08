@@ -1,0 +1,25 @@
+---
+index: 4.08
+---
+### {{page.title}}
+![组件-Chart-circle][chart-circle-01]
+
+用饼状显示数据的图表。
+
+- 类型：图表
+- 属性：
+1. Data Key - Series(String) - 成为数据的值的字段。当具有如下数据时，‘Series’的‘Data Key’将会成为‘Good’。  
+![chart-circle-图表类型][chart-circle-01]
+1. Backgroud Color(Color) - 饼状图的颜色。  
+![chart-circle-图表类型][chart-circle-02]
+1. Data Key - Axis(String) - 成为数据的标签的字段。当具有如下数据时，‘Axis’的‘Data Key’将会成为‘Line’。  
+![chart-circle-图表类型][chart-circle-01]
+1. Prefix(String) - <同柱状图。>
+1. Suffix(String) - <同柱状图。>
+
+
+[chart-circle-01]: {{site.baseurl}}/assets/components/chart-circle-01.png
+{: height="200px" }
+
+[chart-circle-02]: {{site.baseurl}}/assets/components/chart-circle-02.png
+{: height="200px" }

@@ -1,0 +1,150 @@
+---
+index: 4.11
+---
+### {{page.title}}
+![组件-仪表（垂直）][gauge-vertical-01]  
+用竖条形状，显示仪表的组件。
+
+- 类型：仪表
+- 属性：  
+    1. Value(Number) - 仪表的值。  
+      <figure style="text-align: center;">
+      ![仪表-Value适用结果][gauge-vertical-02]  
+      <figurecaption>(value: 85)</figurecaption>
+      </figure>
+
+    2. startValue - 仪表的起始值。  
+      <figure style="text-align: center;">
+      ![仪表-BackgroundColor适用结果][gauge-vertical-03]  
+      <figurecaption>(startValue: 10)</figurecaption>
+      </figure>
+
+    3. endValue - 仪表的最终值。  
+      <figure style="text-align: center;">
+      ![仪表-BackgroundColor适用结果][gauge-vertical-04]  
+      <figurecaption>(endValue: 120)</figurecaption>
+      </figure>
+
+    4. step - 仪表的刻度间隔。  
+      <figure style="text-align: center;">
+      ![仪表-BackgroundColor适用结果][gauge-vertical-05]  
+      <figurecaption>(step: 30)</figurecaption>
+      </figure>
+
+    5. stepTextSize - 仪表的刻度文本大小。  
+      <figure style="text-align: center;">
+      ![仪表-BackgroundColor适用结果][gauge-vertical-06]  
+      <figurecaption>(stepTextSize: 10)</figurecaption>
+      </figure>
+
+    6. subStep - 仪表的刻度之间间隔。  
+      <figure style="text-align: center;">
+      ![仪表-BackgroundColor适用结果][gauge-vertical-07]  
+      <figurecaption>(subStep: 10)</figurecaption>
+      </figure>
+
+    7. stepNeedleSize - 仪表的刻度大小。
+      <figure style="text-align: center;">
+      ![仪表-BackgroundColor适用结果][gauge-vertical-08]  
+      <figurecaption>(stepNeedleSize: 3)</figurecaption>
+      </figure>
+
+    8. textColor - 仪表的刻度文本颜色。  
+      <figure style="text-align: center;">
+      ![仪表-BackgroundColor适用结果][gauge-vertical-09]  
+      <figurecaption>(textColor: #ec5324)</figurecaption>
+      </figure>
+
+    9. needleFillStyle - 仪表的针色。  
+      <figure style="text-align: center;">
+      ![仪表-BackgroundColor适用结果][gauge-vertical-10]  
+      <figurecaption>(needleFillStyle: #ec5324)</figurecaption>
+      </figure>
+
+    10. needleSize - 仪表指针大小。
+      <figure style="text-align: center;">
+      ![仪表-BackgroundColor适用结果][gauge-vertical-11]  
+      <figurecaption>(needleSize: 10)</figurecaption>
+      </figure>
+
+    11. stepFillStyle - 仪表刻度的颜色。  
+      <figure style="text-align: center;">
+      ![仪表-BackgroundColor适用结果][gauge-vertical-12]  
+      <figurecaption>(stepFillStyle: #ec5324)</figurecaption>
+      </figure>
+
+    12. colorStops - 仪表的各个区间的颜色。可以通过双击而添加区间，也可以向下拖动标记而删除区间。  
+      <figure style="text-align: center;">
+      ![仪表-BackgroundColor适用结果][gauge-vertical-13]  
+      <figurecaption>(colorStops: <img src="{{site.baseurl}}/assets/components/color-stops-value2.png" height="30" alt="color stops">)</figurecaption>
+      </figure>
+
+    13. showStartValue - 决定是否显示仪表的起始值。  
+      <figure style="text-align: center;">
+      ![仪表-BackgroundColor适用结果][gauge-vertical-14]  
+      <figurecaption>(showStartValue: unchecked)</figurecaption>
+      </figure>
+
+    14. showEndValue - 决定是否显示仪表的最终值。  
+      <figure style="text-align: center;">
+      ![仪表-BackgroundColor适用结果][gauge-vertical-15]  
+      <figurecaption>(showEndValue: unchecked)</figurecaption>
+      </figure>
+
+    15. showStepLine - 决定是否显示仪表的刻度。  
+      <figure style="text-align: center;">
+      ![仪表-BackgroundColor适用结果][gauge-vertical-16]  
+      <figurecaption>(showStepLine: unchecked)</figurecaption>
+      </figure>
+
+    16. showStepText - 决定是否显示仪表的刻度值。  
+      <figure style="text-align: center;">
+      ![仪表-BackgroundColor适用结果][gauge-vertical-17]  
+      <figurecaption>(showStepText: unchecked)</figurecaption>
+      </figure>
+
+    17. showSubStep - 决定是否显示仪表的分刻度。  
+      <figure style="text-align: center;">
+      ![仪表-BackgroundColor适用结果][gauge-vertical-18]  
+      <figurecaption>(showSubStep: unchecked)</figurecaption>
+      </figure>
+
+
+[gauge-vertical-01]: {{site.baseurl}}/assets/components/gauge-vertical-01.png
+{: height="250px" width="180px"}
+
+[gauge-vertical-02]: {{site.baseurl}}/assets/components/gauge-vertical-02.png
+{: height="200px"}
+
+[gauge-vertical-03]: {{site.baseurl}}/assets/components/gauge-vertical-03.png
+{: height="200px"}
+[gauge-vertical-04]: {{site.baseurl}}/assets/components/gauge-vertical-04.png
+{: height="200px"}
+[gauge-vertical-05]: {{site.baseurl}}/assets/components/gauge-vertical-05.png
+{: height="200px"}
+[gauge-vertical-06]: {{site.baseurl}}/assets/components/gauge-vertical-06.png
+{: height="200px"}
+[gauge-vertical-07]: {{site.baseurl}}/assets/components/gauge-vertical-07.png
+{: height="200px"}
+[gauge-vertical-08]: {{site.baseurl}}/assets/components/gauge-vertical-08.png
+{: height="200px"}
+[gauge-vertical-09]: {{site.baseurl}}/assets/components/gauge-vertical-09.png
+{: height="200px"}
+[gauge-vertical-10]: {{site.baseurl}}/assets/components/gauge-vertical-10.png
+{: height="200px"}
+[gauge-vertical-11]: {{site.baseurl}}/assets/components/gauge-vertical-11.png
+{: height="200px"}
+[gauge-vertical-12]: {{site.baseurl}}/assets/components/gauge-vertical-12.png
+{: height="200px"}
+[gauge-vertical-13]: {{site.baseurl}}/assets/components/gauge-vertical-13.png
+{: height="200px"}
+[gauge-vertical-14]: {{site.baseurl}}/assets/components/gauge-vertical-14.png
+{: height="200px"}
+[gauge-vertical-15]: {{site.baseurl}}/assets/components/gauge-vertical-15.png
+{: height="200px"}
+[gauge-vertical-16]: {{site.baseurl}}/assets/components/gauge-vertical-16.png
+{: height="200px"}
+[gauge-vertical-17]: {{site.baseurl}}/assets/components/gauge-vertical-17.png
+{: height="200px"}
+[gauge-vertical-18]: {{site.baseurl}}/assets/components/gauge-vertical-18.png
+{: height="200px"}

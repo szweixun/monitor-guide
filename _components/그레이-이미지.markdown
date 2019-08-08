@@ -1,0 +1,12 @@
+---
+index: 3.03
+---
+### {{page.title}}
+
+![Media][Media-02]  
+Gray image를 업로드한다.
+
+
+- Category : Media
+
+[Media-02]: {{site.baseurl}}/assets/components/media-02.png

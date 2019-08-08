@@ -1,0 +1,14 @@
+---
+index: 2.06
+---
+### {{page.title}}
+![컴포넌트-다각형][polygon-01]
+
+다각형
+
+- Category : Shape  
+
+
+
+[polygon-01]: {{site.baseurl}}/assets/components/polygon-01.png
+{: height="200px"}

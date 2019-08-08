@@ -1,0 +1,21 @@
+---
+index: 2.99
+---
+### {{page.title}}
+모델링을 마치고 저장하는 방법에는 다음과 같이 두가지 방법이 있다.
+- 버튼을 이용한 방법
+1. 모델러 우측 하단의 ![+][fab]을 클릭한다.  
+1. ![디스켓모양-버튼][save]을 클릭하여 저장한다.
+
+- 단축키를 이용한 방법
+1. 모델링 영역을 클릭한다.  
+1. 저장 단축키를 입력한다.  
+  - OS별 저장 단축키  
+    - Windows: <kbd>Ctrl</kbd> + <kbd>S</kbd>
+    - MacOS: <kbd class="dark">⌘</kbd> + <kbd class="dark">S</kbd>
+
+
+[fab]: {{site.baseurl}}/assets/fab.png
+{: height="20px" }
+[save]: {{site.baseurl}}/assets/tutorials/save-button.png
+{: height="20px" }

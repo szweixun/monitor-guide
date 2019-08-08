@@ -1,0 +1,199 @@
+---
+index: 2.02
+---
+### {{page.title}}
+현재 모델링 중인 SCENE의 정보와 모델링을 더욱 간편하게 하기위해 필요한 기능들을 나열해 놓은 툴 바.  
+<span style="font-size: 13px; line-height:30px;"> (OS가 Mac인 경우는 <kbd>Ctrl</kbd>키를 <kbd class="dark">⌘</kbd>로 바꿔서 입력한다.) </span>
+![제어툴바][control-toolbar]
+
+1. Scene 번호![scene-number][scene-number] :  
+  현재 작업중 인 Scene의 번호를 표시  
+
+1. 되돌리기![되돌리기][되돌리기](<kbd>Ctrl</kbd> + <kbd>Z</kbd>) :  
+  사용자가 마지막으로 편집한 내용을 되돌릴 수 있는 기능
+
+1. 다시실행![다시실행][다시실행](<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Z</kbd>) :  
+ 되돌리기로 취소했던 작업의 내용을 다시 수행
+
+1. 잘라내기![잘라내기][잘라내기](<kbd>Ctrl</kbd> + <kbd>X</kbd>) :  
+ 선택된 컴포넌트를 클립보드로 복사 하면서 현재의 컴포넌트는 삭제
+
+1. 복사![복사][복사](<kbd>Ctrl</kbd> + <kbd>C</kbd>) :  
+ 선택된 컴포넌트를 클립보드로 복사
+
+1. 붙여넣기![붙여넣기][붙여넣기](<kbd>Ctrl</kbd> + <kbd>V</kbd>) :  
+ 클립보드로 복사한 컴포넌트를 붙여넣음
+
+1. 삭제![삭제][삭제](<kbd>Delete</kbd> or <kbd>Backspace</kbd>) :  
+ 선택된 컴포넌트를 삭제
+
+1. 스타일 복사![스타일 복사][스타일 복사] :  
+ 선택된 컴포넌트의 적용되어 있는 스타일만 클립보드로 복사(미구현)
+
+1. 왼쪽 정렬![왼쪽 정렬][왼쪽 정렬](<kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd>) :  
+ 선택된 컴포넌트들의 가장 왼쪽에 있는 컴포넌트를 기준으로 컴포넌트들을 왼쪽으로 정렬
+
+1. 가운데 정렬![가운데 정렬][가운데 정렬](<kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd>) :  
+ 선택된 컴포넌트들의 중앙 좌표를 기준으로 컴포넌트들의 x좌표를 가운데로 정렬
+
+1. 오른쪽 정렬![오른쪽 정렬][오른쪽 정렬](<kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>) :  
+ 선택된 컴포넌트들의 가장 오른쪽에 있는 컴포넌트를 기준으로 컴포넌트들을 오른쪽으로 정렬
+
+1. 위쪽 정렬![위쪽 정렬][위쪽 정렬](<kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>) :  
+ 선택된 컴포넌트들의 가장 위쪽에 있는 컴포넌트를 기준으로 컴포넌트들을 위쪽으로 정렬
+
+1. 중앙 정렬![중앙 정렬][중앙 정렬](<kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd>) :  
+ 선택된 컴포넌트들의 중앙 좌표를 기준으로 컴포넌트들의 y좌표를 가운데로 정렬
+
+1. 아래쪽 정렬![아래쪽 정렬][아래쪽 정렬](<kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd>) :  
+ 선택된 컴포넌트들의 가장 아래쪽에 있는 컴포넌트를 기준으로 컴포넌트들을 아래쪽으로 정렬
+
+1. 가로 폭 같게![가로 폭 같게][가로 폭 같게](<kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>H</kbd>) :  
+ 선택된 컴포넌트들의 가로방향 양 끝에 있는 컴포넌트를 기준으로 각 컴포넌트 사이의 폭을 같게 조절
+
+1. 세로 폭 같게![세로 폭 같게][세로 폭 같게](<kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>) :  
+ 선택된 컴포넌트들의 세로방향 양 끝에 있는 컴포넌트를 기준으로 각 컴포넌트 사이의 폭을 같게 조절
+
+1. 맨 앞으로![맨 앞으로][맨 앞으로](<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd>) :  
+ 선택된 컴포넌트의 순서를 맨 앞으로 보냄
+
+1. 맨 뒤로![맨 뒤로][맨 뒤로](<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd>) :  
+ 선택된 컴포넌트의 순서를 맨 뒤로 보냄
+
+1. 한 칸 앞으로![한 칸 앞으로][한 칸 앞으로](<kbd>Ctrl</kbd> + <kbd>F</kbd>) :  
+ 선택된 컴포넌트의 순서를 한 칸 앞으로 보냄
+
+1. 한 칸 뒤로![한 칸 뒤로][한 칸 뒤로](<kbd>Ctrl</kbd> + <kbd>B</kbd>) :  
+ 선택된 컴포넌트의 순서를 한 칸 뒤로 보냄
+
+1. 가로 대칭![가로 대칭][가로 대칭](<kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd>) :  
+ 선택된 컴포넌트를 가로를 기준으로 대칭
+
+1. 세로 대칭![세로 대칭][세로 대칭](<kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>Y</kbd>) :  
+ 선택된 컴포넌트를 세로를 기준으로 대칭
+
+1. 시계방향으로 회전![시계방향으로 회전][시계방향으로 회전](<kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd>) :  
+ 선택된 컴포넌트를 시계방향으로 90도 회전
+
+1. 반 시계방향으로 회전![반 시계방향으로 회전][반 시계방향으로 회전](<kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>W</kbd>) :  
+ 선택된 컴포넌트를 반 시계방향으로 90도 회전
+
+1. 그룹![그룹][그룹](<kbd>Ctrl</kbd> + <kbd>G</kbd>) :  
+ 선택된 컴포넌트들을 그룹으로 묶음
+
+1. 그룹 해제![그룹 해제][그룹 해제](<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd>) :  
+ 선택된 그룹을 해제
+
+1. 텍스트 크기 증가![텍스트 크기 증가][텍스트 크기 증가](<kbd>Shift</kbd> + <kbd>WheelUp</kbd>) :  
+ 선택된 컴포넌트의 텍스트 크기를 증가
+
+1. 텍스트 크기 감소![텍스트 크기 감소][텍스트 크기 감소](<kbd>Shift</kbd> + <kbd>WheelDown</kbd>) :  
+ 선택된 컴포넌트의 텍스트 크기를 감소
+
+1. 캔버스 크기 맞추기![캔버스 크기 맞추기][캔버스 크기 맞추기](<kbd>Ctrl</kbd> + <kbd>D</kbd>) :  
+ 캔버스의 크기를 화면에 딱 맞게 리사이즈 시킴
+
+1. 전체 화면![전체 화면][전체 화면] :  
+ 툴바와 속성창들을 모두 숨기고 모델링 화면을 전체화면으로 변환
+
+1. 속성 창 숨기기![속성 창 숨기기][속성 창 숨기기](<kbd>Ctrl</kbd> + <kbd>H</kbd>) :  
+ 속성 창을 숨기거나 보여줌
+
+
+
+
+[control-toolbar]: {{site.baseurl}}/assets/tutorials/control-toolbar.png
+{: height="46px" }
+
+[scene-number]: {{site.baseurl}}/assets/tutorials/control-toolbar-01.png
+{: width="60px", height="20px" }
+
+[되돌리기]: {{site.baseurl}}/assets/tutorials/control-toolbar-02.png
+{: width="20px", height="20px" }
+
+[다시실행]: {{site.baseurl}}/assets/tutorials/control-toolbar-03.png
+{: width="20px", height="20px" }
+
+[잘라내기]: {{site.baseurl}}/assets/tutorials/control-toolbar-04.png
+{: width="20px", height="20px" }
+
+[복사]: {{site.baseurl}}/assets/tutorials/control-toolbar-05.png
+{: width="20px", height="20px" }
+
+[붙여넣기]: {{site.baseurl}}/assets/tutorials/control-toolbar-06.png
+{: width="20px", height="20px" }
+
+[삭제]: {{site.baseurl}}/assets/tutorials/control-toolbar-07.png
+{: width="20px", height="20px" }
+
+[스타일 복사]: {{site.baseurl}}/assets/tutorials/control-toolbar-08.png
+{: width="20px", height="20px" }
+
+[왼쪽 정렬]: {{site.baseurl}}/assets/tutorials/control-toolbar-09.png
+{: width="20px", height="20px" }
+
+[가운데 정렬]: {{site.baseurl}}/assets/tutorials/control-toolbar-10.png
+{: width="20px", height="20px" }
+
+[오른쪽 정렬]: {{site.baseurl}}/assets/tutorials/control-toolbar-11.png
+{: width="20px", height="20px" }
+
+[위쪽 정렬]: {{site.baseurl}}/assets/tutorials/control-toolbar-12.png
+{: width="20px", height="20px" }
+
+[중앙 정렬]: {{site.baseurl}}/assets/tutorials/control-toolbar-13.png
+{: width="20px", height="20px" }
+
+[아래쪽 정렬]: {{site.baseurl}}/assets/tutorials/control-toolbar-14.png
+{: width="20px", height="20px" }
+
+[가로 폭 같게]: {{site.baseurl}}/assets/tutorials/control-toolbar-15.png
+{: width="20px", height="20px" }
+
+[세로 폭 같게]: {{site.baseurl}}/assets/tutorials/control-toolbar-16.png
+{: width="20px", height="20px" }
+
+[맨 앞으로]: {{site.baseurl}}/assets/tutorials/control-toolbar-17.png
+{: width="20px", height="20px" }
+
+[맨 뒤로]: {{site.baseurl}}/assets/tutorials/control-toolbar-18.png
+{: width="20px", height="20px" }
+
+[한 칸 앞으로]: {{site.baseurl}}/assets/tutorials/control-toolbar-19.png
+{: width="20px", height="20px" }
+
+[한 칸 뒤로]: {{site.baseurl}}/assets/tutorials/control-toolbar-20.png
+{: width="20px", height="20px" }
+
+[가로 대칭]: {{site.baseurl}}/assets/tutorials/control-toolbar-21.png
+{: width="20px", height="20px" }
+
+[세로 대칭]: {{site.baseurl}}/assets/tutorials/control-toolbar-22.png
+{: width="20px", height="20px" }
+
+[시계방향으로 회전]: {{site.baseurl}}/assets/tutorials/control-toolbar-23.png
+{: width="20px", height="20px" }
+
+[반 시계방향으로 회전]: {{site.baseurl}}/assets/tutorials/control-toolbar-24.png
+{: width="20px", height="20px" }
+
+[그룹]: {{site.baseurl}}/assets/tutorials/control-toolbar-25.png
+{: width="20px", height="20px" }
+
+[그룹 해제]: {{site.baseurl}}/assets/tutorials/control-toolbar-26.png
+{: width="20px", height="20px" }
+
+[텍스트 크기 증가]: {{site.baseurl}}/assets/tutorials/control-toolbar-27.png
+{: width="20px", height="20px" }
+
+[텍스트 크기 감소]: {{site.baseurl}}/assets/tutorials/control-toolbar-28.png
+{: width="20px", height="20px" }
+
+[캔버스 크기 맞추기]: {{site.baseurl}}/assets/tutorials/control-toolbar-29.png
+{: width="20px", height="20px" }
+
+[전체 화면]: {{site.baseurl}}/assets/tutorials/control-toolbar-30.png
+{: width="20px", height="20px" }
+
+[속성 창 숨기기]: {{site.baseurl}}/assets/tutorials/control-toolbar-31.png
+{: width="20px", height="20px" }

@@ -1,0 +1,15 @@
+---
+index: 4.03
+---
+### {{page.title}}
+![컴포넌트-Chart-horizontal-bar][chart-horizontal-bar-01]
+
+데이터를 가로 막대모양의 형태로 표현해주는 차트. 여러개의 필드가 있을시엔 병렬막대 또는 누적막대로 표현이 가능
+
+- Category : Chart
+- 속성 :  
+  < 막대 차트와 동일 >
+
+
+[chart-horizontal-bar-01]: {{site.baseurl}}/assets/components/chart-horizontal-bar-01.png
+{: height="200px" }

@@ -1,0 +1,15 @@
+---
+index: 4.09
+---
+### {{page.title}}
+![컴포넌트-Chart-doughnut][chart-doughnut-01]
+
+데이터를 도넛 모양으로 표현해주는 차트.
+
+- Category : Chart
+- 속성 :  
+ < 원형 차트와 동일 >
+
+
+[chart-doughnut-01]: {{site.baseurl}}/assets/components/chart-doughnut-01.png
+{: height="200px" }

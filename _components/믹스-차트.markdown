@@ -1,0 +1,18 @@
+---
+index: 4.05
+---
+### {{page.title}}
+![컴포넌트-Chart-mix][chart-mix-01]
+
+데이터를 막대모양과 라인모양의 형태를 섞어서 표현해주는 차트. __(믹스차트의 속성은 막대차트와 라인차트와 동일합니다.)__
+
+- Category : Chart
+- 속성 :
+1. Chart Type(Select) - 차트의 형태를 라인과 막대 중 선택  
+![chart-mix-차트 타입][chart-mix-02]
+
+[chart-mix-01]: {{site.baseurl}}/assets/components/chart-mix-01.png
+{: height="200px" }
+
+[chart-mix-02]: {{site.baseurl}}/assets/components/chart-mix-02.png
+{: height="200px" }

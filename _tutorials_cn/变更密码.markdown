@@ -1,0 +1,12 @@
+---
+index: 0.04
+---
+### {{page.title}}
+
+1. 点击左侧菜单上方的![简介][user-profile]。
+
+1. 点击密码变更。
+
+1. 输入当前密码和新密码，并点击确认。
+
+[user-profile]: {{ site.baseurl }}/assets/tutorials/user-profile.png

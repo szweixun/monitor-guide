@@ -1,0 +1,2022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>컴포넌트와 속성</title>
+  <meta name="description" content="공통 속성과 컴포넌트별 속성에 대하여 설명한다.">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:4000/ko/components/">
+  <link rel="alternate" type="application/rss+xml" title="X-Monitoring" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/custom.css">
+
+
+</head>
+
+  <body>
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">
+      <img src="/assets/brand-logo.png" style="height:26px; margin-top: -4px;">
+      X-Monitoring
+    </a>
+
+    <nav class="site-nav">
+      <span class="menu-icon">
+        <svg viewBox="0 0 18 15" width="18px" height="15px">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </span>
+
+      <div class="trigger">
+
+
+
+
+          <a class="page-link" href="/ko/getting-started/">시작하기</a>
+
+
+
+          <a class="page-link" href="/ko/components/">컴포넌트와 속성</a>
+
+
+
+          <a class="page-link" href="/ko/tutorials/">튜토리얼</a>
+
+
+
+        <select id="lang-selector">
+          <option value="ko" >한글</option>
+          <option value="en" >English</option>
+          <option value="cn" >中文</option>
+        </select>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">컴포넌트와 속성</h1>
+  </header>
+
+  <div class="post-content">
+    <p>공통 속성과 컴포넌트별 속성에 대하여 설명한다.</p>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h2 id="공통속성">공통속성</h2>
+  <p>컴포넌트 공통 속성에 대하여 설명한다.</p>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="텍스트-영역">텍스트 영역</h3>
+  <p>텍스트와 영역에 대한 속성을 설명한다.</p>
+
+  <ol>
+  <li>ID : 컴포넌트의 ID를 설정한다.</li>
+  <li>클래스 : 컴포넌트의 클래스를 설정한다.</li>
+  <li>텍스트 : 컴포넌트의 텍스트를 설정한다. 해당 컴포넌트를 더블클릭해도 입력이 가능하다.</li>
+  <li>텍스트 형식 : 텍스트의 형식을 설정한다.
+    <ul>
+      <li># : 숫자형식 (값 또는 소수점 이하의 값이 0이면 표시하지 않는다.)</li>
+      <li>0 : 숫자형식</li>
+      <li>, : 자리수 표현</li>
+      <li>. : 소수점 표현</li>
+    </ul>
+  </li>
+  <li>숨김 : 컴포넌트를 숨긴다.</li>
+  <li>위치고정 : 컴포넌트의 위치를 고정시킨다.</li>
+  <li>크기
+    <ul>
+      <li>너비 : 컴포넌트의 너비를 설정한다.</li>
+      <li>높이 : 컴포넌트의 높이를 설정한다.</li>
+      <li>회전 : 컴포넌트를 회전시킨다. (양수는 시계방향으로, 음수는 시계 반대방향으로 회전한다.)</li>
+    </ul>
+  </li>
+  <li>텍스트 상자
+    <ul>
+      <li><img src="/assets/components/common-property-text-align-horizontal.png" alt="가로정렬" /> : 가로정렬을 설정한다. (좌측부터 순서대로 왼쪽정렬, 가운데정렬, 우측정렬, 양쪽정렬)</li>
+      <li><img src="/assets/components/common-property-text-align-vertical.png" alt="수직정렬" /> : 세로정렬을 설정한다. (좌측부터 순서대로 위쪽정렬, 중간정렬, 아래쪽정렬)</li>
+      <li>텍스트개행 : 텍스트가 컴포넌트의 영역을 벗어날 경우 개행여부를 선택한다.</li>
+      <li><img src="/assets/components/common-property-text-margin.png" alt="여백" /> : 텍스트의 상하좌우 여백을 설정한다.</li>
+    </ul>
+  </li>
+</ol>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="스타일">스타일</h3>
+  <p>컴포넌트의 스타일 속성을 설정할 수 있는 창. 스타일 속성에 대하여 설명한다.</p>
+
+  <ul>
+  <li>투명도 : 컴포넌트의 투명한 정도를 설정한다. (0 ~ 1, 0 : 안보임, 1 : 보임)</li>
+  <li>텍스트 스타일
+    <ul>
+      <li>폰트 : 컴포넌트 텍스트의 폰트를 설정한다.</li>
+      <li>크기 : 컴포넌트 텍스트의 크기를 설정한다.</li>
+      <li>줄간격 : 컴포넌트 텍스트의 줄사이 간격을 설정한다.</li>
+      <li>색상 : 컴포넌트 텍스트의 색상을 설정한다.</li>
+      <li>굵기 : 컴포넌트 텍스트를 굵게 설정한다.</li>
+      <li>기울기 : 컴포넌트 텍스트를 기울임꼴로 설정한다.</li>
+    </ul>
+  </li>
+  <li>채우기 스타일
+    <ul>
+      <li>비우기 : 배경을 투명하게 한다.</li>
+      <li>단색 : 배경을 단색으로 채운다.</li>
+      <li>그라디언트 : 배경에 그라디언트를 적용한다.
+        <ul>
+          <li>타입 : 선형 그라데이션 (선을 따라 한 색상에서 다른 색상으로 음영처리), 방사형 그라데이션 (원형 패턴을 따라 내부의 한 색상과 외부의 다른 색상이 음영처리).</li>
+          <li>회전 : 그라디언트를 적용한 배경을 설정한 각도만큼 회전시킨다.</li>
+          <li>방향 : 드롭다운 리스트 중에서 원하는 각도(45도 기준으로 증감)의 배경을 선택할 수 있다.</li>
+          <li>컬러스탑 : 그라디언트 슬라이더의 양쪽에서 색상을 지정해 주는 색상자이다.</li>
+        </ul>
+      </li>
+      <li>패턴 : 이미지를 패턴으로 삽입한다.
+        <ul>
+          <li>이미지 : 파일 저장소에 있는 이미지를 선택한다.</li>
+          <li>정렬 : 왼쪽 상단, 상단, 오른쪽 상단, 왼쪽, 가운데, 오른쪽, 왼쪽 하단, 하단, 오른쪽 하단 맞춤</li>
+          <li>Offset X : 전체 배경을 시작점으로부터 특정 값만큼 수평으로 이동한다.</li>
+          <li>Offset Y : 전체 배경을 시작점으로부터 특정 값만큼 수직으로 이동한다.</li>
+          <li>넓이 : 패턴으로 삽입된 각 단일 이미지의 넓이를 설정한다.</li>
+          <li>높이 : 패턴으로 삽입된 각 단일 이미지의 높이를 설정한다.</li>
+          <li>맞춤 : 패턴으로 삽입된 단일 이미지를 Scene의 배경으로 설정한다.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>라인 스타일
+    <ul>
+      <li>두께 : 선의 두께를 설정한다.</li>
+      <li>색상 : 선의 색상을 설정한다.</li>
+      <li>선 스타일 : 선 스타일을 설정한다. (직선, 점선 등)</li>
+      <li>선끝 스타일 : 선 끝의 스타일을 설정한다. (square : 각진 선끝, round : 둥근 선끝)</li>
+      <li>연결 스타일 : 선과 선이 연결되는 점의 스타일을 설정한다.<br />
+(miter : <img height="30px " src="/assets/components/join-type-miter.png" alt="miter" />, round : <img height="30px " src="/assets/components/join-type-round.png" alt="round" />, bevel : <img height="30px " src="/assets/components/join-type-bevel.png" alt="bevel" />)</li>
+      <li>시작 모양 : 선의 시작 모양을 설정한다.</li>
+      <li>시작 크기 : 선의 시작 크기를 설정한다.</li>
+      <li>끝 모양 : 선의 끝 모양을 설정한다.</li>
+      <li>끝 크기 : 선의 끝 크기를 설정한다.</li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="효과">효과</h3>
+  <p>컴포넌트의 효과를 조작할 수 있는 창. 컴포넌트에 그림자 효과를 추가하거나, 모니터링 모드 시 동작할 애니메이션과 클릭 이벤트 등을 정의할 수 있다.</p>
+
+  <ul>
+  <li><strong>그림자</strong><br />
+<img height="200px" src="/assets/components/properties/shadow-02.png" alt="shadow-02" /><br />
+컴포넌트의 그림자 효과를 설정. 그림자의 위치와 번짐도, 색상 등을 조절할 수 있다.
+    <ol>
+      <li>X, Y 좌표(Number) - 컴포넌트를 기준으로 그림자가 위치할 좌표를 조정<br />
+<img height="200px" src="/assets/components/properties/shadow-03.png" alt="shadow-03" /></li>
+      <li>크기(Number) - 그림자의 번지는 정도를 조정
+<img height="200px" src="/assets/components/properties/shadow-04.png" alt="shadow-04" /></li>
+      <li>색상(Number) - 그림자의 색상을 조정
+<img height="200px" src="/assets/components/properties/shadow-05.png" alt="shadow-05" /></li>
+    </ol>
+  </li>
+  <li>
+    <p><strong>유지기간</strong><br />
+컴포넌트가 보드에서 유지되는 시간. 즉, 이 유지기간이 종료되면 컴포넌트는 보드에서 사라진다.<br />
+단, 유지기간 내에 컴포넌트 속성에 변화가 발생하면 유지기간의 시점이 리셋된다.</p>
+  </li>
+  <li><strong>애니메이션</strong><br />
+<img width="400" height="100px" style="margin-bottom: 30px; margin-left:100px" src="/assets/components/properties/animation-01.gif" alt="animation-01" /><br />
+미리보기와 모니터링 모드로 변환될 시 동작할 컴포넌트의 애니메이션들을 설정할 수 있다.
+    <ul>
+      <li>이벤트 시점
+        <ol>
+          <li>onCreate - 뷰 모드가 실행되는 순간부터 애니메이션 동작.</li>
+          <li>onChange - 컴포넌트의 데이터가 변경이 되었을 때 동작.</li>
+        </ol>
+      </li>
+      <li>애니메이션 종류
+        <ol>
+          <li>Rotation-CW<br />
+<img width="200px" height="200px" style="margin-bottom: 30px" src="/assets/components/properties/animation-02.gif" alt="animation-02" /></li>
+          <li>Rotation-CWW<br />
+<img width="200px" height="200px" style="margin-bottom: 30px" src="/assets/components/properties/animation-03.gif" alt="animation-03" /></li>
+          <li>Vibration<br />
+<img width="200px" height="200px" style="margin-bottom: 30px" src="/assets/components/properties/animation-04.gif" alt="animation-04" /></li>
+          <li>Hearbeat<br />
+<img width="200px" height="200px" style="margin-bottom: 30px" src="/assets/components/properties/animation-05.gif" alt="animation-05" /></li>
+          <li>Moving-Right<br />
+<img width="200px" height="200px" style="margin-bottom: 30px" src="/assets/components/properties/animation-07.gif" alt="animation-06" /></li>
+          <li>Moving-Left<br />
+<img width="200px" height="200px" style="margin-bottom: 30px" src="/assets/components/properties/animation-06.gif" alt="animation-07" /></li>
+          <li>Moving-Bottom<br />
+<img width="200px" height="200px" style="margin-bottom: 30px" src="/assets/components/properties/animation-09.gif" alt="animation-08" /></li>
+          <li>Moving-Top<br />
+<img width="200px" height="200px" style="margin-bottom: 30px" src="/assets/components/properties/animation-08.gif" alt="animation-09" /></li>
+          <li>Outline<br />
+<img width="500px" height="300px" style="margin-bottom: 30px" src="/assets/components/properties/animation-10.gif" alt="animation-10" /></li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+  <li><strong>호버 이벤트</strong><br />
+마우스의 커서가 컴포넌트 위에 올라갔을 때 동작하는 이벤트를 설정. 변수를 생성 한 뒤 마우스가 컴포넌트 위에 올라갔을 때 변경 될 변수와 변수의 값을 설정 한다.
+    <ul>
+      <li>강조 - 마우스의 커서가 컴포넌트 위로 올라갈 때, 테두리를 강조하여 표시<br />
+<strong>(체크 시, ‘탭 이벤트’ 에서도 마우스 이벤트 적용)</strong><br />
+<img height="200px" src="/assets/components/properties/hover-01.png" alt="hover-01" /></li>
+      <li>변수정보 - 마우스의 커서가 컴포넌트 위로 올라갔을 때, 값을 변경할 변수를 선택</li>
+      <li>값 - 마우스의 커서가 컴포넌트 위로 올라갔을 때, 선택된 변수의 값을 변경</li>
+    </ul>
+  </li>
+  <li><strong>탭 이벤트</strong><br />
+ 컴포넌트가 클릭 되었을 때 동작하는 이벤트를 설정. 기본적으로 ‘GoTo’, ‘Link Open’, ‘Link Move’ 등을 제공하며 사용자가 추가로 변수를 생성한 뒤 컴포넌트가 클릭 되었을 때 변경될 변수와 변수의 값을 설정할 수 있다.<br />
+<strong>(컴포넌트 위로 마우스가 올라갔을 때에 강조 이벤트를 주고싶다면 ‘호버 이벤트’의 ‘강조’를 선택)</strong>
+    <ul>
+      <li>변수정보 - 컴포넌트가 선택되었을 때, 값을 변경할 변수를 선택
+        <ol>
+          <li>GoTo - 해당 SCENE의 화면으로 이동</li>
+          <li>StopPlaying -</li>
+          <li>LinkOpen - 해당 URL을 새창으로 열기</li>
+          <li>LinkMove - 해당 URL로 이동</li>
+          <li>InfoWindow -</li>
+          <li>(컴포넌트 변수) - 컴포넌트의 데이터</li>
+        </ol>
+      </li>
+      <li>값 - 컴포넌트가 클릭 되었을 때, 선택된 변수의 값을 변경</li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:10rem; min-height:0rem;">
+  <h2 id="선-컴포넌트">선 컴포넌트</h2>
+  <p>Line 컴포넌트에 대하여 설명한다.</p>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="직선">직선</h3>
+  <p><img src="/assets/components/line-01.png" alt="Line" /></p>
+
+  <p>일반적인 직선</p>
+
+  <ul>
+  <li>Category : Line</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="점선">점선</h3>
+  <p><img src="/assets/components/dash-01.png" alt="Dash" /></p>
+
+  <p>곧은 점선</p>
+
+  <ul>
+  <li>Category : Line</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="화살표">화살표</h3>
+  <p><img src="/assets/components/single-arrow-01.png" alt="Single-Arrow" /></p>
+
+  <p>한쪽 끝자락에 화살표 모양이 있는 직선</p>
+
+  <ul>
+  <li>Category : Line</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="양쪽-화살표">양쪽 화살표</h3>
+  <p><img src="/assets/components/both-arrow-01.png" alt="Both-Arrow" /></p>
+
+  <p>양쪽 끝자락에 화살표 모양이 있는 직선</p>
+
+  <ul>
+  <li>Category : Line</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="폴리라인">폴리라인</h3>
+  <p><img height="200px" src="/assets/components/polyline-01.png" alt="Polyline" /></p>
+
+  <p>하나 이상의 선분으로 구성된 연속적인 선</p>
+
+  <ul>
+  <li>Category : Line</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="직각-경로">직각 경로</h3>
+  <p><img height="200px" src="/assets/components/right-angle-path-01.png" alt="Right-Angle-Path" /></p>
+
+  <p>직각 경로</p>
+
+  <ul>
+  <li>Category : Line</li>
+  <li>속성 :
+    <ol>
+      <li>direction(선택) - 시작과 끝의 방향을 바꿈
+<img src="/assets/components/right-angle-path-02.png" alt="Right-Angle-Path-02" /></li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:10rem; min-height:0rem;">
+  <h2 id="도형-컴포넌트">도형 컴포넌트</h2>
+  <p>Shape(도형) 컴포넌트에 대하여 설명한다.</p>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="사각형">사각형</h3>
+  <p><img height="200px" src="/assets/components/rect-01.png" alt="컴포넌트-Rect" /></p>
+
+  <p>기본적인 사각형 도형.</p>
+
+  <ul>
+  <li>Category : Shape</li>
+  <li>속성 :
+    <ol>
+      <li>Round(Number) - 모서리를 둥글게 적용
+<img src="/assets/components/rect-02.png" alt="Rect-Round적용결과" /></li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="둥근-위쪽모서리-사각형">둥근 위쪽모서리 사각형</h3>
+  <p><img height="200px" src="/assets/components/half-round-rect-01.png" alt="Half-Round-Rect" /></p>
+
+  <p>위쪽 모퉁이가 둥근 사각형</p>
+
+  <ul>
+  <li>Category : Shape</li>
+  <li>속성 :
+    <ol>
+      <li>round(Number) - 위쪽 모퉁이를 둥글게 적용
+<img src="/assets/components/half-round-rect-02.png" alt="Half-Round-Rect-Round-Result" /></li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="타원">타원</h3>
+  <p><img height="200px" src="/assets/components/ellipse-01.png" alt="컴포넌트-원" /></p>
+
+  <p>원(타원 포함)</p>
+
+  <ul>
+  <li>Category : Shape</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="도넛">도넛</h3>
+  <p><img height="200px" src="/assets/components/donut-01.png" alt="컴포넌트-도넛" /></p>
+
+  <p>안쪽에 구멍 뚫린 원(도넛 모양)</p>
+  <ul>
+  <li>Category : Shape</li>
+  <li>속성 :
+    <ol>
+      <li>ratio(Number) - 안쪽 원의 크기를 조정
+<img height="200px" src="/assets/components/donut-02.png" alt="도넛-ratio적용결과" /></li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="삼각형">삼각형</h3>
+  <p><img height="200px" src="/assets/components/triangle-01.png" alt="컴포넌트-삼각형" /></p>
+
+  <p>삼각형</p>
+
+  <ul>
+  <li>Category : Shape</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="다각형">다각형</h3>
+  <p><img height="200px" src="/assets/components/polygon-01.png" alt="컴포넌트-다각형" /></p>
+
+  <p>다각형</p>
+
+  <ul>
+  <li>Category : Shape</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="별">별</h3>
+  <p><img height="200px" src="/assets/components/star-01.png" alt="컴포넌트-별" /></p>
+
+  <p>별 모양 도형</p>
+
+  <ul>
+  <li>Category : Shape</li>
+  <li>속성 :
+    <ol>
+      <li>ratio(Number) - 도형의 두께를 조절<br />
+<img height="200px" src="/assets/components/star-02.png" alt="별-ratio적용결과" /></li>
+      <li>wing(Number) - 날개의 개수를 조절<br />
+<img height="200px" src="/assets/components/star-03.png" alt="별-wing적용결과" /></li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="마커">마커</h3>
+  <p><img height="200px" src="/assets/components/marker-01.png" alt="컴포넌트-마커" /></p>
+
+  <p>표시물 도형</p>
+  <ul>
+  <li>Category : Shape</li>
+  <li>속성 :
+    <ol>
+      <li>innerCircleFillStyle(Color) - 마커 안쪽 공간의 색상을 지정<br />
+<img height="200px" src="/assets/components/marker-02.png" alt="마커-innerCircleFillStyle적용결과" /></li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:10rem; min-height:0rem;">
+  <h2 id="텍스트-미디어-컴포넌트">텍스트 미디어 컴포넌트</h2>
+  <p>Text 및 Media 컴포넌트에 대하여 설명한다.</p>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="텍스트">텍스트</h3>
+
+  <p><img src="/assets/components/text-01.png" alt="Text" /><br />
+텍스트 상자</p>
+
+  <ul>
+  <li>Category : Text</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="컬러-이미지">컬러 이미지</h3>
+
+  <p><img src="/assets/components/media-01.png" alt="Media" /><br />
+RGB (Color) image를 업로드한다.</p>
+
+  <ul>
+  <li>Category : Media</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="그레이-이미지">그레이 이미지</h3>
+
+  <p><img src="/assets/components/media-02.png" alt="Media" /><br />
+Gray image를 업로드한다.</p>
+
+  <ul>
+  <li>Category : Media</li>
+</ul>
+
+</div>
+
+<div style="margin-top:10rem; min-height:0rem;">
+  <h2 id="차트-게이지-컴포넌트">차트 게이지 컴포넌트</h2>
+  <p>복잡한 데이터를 차트나 게이지의 형태로 표현하여 사용자의 데이터 해석에 도움을 줌.</p>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="차트-공통속성">차트 공통속성</h3>
+
+  <ul>
+  <li>Category : Chart</li>
+  <li>속성 :
+    <ol>
+      <li>Theme(Select) - 차트의 테마를 변경. ‘light’와 ‘dark’ 두가지를 지원
+<img height="200px" src="/assets/components/chart-01.png" alt="Chart-테마" /></li>
+      <li>Legend(Check) - 차트의 범례를 표시. 상, 하, 좌, 우 네방향으로 배치할 수 있다.
+<img height="200px" src="/assets/components/chart-02.png" alt="Chart-범례" /></li>
+      <li>Text Size(Number) - 차트의 텍스트 크기를 조절
+<img height="200px" src="/assets/components/chart-03.png" alt="Chart-텍스트 크기" /></li>
+      <li>Value-Display(Check) - 차트 데이터의 필드마다 값 레이블을 표시
+<img height="200px" src="/assets/components/chart-04.png" alt="Chart- 레이블" /></li>
+      <li>Value-Display-Color(Color) - 차트 값 레이블의 색상을 변경
+<img height="200px" src="/assets/components/chart-05.png" alt="Chart-레이블 색상" /></li>
+      <li>Value-Display-Size(Number) - 차트 값 레이블의 크기를 변경
+<img height="200px" src="/assets/components/chart-06.png" alt="Chart-레이블 크기" /></li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="막대-차트">막대 차트</h3>
+  <p><img height="200px" src="/assets/components/chart-bar-01.png" alt="컴포넌트-Chart-bar" /></p>
+
+  <p>데이터를 막대모양의 형태로 표현해주는 차트. 여러개의 필드가 있을시엔 병렬막대 또는 누적막대로 표현이 가능</p>
+
+  <ul>
+  <li>Category : Chart</li>
+  <li>속성 :
+    <ol>
+      <li>Stacked(Check) - 차트를 누적막대로 변경<br />
+<img height="200px" src="/assets/components/chart-bar-02.png" alt="Chart-bar-테마" /></li>
+      <li>Multi Axes(Check) - 차트의 보조축을 사용. 보조축 데이터를 사용할 시 ‘Series’의 ‘Target Axis’의 방향을 Right로 변경 해 줘야 함<br />
+<img height="200px" src="/assets/components/chart-bar-03.png" alt="Chart-bar-테마" /></li>
+      <li>Data Key - Series(String) - 차트가 표현할 데이터의 필드명. Y축에 표현될 데이터의 필드명을 입력한다. 아래와 같은 데이터를 표시할 시 Series의 Data-Key는 ‘Good’과 ‘Bad’가 된다.<br />
+<img height="200px" src="/assets/components/chart-bar-01.png" alt="Chart-bar-테마" /></li>
+      <li>Label(String) - 범례에 표시될 데이터의 값<br />
+<img height="200px" src="/assets/components/chart-bar-04.png" alt="Chart-bar-테마" /></li>
+      <li>Target Axis(Select) - 시리즈의 데이터가 표시될 방향을 선택. 오른쪽을 선택 시 보조 축의 데이터 표현범위를 따르며 공통 속성의 ‘Multi Axes’가 선택되어 있어야 한다.<br />
+<img height="200px" src="/assets/components/chart-bar-03.png" alt="Chart-bar-테마" /></li>
+      <li>Prefix(String) - 차트에 마우스를 올릴 때 표기되는 데이터의 앞에 표기될 문자.<br />
+<img height="200px" src="/assets/components/chart-bar-05.png" alt="Chart-bar-테마" /></li>
+      <li>Suffix(String) - 차트에 마우스를 올릴 때 표기되는 데이터의 뒤에 표기될 문자.<br />
+<img height="200px" src="/assets/components/chart-bar-06.png" alt="Chart-bar-테마" /></li>
+      <li>Data Key - X Axis(String) - 차트가 표현할 데이터의 필드명. X축에 표현될 데이터의 필드명을 입력한다. 아래와 같은 데이터를 표시할 시 X-Axis의 Data-Key는 ‘Date’가 된다.<br />
+<img height="200px" src="/assets/components/chart-bar-01.png" alt="Chart-bar-테마" /></li>
+      <li>Thickness(Number) - 막대차트의 두께.<br />
+<img height="200px" src="/assets/components/chart-bar-07.png" alt="Chart-bar-테마" /></li>
+      <li>Grid Line - X Axis(Check) - X축의 눈금선을 표시<br />
+<img height="200px" src="/assets/components/chart-bar-08.png" alt="Chart-bar-테마" /></li>
+      <li>Display Tick - X Axis(Check) - X축의 레이블을 표시<br />
+<img height="200px" src="/assets/components/chart-bar-09.png" alt="Chart-bar-테마" /></li>
+      <li>Min Auto - Y Axis(Check&amp;Number) - Y축의 최소값을 지정하거나 자동으로 표시<br />
+<img height="200px" src="/assets/components/chart-bar-10.png" alt="Chart-bar-테마" /></li>
+      <li>Max Auto - Y Axis(Check&amp;Number) - Y축의 최대값을 지정하거나 자동으로 표시<br />
+<img height="200px" src="/assets/components/chart-bar-11.png" alt="Chart-bar-테마" /></li>
+      <li>Grid Line - Y Axis(Check) - Y축의 눈금선을 표시<br />
+<img height="200px" src="/assets/components/chart-bar-12.png" alt="Chart-bar-테마" /></li>
+      <li>Display Tick - Y Axis(Check) - Y축의 레이블을 표시<br />
+<img height="200px" src="/assets/components/chart-bar-13.png" alt="Chart-bar-테마" /></li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="가로막대-차트">가로막대 차트</h3>
+  <p><img height="200px" src="/assets/components/chart-horizontal-bar-01.png" alt="컴포넌트-Chart-horizontal-bar" /></p>
+
+  <p>데이터를 가로 막대모양의 형태로 표현해주는 차트. 여러개의 필드가 있을시엔 병렬막대 또는 누적막대로 표현이 가능</p>
+
+  <ul>
+  <li>Category : Chart</li>
+  <li>속성 :<br />
+&lt; 막대 차트와 동일 &gt;</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="라인-차트">라인 차트</h3>
+  <p><img height="200px" src="/assets/components/chart-line-01.png" alt="컴포넌트-Chart-line" /></p>
+
+  <p>데이터를 라인모양의 형태로 표현해주는 차트. (중복되는 속성은 막대차트를 참조)</p>
+
+  <ul>
+  <li>Category : Chart</li>
+  <li>속성 :
+    <ol>
+      <li>Multi Axis(Check) - &lt; 막대 차트와 동일 &gt;  &lt;– 링크 걸수있는 방법이 있을까나요?</li>
+      <li>Data Key - Series(String) - &lt; 막대 차트와 동일 &gt;</li>
+      <li>Label(String) - &lt; 막대 차트와 동일 &gt;</li>
+      <li>Line Tension(Select) - 데이터를 표시하는 라인의 각도를 부드럽게 또는 날카롭게 변경<br />
+<img height="200px" src="/assets/components/chart-line-02.png" alt="Chart-line-선 민감도" /></li>
+      <li>Border Color(Color) - 라인의 색상을 변경<br />
+<img height="200px" src="/assets/components/chart-line-03.png" alt="Chart-line-선 색상" /></li>
+      <li>Border Width(Number) - 라인의 굵기를 변경<br />
+<img height="200px" src="/assets/components/chart-line-04.png" alt="Chart-line-선 굵기" /></li>
+      <li>Fill(Color) - 라인이 그려진 공간을 색칠<br />
+<img height="200px" src="/assets/components/chart-line-05.png" alt="Chart-line-공간 칠하기" /></li>
+      <li>Background Color(Color) - 라인의 속성이 ‘Fill’일 경우 채워지는 색상의 변경<br />
+<img height="200px" src="/assets/components/chart-line-06.png" alt="Chart-line-배경색" /></li>
+      <li>Point Shape(Select) - 데이터를 표시하는 도형의 모양<br />
+<img height="200px" src="/assets/components/chart-line-07.png" alt="Chart-line-선 민감도" /></li>
+      <li>Point Size(Number) - 데이터를 표시하는 도형의 크기<br />
+<img height="200px" src="/assets/components/chart-line-08.png" alt="Chart-line-선 민감도" /></li>
+      <li>Point Bg Color(Color) - 데이터를 표시하는 도형에 채워지는 색상<br />
+<img height="200px" src="/assets/components/chart-line-09.png" alt="Chart-line-공간 칠하기" /></li>
+      <li>Target Axis(Select) - &lt; 막대 차트와 동일 &gt;</li>
+      <li>Prefix(String) - &lt; 막대 차트와 동일 &gt;</li>
+      <li>Suffix(String) - &lt; 막대 차트와 동일 &gt;</li>
+      <li>Data Key - &lt; 막대 차트와 동일 &gt;</li>
+      <li>Thickness(Number) - &lt; 막대 차트와 동일 &gt;</li>
+      <li>Grid Line - &lt; 막대 차트와 동일 &gt;</li>
+      <li>Display Tick - &lt; 막대 차트와 동일 &gt;</li>
+      <li>Min Auto - &lt; 막대 차트와 동일 &gt;</li>
+      <li>Max Auto - &lt; 막대 차트와 동일 &gt;</li>
+      <li>Grid Line - &lt; 막대 차트와 동일 &gt;</li>
+      <li>Display Tick - &lt; 막대 차트와 동일 &gt;</li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="믹스-차트">믹스 차트</h3>
+  <p><img height="200px" src="/assets/components/chart-mix-01.png" alt="컴포넌트-Chart-mix" /></p>
+
+  <p>데이터를 막대모양과 라인모양의 형태를 섞어서 표현해주는 차트. <strong>(믹스차트의 속성은 막대차트와 라인차트와 동일합니다.)</strong></p>
+
+  <ul>
+  <li>Category : Chart</li>
+  <li>속성 :
+    <ol>
+      <li>Chart Type(Select) - 차트의 형태를 라인과 막대 중 선택<br />
+<img height="200px" src="/assets/components/chart-mix-02.png" alt="chart-mix-차트 타입" /></li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="레이더-차트">레이더 차트</h3>
+  <p><img height="200px" src="/assets/components/chart-radar-01.png" alt="컴포넌트-Chart-radar" /></p>
+
+  <p>데이터를 레이더 모양으로 표현해주는 차트. 원형 차트의 데이터를 여러개의 라인 형태로 표현</p>
+
+  <ul>
+  <li>Category : Chart</li>
+  <li>속성 :
+    <ol>
+      <li>Data Key - Series(String) - 데이터의 값이 되는 필드. 아래와 같은 데이터가 있을 때 ‘Series’의 ‘Data Key’는 ‘Good’과 ‘Bad’가 된다.<br />
+<img height="200px" src="/assets/components/chart-radar-01.png" alt="chart-radar-데이타 키" /></li>
+      <li>Data Key - Axis(String) - 데이터의 레이블이 되는 필드. 아래와 같은 데이터가 있을 때 ‘Axis’의 ‘Data Key’는 ‘Line’이 된다.<br />
+<img height="200px" src="/assets/components/chart-radar-01.png" alt="chart-radar-데이타 키" /></li>
+    </ol>
+  </li>
+</ul>
+
+  <p><br />
+&lt; 나머지 속성은 라인 차트와 동일 &gt;</p>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="극좌표-차트">극좌표 차트</h3>
+  <p><img height="200px" src="/assets/components/chart-polar-01.png" alt="컴포넌트-Chart-polar" /></p>
+
+  <p>데이터를 극좌표 모양으로 표현해주는 차트.</p>
+
+  <ul>
+  <li>Category : Chart</li>
+  <li>속성 :<br />
+ &lt; 원형 차트와 동일 &gt;</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="원형-차트">원형 차트</h3>
+  <p><img height="200px" src="/assets/components/chart-circle-01.png" alt="컴포넌트-Chart-circle" /></p>
+
+  <p>데이터를 원형 모양으로 표현해주는 차트.</p>
+
+  <ul>
+  <li>Category : Chart</li>
+  <li>속성 :
+    <ol>
+      <li>Data Key - Series(String) - 데이터의 값이 되는 필드. 아래와 같은 데이터가 있을 때 ‘Series’의 ‘Data Key’는 ‘Good’이 된다.<br />
+<img height="200px" src="/assets/components/chart-circle-01.png" alt="chart-circle-차트 타입" /></li>
+      <li>Backgroud Color(Color) - 원형 차트의 색상<br />
+<img height="200px" src="/assets/components/chart-circle-02.png" alt="chart-circle-차트 타입" /></li>
+      <li>Data Key - Axis(String) - 데이터의 레이블이 되는 필드. 아래와 같은 데이터가 있을 때 ‘Axis’의 ‘Data Key’는 ‘Line’이 된다.<br />
+<img height="200px" src="/assets/components/chart-circle-01.png" alt="chart-circle-차트 타입" /></li>
+      <li>Prefix(String) - &lt; 막대 차트와 동일 &gt;</li>
+      <li>Suffix(String) - &lt; 막대 차트와 동일 &gt;</li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="도넛-차트">도넛 차트</h3>
+  <p><img height="200px" src="/assets/components/chart-doughnut-01.png" alt="컴포넌트-Chart-doughnut" /></p>
+
+  <p>데이터를 도넛 모양으로 표현해주는 차트.</p>
+
+  <ul>
+  <li>Category : Chart</li>
+  <li>속성 :<br />
+ &lt; 원형 차트와 동일 &gt;</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="원형-게이지">원형 게이지</h3>
+  <p><img height="200px" src="/assets/components/gauge-circle-01.png" alt="컴포넌트-게이지(원형)" /></p>
+
+  <ul>
+  <li>Category: Gauge</li>
+  <li>속성:
+    <ol>
+      <li>
+        <p>Value(Number) - 게이지의 값.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-02.png" alt="게이지-Value적용결과" /><br />
+    <figurecaption>(value: 85)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>startValue - 게이지의 시작 값.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-03.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(startValue: 10)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>endValue - 게이지의 끝 값.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-04.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(endValue: 120)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>step - 게이지 눈금 간격.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-05.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(step: 30)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>stepTextSize - 게이지 눈금 글씨 크기.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-06.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(stepTextSize: 10)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>subStep - 게이지 눈금 사이 간격.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-07.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(subStep: 10)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>stepNeedleSize - 게이지 눈금 크기.
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-08.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(stepNeedleSize: 3)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>startAngle - 게이지의 시작 각도. 12시 방향을 기준으로 시계방향으로 증가한다. 음수일 경우 역방향.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-09.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(startAngle: -90)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>endAngle - 게이지의 끝 각도. 12시 방향을 기준으로 시계방향으로 증가한다. 음수일 경우 역방향.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-10.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(endAngle: 90)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>textFillStyle - 게이지 눈금 글씨 색상.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-11.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(textFillStyle: #ec5324)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>needleFillStyle - 게이지 바늘 색상.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-12.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(needleFillStyle: #ec5324)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>innerCircleFillStyle - 게이지 바늘의 원의 색상.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-13.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(innerCircleFillStyle: #ec5324)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>stepFillStyle - 게이지 눈금 색상.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-14.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(stepFillStyle: #ec5324)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>colorStops - 게이지 구간별 색상. 더블클릭으로 구간을 추가할 수 있으며 마커를 드래그하여 아래로 내리면 구간을 삭제할 수 있다.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-15.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(colorStops: <img src="/assets/components/color-stops-value.png" height="30" alt="color stops" />)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>showStartValue - 게이지 시작값의 표시여부를 결정.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-16.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(showStartValue: unchecked)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>showEndValue - 게이지 끝값의 표시여부를 결정.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-17.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(showEndValue: unchecked)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>showStepLine - 게이지 눈금의 표시여부를 결정.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-18.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(showStepLine: unchecked)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>showStepText - 게이지 눈금 값의 표시여부를 결정.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-19.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(showStepText: unchecked)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>showSubStep - 게이지 보조 눈금의 표시여부를 결정.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-20.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(showSubStep: unchecked)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>inText - 게이지 눈금 값의 위치를 결정. (checked: 내부, unchecked: 외부)<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-circle-21.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(inText: unchecked)</figurecaption>
+    </figure></p>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="수직-게이지">수직 게이지</h3>
+  <p><img height="250px" width="180px" src="/assets/components/gauge-vertical-01.png" alt="컴포넌트-게이지(수직)" /><br />
+게이지를 세로막대 형태로 표시해주는 컴포넌트</p>
+
+  <ul>
+  <li>Category : Gauge</li>
+  <li>속성 :
+    <ol>
+      <li>
+        <p>Value(Number) - 게이지의 값.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-02.png" alt="게이지-Value적용결과" /><br />
+    <figurecaption>(value: 85)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>startValue - 게이지의 시작 값.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-03.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(startValue: 10)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>endValue - 게이지의 끝 값.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-04.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(endValue: 120)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>step - 게이지 눈금 간격.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-05.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(step: 30)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>stepTextSize - 게이지 눈금 글씨 크기.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-06.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(stepTextSize: 10)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>subStep - 게이지 눈금 사이 간격.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-07.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(subStep: 10)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>stepNeedleSize - 게이지 눈금 크기.
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-08.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(stepNeedleSize: 3)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>textColor - 게이지 눈금 글씨 색상.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-09.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(textColor: #ec5324)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>needleFillStyle - 게이지 바늘 색상.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-10.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(needleFillStyle: #ec5324)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>needleSize - 게이지 바늘 크기.
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-11.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(needleSize: 10)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>stepFillStyle - 게이지 눈금 색상.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-12.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(stepFillStyle: #ec5324)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>colorStops - 게이지 구간별 색상. 더블클릭으로 구간을 추가할 수 있으며 마커를 드래그하여 아래로 내리면 구간을 삭제할 수 있다.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-13.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(colorStops: <img src="/assets/components/color-stops-value2.png" height="30" alt="color stops" />)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>showStartValue - 게이지 시작값의 표시여부를 결정.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-14.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(showStartValue: unchecked)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>showEndValue - 게이지 끝값의 표시여부를 결정.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-15.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(showEndValue: unchecked)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>showStepLine - 게이지 눈금의 표시여부를 결정.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-16.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(showStepLine: unchecked)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>showStepText - 게이지 눈금 값의 표시여부를 결정.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-17.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(showStepText: unchecked)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>showSubStep - 게이지 보조 눈금의 표시여부를 결정.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/gauge-vertical-18.png" alt="게이지-BackgroundColor적용결과" /><br />
+    <figurecaption>(showSubStep: unchecked)</figurecaption>
+    </figure></p>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="수평-게이지">수평 게이지</h3>
+  <p><img height="150px" width="250px" src="/assets/components/gauge-horizontal-01.png" alt="컴포넌트-게이지(수평)" /><br />
+게이지를 가로막대 형태로 표시해주는 컴포넌트</p>
+
+  <ul>
+  <li>Category : Gauge</li>
+  <li>속성 :<br />
+&lt; 수직 게이지와 동일 &gt;</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="수직-진행막대">수직 진행막대</h3>
+  <p><img height="250px" width="130px" src="/assets/components/progress-vertical-01.png" alt="컴포넌트-프로그레스바(수직)" /><br />
+진행률을 세로막대 형태로 표시해주는 컴포넌트</p>
+
+  <ul>
+  <li>Category : Shape</li>
+  <li>속성 :
+    <ol>
+      <li>
+        <p>Value(Number) - 프로그레스바의 진행률 값<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/progress-vertical-02.png" alt="프로그레스바-Value적용결과" /><br />
+    <figurecaption>(value: 80)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>BackgroundColor(Color) - 진행률이 채워지지 않은 부분의 색<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/progress-vertical-03.png" alt="프로그레스바-Value적용결과" /><br />
+    <figurecaption>(backgroundColor: #ec5324)</figurecaption>
+    </figure></p>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="수평-진행막대">수평 진행막대</h3>
+  <p><img height="130px" width="250px" src="/assets/components/progress-horizontal-01.png" alt="컴포넌트-프로그레스바(수평)" /><br />
+진행률을 가로막대 형태로 표시해주는 컴포넌트</p>
+
+  <ul>
+  <li>Category : Shape</li>
+  <li>속성 :
+    <ol>
+      <li>
+        <p>Value(Number) - 프로그레스바의 진행률 값<br />
+    <figure style="text-align: center;">
+    <img max-height="200px" src="/assets/components/progress-horizontal-02.png" alt="프로그레스바-Value적용결과" /><br />
+    <figurecaption>(value: 80)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>BackgroundColor(Color) - 진행률이 채워지지 않은 부분의 색<br />
+    <figure style="text-align: center;">
+    <img max-height="200px" src="/assets/components/progress-horizontal-03.png" alt="프로그레스바-BackgroundColor적용결과" /><br />
+    <figurecaption>(backgroundColor: #ec5324)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>reverse - 진행율을 역방향으로 채운다.<br />
+    <figure style="text-align: center;">
+    <img max-height="200px" src="/assets/components/progress-horizontal-04.png" alt="프로그레스바-BackgroundColor적용결과" /><br />
+    <figurecaption>(backgroundColor: #ec5324)</figurecaption>
+    </figure></p>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="원형-진행막대">원형 진행막대</h3>
+  <p><img height="200px" src="/assets/components/progress-circle-01.png" alt="컴포넌트-진행막대(원형)" /></p>
+
+  <ul>
+  <li>Category : Shape</li>
+  <li>속성 :
+    <ol>
+      <li>
+        <p>Value(Number) - 프로그레스바의 진행률 값.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/progress-circle-02.png" alt="진행막대-Value적용결과" /><br />
+    <figurecaption>(value: 80)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>startAngle - 프로그레스바의 시작 각도. 12시 방향을 기준으로 시계방향으로 증가한다. 음수일 경우 역방향.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/progress-circle-03.png" alt="진행막대-startAngle적용결과" /><br />
+    <figurecaption>(startAngle: -120)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>endAngle - 프로그레스바의 끝 각도. 12시 방향을 기준으로 시계방향으로 증가한다. 음수일 경우 역방향.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/progress-circle-04.png" alt="진행막대-endAngle적용결과" /><br />
+    <figurecaption>(endAngle: 120)</figurecaption>
+    </figure></p>
+      </li>
+      <li>
+        <p>blankStrokeStyle - 프로그레스바가 채워지지 않은 부분의 색상.<br />
+    <figure style="text-align: center;">
+    <img height="200px" src="/assets/components/progress-circle-05.png" alt="진행막대-blankStrokeStyle적용결과" /><br />
+    <figurecaption>(blankStrokeStyle: #ec5324)</figurecaption>
+    </figure></p>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:10rem; min-height:0rem;">
+  <h2 id="테이블-컴포넌트">테이블 컴포넌트</h2>
+  <p>테이블 컴포넌트에 대하여 설명한다.</p>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="테이블">테이블</h3>
+  <p><img height="200px" src="/assets/components/table-01.png" alt="컴포넌트-Table" /></p>
+
+  <p>여러개의 데이터를 테이블의 형태로 표현할 때 사용하는 컴포넌트.</p>
+
+  <ul>
+  <li>Category : Table</li>
+  <li>속성(테이블) :
+    <ol>
+      <li>Row &amp; Column(Number) - 행과 열의 개수를 조절
+<img height="200px" src="/assets/components/table-02.png" alt="Table-행열 갯수" /></li>
+      <li>Cell Width &amp; Height - 테이블의 빨간 핸들러를 마우스로 드래그하면 각 셀마다 크기를 조절할 수 있다.<br />
+<img height="200px" src="/assets/components/table-03.png" alt="Table-행열의 크기" /></li>
+    </ol>
+  </li>
+  <li>속성(셀) :
+    <ol>
+      <li>Border Style - 선택된 셀의 테두리의 굵기 및 색상을 변경. 스타일 값을 입력 후 <img height="70px" src="/assets/components/table-04.png" alt="Table-셀 스타일 종류" /> 중 적용할 셀의 버튼을 누른다.
+<img height="200px" src="/assets/components/table-05.png" alt="Table-셀 스타일" /></li>
+      <li>Border Type - 선택 된 셀의 선의 종류를 변경. 테두리 종류를 선택 후 <img height="70px" src="/assets/components/table-04.png" alt="Table-셀 스타일 종류" /> 중 적용할 셀의 버튼을 누른다.<br />
+<strong>(!!셀의 테두리와 테이블의 테두리는 서로 다르게 적용)</strong></li>
+      <li>Merge Cells - 선택된 셀을 병합(붙어있는 셀만 적용)</li>
+      <li>Split Cells - 셀의 병합을 해제</li>
+      <li>Delete Row - 선택된 행을 삭제
+<img height="200px" src="/assets/components/table-06.png" alt="Table-셀 행 삭제" /></li>
+      <li>Delete Column - 선택된 열을 삭제
+<img height="200px" src="/assets/components/table-07.png" alt="Table-셀 열 삭제" /></li>
+      <li>Insert Above - 선택된 셀의 위쪽에 새로운 셀 삽입
+<img height="200px" src="/assets/components/table-08.png" alt="Table-셀 위쪽 삽입" /></li>
+      <li>Insert Below - 선택된 셀의 아래쪽에 새로운 셀 삽입
+<img height="200px" src="/assets/components/table-09.png" alt="Table-셀 아래쪽 삽입" /></li>
+      <li>Insert Left - 선택된 셀의 왼쪽에 새로운 셀 삽입
+<img height="200px" src="/assets/components/table-10.png" alt="Table-셀 왼쪽 삽입" /></li>
+      <li>Insert Right - 선택된 셀의 오른쪽에 새로운 셀 삽입
+<img height="200px" src="/assets/components/table-11.png" alt="Table-셀 오른쪽 삽입" /></li>
+      <li>Distribute Horizontal - 선택된 열들의 넓이를 같게
+<img height="200px" src="/assets/components/table-12.png" alt="Table-셀 넓이 같게" /></li>
+      <li>Distribute Vertical - 선택된 행들의 높이를 같게
+<img height="200px" src="/assets/components/table-13.png" alt="Table-셀 높이 같게" /></li>
+      <li>Data Key - 테이블에 데이터를 매핑할 때 데이터 헤더의 필드명. DataKey는 열이 위치하는 번호가 아닌 반드시 필드명으로 입력한다.</li>
+      <li>Data Index - 테이블에 데이터를 매핑할 때 데이터 행의 위치. DataIndex는 헤더를 제외한 데이터의 시작번호를 0으로 한다.<br />
+<img height="200px" src="/assets/components/table-14.png" alt="Table-데이터 예시" /><br />
+위 사진과 같은 데이터가 왔을시 Date의 ‘01-03’의 데이터를 표시한다면 DataKey = Date, DataIndex = 2를 입력한다.</li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:10rem; min-height:0rem;">
+  <h2 id="컨테이너-컴포넌트">컨테이너 컴포넌트</h2>
+  <p>컨테이너 컴포넌트에 대하여 설명한다.</p>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="컨테이너">컨테이너</h3>
+
+  <p><img height="200px" src="/assets/components/container-01.png" alt="Container" /><br />
+컨테이너</p>
+
+  <ul>
+  <li>Category : Container</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="threed-컨테이너">3D 컨테이너</h3>
+
+  <p><img height="200px" src="/assets/components/container-02.png" alt="Container" /><br />
+3D 컨테이너</p>
+
+  <ul>
+  <li>Category : Container</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="인도어-맵">인도어 맵</h3>
+
+  <p><img height="200px" src="/assets/components/container-03.png" alt="Container" /><br />
+인도어 맵</p>
+
+  <ul>
+  <li>Category : Container</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="탭">탭</h3>
+
+  <p><img height="200px" src="/assets/components/container-04.png" alt="Container" /><br />
+탭</p>
+
+  <ul>
+  <li>Category : Container</li>
+</ul>
+
+</div>
+
+<div style="margin-top:10rem; min-height:0rem;">
+  <h2 id="데이터-소스-컴포넌트">데이터 소스 컴포넌트</h2>
+  <p>데이터 소스 컴포넌트에 대하여 설명한다.</p>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="스톰프">스톰프</h3>
+
+  <p><img height="200px" src="/assets/components/data-source-01.png" alt="컴포넌트-데이터 소스" /><br />
+스톰프</p>
+
+  <ul>
+  <li>Category : Data Source</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="파이어베이스">파이어베이스</h3>
+
+  <p><img height="200px" src="/assets/components/data-source-02.png" alt="컴포넌트-데이터 소스" /><br />
+파이어베이스</p>
+
+  <ul>
+  <li>Category : Data Source</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="mqtt">Mqtt</h3>
+
+  <p><img height="200px" src="/assets/components/data-source-03.png" alt="컴포넌트-데이터 소스" /><br />
+MQTT</p>
+
+  <ul>
+  <li>Category : Data Source</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="restful">Restful</h3>
+
+  <p><img height="200px" src="/assets/components/data-source-04.png" alt="컴포넌트-데이터 소스" /><br />
+Restful</p>
+
+  <ul>
+  <li>Category : Data Source</li>
+</ul>
+
+</div>
+
+<div style="margin-top:10rem; min-height:0rem;">
+  <h2 id="iot-컴포넌트">Iot 컴포넌트</h2>
+  <p>IoT 컴포넌트에 대하여 설명한다.</p>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="비콘">비콘</h3>
+
+  <p><img height="200px" src="/assets/components/iot-01.png" alt="IoT" /><br />
+Beacon</p>
+
+  <ul>
+  <li>Category : IoT</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="온습도-센서">온습도 센서</h3>
+
+  <p><img src="/assets/components/iot-02.png" alt="IoT" /><br />
+온습도 센서</p>
+
+  <ul>
+  <li>Category : IoT</li>
+</ul>
+
+</div>
+
+<div style="margin-top:10rem; min-height:0rem;">
+  <h2 id="threed-컴포넌트">3D 컴포넌트</h2>
+  <p>3D 컴포넌트에 대하여 설명한다.</p>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="threed-컨테이너-2">3D 컨테이너</h3>
+
+  <p><img height="200px" src="/assets/components/3D-01.png" alt="3D" /><br />
+3D 컨테이너</p>
+
+  <ul>
+  <li>Category : 3D</li>
+</ul>
+
+</div>
+
+<div style="margin-top:10rem; min-height:0rem;">
+  <h2 id="창고-컴포넌트">창고 컴포넌트</h2>
+  <p>창고용 모델링에 사용되는 컴포넌트</p>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="랙">랙</h3>
+  <p><img height="200px" src="/assets/components/rack-01.png" alt="컴포넌트-Rack" /></p>
+
+  <p>창고용 랙을 표현할 때 사용하는 컴포넌트. 높이와 층을 적용할 수 있으며 랙과 층마다 고유 ID를 부여할 수 있다.</p>
+
+  <ul>
+  <li>Category : WareHouse</li>
+  <li>속성 :
+    <ol>
+      <li>Depth(Number) - 3D 모델링으로 전환되었을 때, 한 층의 높이</li>
+      <li>Shelves(Number) - 3D 모델링으로 전환되었을 때, 층의 개수</li>
+      <li>Location Pattern(String) - 랙의 위치 및 층에 고유한 ID를 부여할 때 정의하는 패턴. {}안에 Z(Zone), S(Selection), U(Unit), Sh(Shelf)의 패턴을 정의한다.</li>
+      <li>Zone(String) - 패턴에 적용 될 Zone의 값</li>
+      <li>Selection(String) - 패턴에 적용 될 Selection 값</li>
+      <li>Unit(String) - 패턴에 적용 될 Unit 값</li>
+      <li>Shelf Pattern(String) - 패턴에 적용 될 Shelf Pattern 값<br />
+ # - 층의 숫자가 동적으로 적용<br />
+ 0 - 층의 숫자가 0의 갯수대로 자릿수 고정(ex. 0 = 0~9 / 00 = 00~99)</li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div style="margin-top:10rem; min-height:0rem;">
+  <h2 id="기타-컴포넌트">기타 컴포넌트</h2>
+  <p>모델링에 사용되는 기타 컴포넌트에 대하여 설명한다.</p>
+
+</div>
+
+<div style="margin-top:3rem; min-height:0rem;">
+  <h3 id="아날로그-시계">아날로그 시계</h3>
+  <p><img height="200px" src="/assets/components/clock-analog-01.png" alt="컴포넌트-아날로그시계" /><br />
+아날로그 시계</p>
+
+  <ul>
+  <li>Category : Shape</li>
+</ul>
+
+</div>
+
+<div style="margin-top:3rem; min-height:30rem;">
+  <h3 id="디지털-시계">디지털 시계</h3>
+  <p><img src="/assets/components/clock-text-01.png" alt="컴포넌트-텍스트시계" /><br />
+텍스트 형식의 시계</p>
+
+  <ul>
+  <li>Category : Shape</li>
+  <li>속성 :
+    <ol>
+      <li>time-format(YYYY-MM-DD HH:mm:ss) - 시간 형식을 지정<br />
+<img height="200px" src="/assets/components/clock-text-02.png" alt="텍스트시계-time-format적용결과" /></li>
+      <li>is-local-time(checkbox) - 현지 시간(기본적으로 체크되어 있음)<br />
+<img height="200px" src="/assets/components/clock-text-03.png" alt="텍스트시계-is-local-time적용결과" /></li>
+      <li>utc - 협정세계시(is-local-time을 체크 해제하고 지정해야 함)<br />
+<img height="200px" src="/assets/components/clock-text-04.png" alt="텍스트시계-utc적용결과" /></li>
+    </ol>
+  </li>
+</ul>
+
+</div>
+
+<div id="affix">
+  <ul>
+
+
+
+
+
+        <li class="collapsible">
+          <a href="#공통속성">공통속성</a>
+        </li>
+        <ul>
+
+
+
+
+
+        <li>
+          <a href="#텍스트-영역">텍스트 영역</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#스타일">스타일</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#효과">효과</a>
+        </li>
+
+
+
+
+
+          </ul>
+
+
+        <li class="collapsible">
+          <a href="#선-컴포넌트">선 컴포넌트</a>
+        </li>
+        <ul>
+
+
+
+
+
+        <li>
+          <a href="#직선">직선</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#점선">점선</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#화살표">화살표</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#양쪽-화살표">양쪽 화살표</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#폴리라인">폴리라인</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#직각-경로">직각 경로</a>
+        </li>
+
+
+
+
+
+          </ul>
+
+
+        <li class="collapsible">
+          <a href="#도형-컴포넌트">도형 컴포넌트</a>
+        </li>
+        <ul>
+
+
+
+
+
+        <li>
+          <a href="#사각형">사각형</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#둥근-위쪽모서리-사각형">둥근 위쪽모서리 사각형</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#타원">타원</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#도넛">도넛</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#삼각형">삼각형</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#다각형">다각형</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#별">별</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#마커">마커</a>
+        </li>
+
+
+
+
+
+          </ul>
+
+
+        <li class="collapsible">
+          <a href="#텍스트-미디어-컴포넌트">텍스트 미디어 컴포넌트</a>
+        </li>
+        <ul>
+
+
+
+
+
+        <li>
+          <a href="#텍스트">텍스트</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#컬러-이미지">컬러 이미지</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#그레이-이미지">그레이 이미지</a>
+        </li>
+
+
+
+
+
+          </ul>
+
+
+        <li class="collapsible">
+          <a href="#차트-게이지-컴포넌트">차트 게이지 컴포넌트</a>
+        </li>
+        <ul>
+
+
+
+
+
+        <li>
+          <a href="#차트-공통속성">차트 공통속성</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#막대-차트">막대 차트</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#가로막대-차트">가로막대 차트</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#라인-차트">라인 차트</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#믹스-차트">믹스 차트</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#레이더-차트">레이더 차트</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#극좌표-차트">극좌표 차트</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#원형-차트">원형 차트</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#도넛-차트">도넛 차트</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#원형-게이지">원형 게이지</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#수직-게이지">수직 게이지</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#수평-게이지">수평 게이지</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#수직-진행막대">수직 진행막대</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#수평-진행막대">수평 진행막대</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#원형-진행막대">원형 진행막대</a>
+        </li>
+
+
+
+
+
+          </ul>
+
+
+        <li class="collapsible">
+          <a href="#테이블-컴포넌트">테이블 컴포넌트</a>
+        </li>
+        <ul>
+
+
+
+
+
+        <li>
+          <a href="#테이블">테이블</a>
+        </li>
+
+
+
+
+
+          </ul>
+
+
+        <li class="collapsible">
+          <a href="#컨테이너-컴포넌트">컨테이너 컴포넌트</a>
+        </li>
+        <ul>
+
+
+
+
+
+        <li>
+          <a href="#컨테이너">컨테이너</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#threed-컨테이너">3D 컨테이너</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#인도어-맵">인도어 맵</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#탭">탭</a>
+        </li>
+
+
+
+
+
+          </ul>
+
+
+        <li class="collapsible">
+          <a href="#데이터-소스-컴포넌트">데이터 소스 컴포넌트</a>
+        </li>
+        <ul>
+
+
+
+
+
+        <li>
+          <a href="#스톰프">스톰프</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#파이어베이스">파이어베이스</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#mqtt">Mqtt</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#restful">Restful</a>
+        </li>
+
+
+
+
+
+          </ul>
+
+
+        <li class="collapsible">
+          <a href="#iot-컴포넌트">Iot 컴포넌트</a>
+        </li>
+        <ul>
+
+
+
+
+
+        <li>
+          <a href="#비콘">비콘</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#온습도-센서">온습도 센서</a>
+        </li>
+
+
+
+
+
+          </ul>
+
+
+        <li class="collapsible">
+          <a href="#threed-컴포넌트">3D 컴포넌트</a>
+        </li>
+        <ul>
+
+
+
+
+
+        <li>
+          <a href="#threed-컨테이너-2">3D 컨테이너</a>
+        </li>
+
+
+
+
+
+          </ul>
+
+
+        <li class="collapsible">
+          <a href="#창고-컴포넌트">창고 컴포넌트</a>
+        </li>
+        <ul>
+
+
+
+
+
+        <li>
+          <a href="#랙">랙</a>
+        </li>
+
+
+
+
+
+          </ul>
+
+
+        <li class="collapsible">
+          <a href="#기타-컴포넌트">기타 컴포넌트</a>
+        </li>
+        <ul>
+
+
+
+
+
+        <li>
+          <a href="#아날로그-시계">아날로그 시계</a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#디지털-시계">디지털 시계</a>
+        </li>
+
+
+
+      </ul>
+
+  </ul>
+</div>
+
+  </div>
+
+</article>
+<script src="/assets/scroll-spy.js" charset="utf-8"></script>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <!-- <h2 class="footer-heading">X-Monitoring</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+
+              X-Monitoring
+
+            </li>
+
+            <li><a href="mailto:jinxianlong@qhweixun.com">jinxianlong@qhweixun.com</a></li>
+
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+
+          <li>
+            <a href="https://github.com/hatiolab"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">hatiolab</span></a>
+
+          </li>
+
+
+
+          <li>
+            <a href="https://twitter.com/hatiolab"><span class="icon icon--twitter"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">hatiolab</span></a>
+
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3"> -->
+        <p>Realtime Monitoring System
+</p>
+      <!-- </div>
+    </div> -->
+
+  </div>
+
+</footer>
+
+
+    <script src="/assets/scroll-spy.js" charset="utf-8"></script>
+    <script src="/assets/locale-selector.js" charset="utf-8"></script>
+  </body>
+
+</html>
